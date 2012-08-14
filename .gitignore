@@ -1,0 +1,11 @@
+.DS\_Store
+coverage/*
+*.tmproj
+.tmp*
+nbproject/
+Capfile
+log/*.log
+log/*.log.1
+log/**/*
+tmp/**/*
+
