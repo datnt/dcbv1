@@ -1,8 +1,14 @@
 class AddAttachmentsBlobAvatarToUser < ActiveRecord::Migration
   def self.up
-    execute 'ALTER TABLE users ADD COLUMN avatar_file LONGBLOB'
-    execute 'ALTER TABLE users ADD COLUMN avatar_small_file LONGBLOB'
-    execute 'ALTER TABLE users ADD COLUMN avatar_thumb_file LONGBLOB'
+#    execute 'ALTER TABLE users ADD COLUMN avatar_file LONGBLOB'
+#    execute 'ALTER TABLE users ADD COLUMN avatar_small_file LONGBLOB'
+#    execute 'ALTER TABLE users ADD COLUMN avatar_thumb_file LONGBLOB'
+  add_column :users, :avatar_file,    :binary
+  add_column :users, :avatar_small_file,    :binary
+  add_column :users, :avatar_thumb_file,    :binary
+
+
+
   end
 
   def self.down

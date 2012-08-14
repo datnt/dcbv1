@@ -16,15 +16,15 @@ ActiveRecord::Schema.define(:version => 20120814072018) do
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at",                                :null => false
-    t.datetime "updated_at",                                :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.binary   "avatar_file",         :limit => 2147483647
-    t.binary   "avatar_small_file",   :limit => 2147483647
-    t.binary   "avatar_thumb_file",   :limit => 2147483647
+    t.binary   "avatar_file"
+    t.binary   "avatar_small_file"
+    t.binary   "avatar_thumb_file"
   end
 
 end
