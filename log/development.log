@@ -1,0 +1,1125 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-14 09:48:39 +0700
+Connecting to database specified by database.yml
+
+Mysql2::Error (Unknown database 'dcbv1_development'):
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `connect'
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `initialize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  /usr/local/ruby/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  /usr/local/ruby/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__211028050__call__414299615__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-14 14:17:07 +0700
+Connecting to database specified by database.yml
+
+Mysql2::Error (Unknown database 'dcbv1_development'):
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `connect'
+  mysql2 (0.3.11) lib/mysql2/client.rb:44:in `initialize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.6) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  /usr/local/ruby/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  /usr/local/ruby/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__182674685__call__339836830__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (141.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (266.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120814071810)
+  [1m[35m (119.9ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (41.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120814071810')[0m
+Migrating to AddAttachmentsAvatarToUser (20120814071920)
+  [1m[35m (266.5ms)[0m  ALTER TABLE `users` ADD `avatar_file_name` varchar(255)
+  [1m[36m (293.8ms)[0m  [1mALTER TABLE `users` ADD `avatar_content_type` varchar(255)[0m
+  [1m[35m (308.8ms)[0m  ALTER TABLE `users` ADD `avatar_file_size` int(11)
+  [1m[36m (242.3ms)[0m  [1mALTER TABLE `users` ADD `avatar_updated_at` datetime[0m
+  [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120814071920')
+Migrating to AddAttachmentsBlobAvatarToUser (20120814072018)
+  [1m[36m (57.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120814072018')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/users" for 127.0.0.1 at 2012-08-14 14:30:34 +0700
+Connecting to database specified by database.yml
+
+Paperclip::PaperclipError (User model does not have required column 'avatar_file'):
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-08-14 14:30:35 +0700
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.6) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.6) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.6) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__871782155__call__356854540__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120814071810)
+Migrating to AddAttachmentsAvatarToUser (20120814071920)
+Migrating to AddAttachmentsBlobAvatarToUser (20120814072018)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-08-14 14:31:20 +0700
+Connecting to database specified by database.yml
+
+Paperclip::PaperclipError (User model does not have required column 'avatar_file'):
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (131.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (292.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120814071810)
+  [1m[35m (135.9ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (57.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120814071810')[0m
+Migrating to AddAttachmentsAvatarToUser (20120814071920)
+  [1m[35m (291.1ms)[0m  ALTER TABLE `users` ADD `avatar_file_name` varchar(255)
+  [1m[36m (284.0ms)[0m  [1mALTER TABLE `users` ADD `avatar_content_type` varchar(255)[0m
+  [1m[35m (284.1ms)[0m  ALTER TABLE `users` ADD `avatar_file_size` int(11)
+  [1m[36m (375.8ms)[0m  [1mALTER TABLE `users` ADD `avatar_updated_at` datetime[0m
+  [1m[35m (66.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120814071920')
+Migrating to AddAttachmentsBlobAvatarToUser (20120814072018)
+  [1m[36m (292.1ms)[0m  [1mALTER TABLE users ADD COLUMN avatar_file LONGBLOB[0m
+  [1m[35m (260.4ms)[0m  ALTER TABLE users ADD COLUMN avatar_small_file LONGBLOB
+  [1m[36m (284.2ms)[0m  [1mALTER TABLE users ADD COLUMN avatar_thumb_file LONGBLOB[0m
+  [1m[35m (41.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120814072018')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-08-14 14:37:25 +0700
+Connecting to database specified by database.yml
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (83.7ms)
+Completed 500 Internal Server Error in 114ms
+
+ActionView::Template::Error (undefined method `error_messages' for #<ActionView::Helpers::FormBuilder:0x89544c8>):
+    1: <h1>New user</h1>
+    2: 
+    3: <% form_for(@user, :html => { :multipart => true }) do |f| %>
+    4:   <%= f.error_messages %>
+    5: 
+    6:   <p>
+    7:     <%= f.label :name %><br />
+  app/views/users/new.html.erb:4:in `block in _app_views_users_new_html_erb___740019760_75531030'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___740019760_75531030'
+  app/controllers/users_controller.rb:7:in `new'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-08-14 14:37:58 +0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (75.5ms)
+Compiled users.css  (55ms)  (pid 10605)
+Compiled application.css  (62ms)  (pid 10605)
+Compiled jquery.js  (3ms)  (pid 10605)
+Compiled jquery_ujs.js  (0ms)  (pid 10605)
+Compiled users.js  (91ms)  (pid 10605)
+Compiled application.js  (190ms)  (pid 10605)
+Completed 200 OK in 385ms (Views: 384.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:37:58 +0700
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:37:59 +0700
+Served asset /users.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:37:59 +0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:37:59 +0700
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:37:59 +0700
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:37:59 +0700
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-08-14 14:38:18 +0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (3.2.6) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__701104859__call__277255848__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-08-14 14:38:22 +0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:38:22 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:38:22 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:22 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:22 +0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:22 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:22 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-08-14 14:38:27 +0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:27 +0700
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:38:27 +0700
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:28 +0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:28 +0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:38:28 +0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:38:28 +0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-08-14 14:41:38 +0700
+Served asset /rails.png - 200 OK (3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-08-14 14:41:42 +0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (3.2.6) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__701104859__call__277255848__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-08-14 14:41:43 +0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:41:43 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:41:43 +0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:41:43 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:41:43 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:41:43 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:41:43 +0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-08-14 14:41:56 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5INFcpfj1tridyfmviu6H0nNDi5ewGZNT1dWcz82g7I=", "user"=>{"name"=>"user 1", "email"=>"user1@abc.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xa96ff8c @original_filename="WnXqxaBGbr.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"WnXqxaBGbr.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20120814-10605-1na9d4u>>}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: name, email, avatar):
+  app/controllers/users_controller.rb:16:in `new'
+  app/controllers/users_controller.rb:16:in `create'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-08-14 14:43:09 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5INFcpfj1tridyfmviu6H0nNDi5ewGZNT1dWcz82g7I=", "user"=>{"name"=>"user 1", "email"=>"user1@abc.com", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x9d39c68 @original_filename="Hot_Asian_Babe_Unknown_31.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"Hot_Asian_Babe_Unknown_31.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120814-10605-k8qmq0>>}, "commit"=>"Create"}
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120814-10605-1i8p8ow.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120814-10605-1i8p8ow.jpg[0]' -resize "75x75>" '/tmp/stream20120814-10605-1i8p8ow20120814-10605-1rgw57x'
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120814-10605-1i8p8ow.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120814-10605-1i8p8ow.jpg[0]' -resize "150x150>" '/tmp/stream20120814-10605-1i8p8ow20120814-10605-3g7biu'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (21.7ms)[0m  INSERT INTO `users` (`avatar_content_type`, `avatar_file`, `avatar_file_name`, `avatar_file_size`, `avatar_small_file`, `avatar_thumb_file`, `avatar_updated_at`, `created_at`, `email`, `name`, `updated_at`) VALUES ('image/jpeg', x'ffd8ffe000104a46494600010101004800480000fffe003b43524541544f523a2067642d6a7065672076312e3020287573696e6720494a47204a50454720763632292c207175616c697479203d2039300affdb00430006040506050406060506070706080a100a0a09090a140e0f0c1017141818171416161a1d251f1a1b231c1616202c20232627292a29191f2d302d283025282928ffdb0043010707070a080a130a0a13281a161a2828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828ffc000110802f1022603012200021101031101ffc4001c0000010501010100000000000000000000040001020305060708ffc4004410000103030204040404050303030304030100021103042112310541516106132271328191a10714b1c12342d1e1f03352f1152472344362163582256392a25373b2ffc400190100030101010000000000000000000000000102030405ffc40026110101000202020202030003010000000000010211032112310441225113326123337142ffda000c03010002110311003f00fa41209670904d292402452941538e692436292011492490649249201734e993a012729924024e364c904e74093a427298928b41d385193cf6ec9f09039d93240ca480476c75510606534faa3a8fa28c6a1067a1404838bb6062613ce79268d381b0c277434662500e77298981cd57acbb790dda6374c5d4c6f3280b41c60241dda1541c77c803aa76bb54c1f925b834b8194957a8b72448f753d5d3f446e038de0ce53c2631f3481c65307faa64e90caa941cf24e1408eea53c904749304e94324924900fb28a74c5380924d29028223d937ba5292068e024981dd2f9a569a4928839dd298482492492012499228074937248a01d21d930fbaba9b40dc270b7a45ac277d95cca63a2936310a7845d0b4c1a213e91d93c84da8722120a9f4c1931d90b51cda625ee0d13cd1951c037042cdad53d7845a17636919ee9103fc28763fbab5aee894a7a4b48ff000a49f74930a92492411270994b640d92491490092492402492490674b9a492012492480491c243649d11ee8043aa5cfb25cb090c9402c41e8987739d9394c77402263718e4913982917750607255bea3719f6ee8098f889faa44fa8c735532a08702e12371287af794d8c6b83c6a076edfe7e889fe8f639ee0dd4e39007d50e2a6a79923039f21d3dd665d719a0c2d02a36498df640712e396f468b5cd20b419741991d52d8d374d67b800d043482493b00b3ef38adbdbb8075573df120307f9f55cb712f1536e28bc35c19419b868cbb92e1f8af1eaf71509a734a9c4691fbaa0f46a9e2b2fb914e968d2305dae63e9f4543bc565afd2eacc6b86f3c8fc9791d7e2351a496920ec7bc9feca2cbea8c25d50b873cc9fb29b82a5d3d82978b9a5dfea0737b488ee8eb6f15b1ee6b1ee124fb2f18b6e24dd4d0010e264171dfd82d46f1aacc03cc8c1ddb0b1ca653d36c7c2bdaed78cdbd53a4bc03eff00bad1a55d9532c70facaf18e1dc61aed9c1c0e792e86c38f3e9186bdc00c86bb307b289cd71eb2697e3cca6f17a682484f9f9ae5f877889950b05505a4f33b15d0d1aedacd058e0672b7c739939b2e3b87b10d929d4072e85481568ec8e3609e524900e98a5fa248049c113dd32529c06744e13274b9265a45c632aa756014aaf358dc42b1a66654dba1256af9e3a8faa89b803781f35cf0bd3b6655756f1dc8953e4ad3a5fcc8ecad6540e8dbeab94a57aed5995a36f79912e4e5d969be0f44a7081a5701dcc2298e91ba616ee97ba88384e80748fba6092011c6526d683949cdd42150f6c73282b3624571d7ee9cdc60e502e0ab33945d8905baea0ef851fce1d81f9a05cd3b26183cd2b7424a39f75a86ea9d5a9d9542ba98c29ded5248ba981d95ad1d14180c442b1b015482dfa484f34936a94934f68249248169291515219080492453129e81d314e9b1d91ad02013a64e919d24c9d00924924031dd276d29f3c941ee22704a025a931789990a201224ec87b9aeca0d05d1a8e00ea95a34baad66324ba4003d9055f8ad26020125c33b6eb2788f13752cb835cf930065a0ed92772b9ae23c56bb5afa8ff002d8d264b8824b846d9e5844c9571d3a2ff00ea36bea540299861cea91baabffa883c904349048c602f3faf7d7d7190e0d0440e583d21526bbad665daeb3f7edee5196521e3c7727777fe2536c016913b11bef2b96bbe3971503b43c804e20fdd6156b97497d7249fd7e4857d77d5688058d99c74595cad744e392349f7d5aad4d25e5c499f655d5ba7c3da6aee237e8b0ee788368d414a93c17b8c6f933dd38b7b87b832a384d4110390ebf6578efed9e5a1156fa95771a2d7b886fa9c4607f9c82954a02e1a5aca600689748dbd8f32afa7636b6714e980f74eb13ccf53d422ee5cea869b5e48a4d12437127bf6556a663286b0b6a36b45e5ac63df121ce1be7f44c6ddb56a79977f06ec6c44931b0e8a62e03aab5a1b8d80fea8915053735ce97543047623653ba76464dff93c39952a3a832a5724c6a1fe9b738e93fa2c9a5c42a55afe5800170f4c8fe6e9f4c2378c3eb5d5c35cda25c0bb4869e6eebec84ba656b278f3852d348fa5e705ce0771dbbaac757aa8bd5e9365e502d63dae14dfb384e01ea7a2dce19c48b4b4557360fc241041f658156d683ea1a8ca4df26e3d5e919693c88e7cf2a96d0f26a6891a2621ce8fb28cf09934c7932c5e976777a8025a1e2600fe8b6386714af62e0e0e73e9f4983fd0af33b4755a4c06deabda07f29ce7dfa2e8787f15a8da40dd539e41cd1f7ecb972e3b8771d5339c9d57b0f0ce2d46fa9fa5c35e2474f92d2064e221793d8dfb7cc655a0ecb4ce0c11fd4765da708e3cdae743dbe9ea397ee44adb8f9b7d573f2f059dc74aa4aa6d4d511f54e5cba3a735e924f3943bab006254d9503b9a02e494014f3d500fcf29929eea2e72360d53639583c584b4e02d9aaf199dd635fb83a7dd4e54e4db1a0a67b5d1ba28d3e7cd31a6a36bd04682d89070ad654d242559b0091c9066a43b27629ca9b1b76b704d41fd56fd074b41ecb9de1344b9dadc3a42e8e8b480ae257b764e901809d3074929490087ba6709dd2490159a4a2698230ae2ab79c7645a03d4a7076553801c94ead582550fac0fbaced543ce792b995035a0e2502fa837553eb9d829f2d091a9e789dd47f31dfeeb24d6cc734de7183251e67e2da15c1496336e6066524fcc69d0a494a4b567a24924954052531264274a10347493a481b453ca44248a36748744920a699d24df34fc901127065424ba62798095471881298bc31924e4204f683dfe5b1c5c6480b9ce2376dadac97914db8c88d59dfd911c678953b76b839e0000971ee392f37e35c62a55d50f2d682607d7e8b3b76d71c7ec6f17e314db5c516c38b0c06b2081fdf6cacabfbe75cbc174b9d0446fa42c96563509f280d47776f93efcd4b51a6d21b05c7724ed1cd2b5ae386fd8bad7069334b0ea7913eddbdd0552a0a432e9a9b9507d5653692dcbba9fd509e617bcb8c9f928f6de7e33a4dce21de6d4974ecdeddd03797cf7ff000e8c03cced8e8a5755b4b4ee4fee856b039ecd4d21806a777edf5578e3f6c73cbea2fe19674a9d665c569a8f8913cb3bad77dcb64e3d430b32dee350a955d2353a1a22200507d52e2631cd696fd3391a36f54baa39e4827601577dc40b40a2c20b86e7ef081ad7428d30d6ff00a9bff741d2973e5c4924c952a6e5b5481e63a7027dff00c2aca97ee0f734001f104f42509e68a54a4381dfebfd90b488370c6871ce4fba509bb64e0f734d43f09207ca101c72dd97d5d9518f134c10ec4cc83b05732a86174190d11b2cfbdac29b1ef261e5b81f555896502dbb9e69b581c7453645333bc1e7eeb5ab5bd3b86173d8c7556b1ae6923793faf255705b763b84527578f32a00f036c03fa415670f0455a02a03e9610e93bc13fd5153250745b4800e15b4b89889888fd32b76c2bd5149c1e69d403fda72b9ee29e4fe69af20127e21d0f5f753b4acda6f6f9358b1dd1e3fa259e3b8785d57696be5bffd279a554e4078227b4ec8ca775736b55aeaad7b236a804cfcd63f0fbd7e9679a1af61cc6089fd56dd9bdb714c8a5546aff654c8f92e0ce78ddbbf0b328eafc3fe20d4032bb8413893bff9d1752db9655a5a9ae110bc9eb51f289c68cce0c89ecb6f83f1a36ee6d0aaef49183d96fc5cdfb73f3707dc75b5ee087c03ba3ad1d2cdd62d27d3ad0f6b8193d56c5a16e9895d53297d38ecb3d8e66d952550701dd397a7b2d5598ea145dd940bc26d625014dc8236e4b16b125e41e4b6abbc1690b22bb7d7239acf2548aa025a7fc8531ec91d8acd616bb496c09ca16df87b9d5439f312b40c6eac6b8647cd549f655a165483060725a2ce4b228570ddc94532e9b0b5959f6d1271d93ca045c8ea2148dc36371f546c0c94a420ff00300ec521703b2360592989c211d70226556eba6f508f2120e2ec2a2b3e1bba1bf36deaa8b8b90440295a722baf5bd583d90eea866672a9a8fd4491d5309eab0b76d2458f7e154e71384c7b851214d33cf78502e204952517ce9294decc1dcdc1691ba481e26fd2e6c24ad2f48521b7c956a6175d9d31249249294124924982072a4a2374e8074c9d28450694e99284a99893384a4fc93c7c9338c091b8482ba8e209201276898583c738a32ce9e92e1ab9a3b8bdf32ced5ce244c13f3fe8bcaf8df157dcd673dee27240ec3aacb3c9b71e1bbba871ee2ceb87975471d3381c972d56e1f755f489c6c3a773dd4788ddbaa12da644fbec3faab2d582937d43d472e3d00513a6fadfa14d1e5d30da71b7d7bfbfe887ab5664348d0203bdd5777705b48691ea7986fb754355761b499b34cbccee512ed7ad4d2751e5d24039c7b2a1d5f1fc332361dcf5f650bbabff00b6dc465c6760aaa674838104631b057226d21b97bdde96efefd146939cfa7acc82ed874087af5c57a82937669871ee9ead434cb5ad397081dbbfd156319512ead968110067ba8d2ab2e25db0128473896b5c08c9ca935c5b42a387b0c276948856a85f70e7493c823a8c53a65ee9cb647f9f359d4185d774a90d87a9c51b755853a0e263481fe053b543d6ab9203843406fd72a36cfd2e2f3303ee8173f4d1660ea741d95f4dd2d6811032e4091a9e701024e7255370ef3f553112e11f2db0aaa2ed724ba397b04d6b5daebd754032d1a7da513a4e536d8b37cbc536cc30068edc94aeeb4710aa4086b1a5d8e9ff002aaa759adaf5cff2b081ee71fd5535ea8a552bd579c3e27d87edb272933af3d75b2208307b2ae85470796bf91e636563298b8a8f735e1ce3923656b69bdbe9a8cd5189e63dfaa7e5af69988eb0be14eaf92f3a756c791fe8b7e85cf94d1a087931ea1d3faae6a8d115810581cd13b1dbb8ee9c57ab6bfe9c46304feab0ce4ae9c2dc63b6a37cf7fa1f91cb9429121a1d569fb969e5dc0e8b98b4e2190ea92d31913b7f65a2dbad4e043e0c6172e7859771d38e5b8eab81714f2dc29d4700257696b76d2d0e04759eabca6997e9d6d700fc44673ecba2e03c5640a15480edb7d8f457c5cb67558f370cbdc77e2e9b18227dd39bb11b895894ea120412ac2f773395d532df6e2f1d357f3627709bf358c12b2b53a62520e3d53f31e2d27dcc9df2a873b541942827aab99b774ad122c09148278ee1286add8955b9d02558f1baa1d398552c16179a67130a4daae8c280181b2986a5b2d2c159ca7e7bb65506f74b3d5394696f9ee1c8a6370ee6554ef750c9081a8b9d72e8e4aa370e3b2890613419295ba1e29b6ab88325317bb649ad851d3dd4da7268f95206143ea9d0d34934ccc848c7450cf24c4ee7a25ada6c3ea13821354763e4a3cf0a2e38211ad156271704bdb0922eee907bb3c92413d04271bc26e6138dd75b13a49fd9329d024924954a0938493a01264e920229e522994fd99dc5515de29d271244c7d3dd5a49910b94f1b719658da9a14dc3cd7efdb64add1e33cae9cbf8bf8d0b8ace6b1c452663dc8eab84bfba0d639e64b88819fba22fae9d5aa9970239958c49bcae441f2987ff00e51fdd61eeeddb31f19a5b654cf966a39a0b8e5bff00ca79fee88aaf90298389009fd527383691248c64e370100cabaadcd59f53c9033b0ea8b558cd45b5eab75bea80200d2d1d10ee71a36e5eede7ea4a54d8ead74ca43fd36e4fff002eca3727cdae5bff00b7487d4a720b438c37f8840921cf24ce7a7eeabbaae69d073c903561bd847f853d6873741999d4f40d63e6bc093a1824857232c92b40e635babe23ea3f356d6a825ce27f9607655d380003b8127d90d735a7b0e4ab1f685ae7c9a2d6ff0028fd4a32ab80a3a4c63250366d351cc7741289b974b5ad1b977d546574bc62cb2696b1ef3fcd81d86cabbd3e60a5484cd4789f61cd58e71f2031b1931f4416bd57f5093e9a6dd23de129d8b0f5aaeab8710700691eeaca648a38dde7ec1036f2ea8f818380b4edc86124c696881f34cb14ee2afe5edc301f51dfbabf84b4b696b3193ab3cd64b5c6fafe1bfe9b3aade696374b410247e898b0edaa031c4eee76a3dca1b8ad6d54991b2855798869c039f641ded53503319693108846a752ab08a949fa4ec5685af1aa8c2056873769c63ba0ecfcb9d352483d516db2a2f92dd42718cfcd3b773b4c977d3628d4a370258431e798e7de15174e741d6d0f0d4136cdf4d80d2acd711bb660fd13bee6a52a7001d40443963676db1dab7d5f40d2488cc13b76445b5f68193e9d889d8f659b59e1dfc4a6081cc74433aa749fec96a554ba75f42f8c4efce41c7fcad0b5bc1a855c4edbeeb89b1bd34e1a67493b4ec56bdbddb5b2dc75dfaae6cf0b2ee3a31cb7355eb1c0b898baa2185deb6c022775b8dd87d8f55e5dc278879151951a4070382398e857a3d85d36eadd951a477ecaf873df55cdcdc7aee084a72a589cca780ba191dbd15ccdc7b2a9b132afa68455813f2f648251d13256f5596fb2b9dbcaacee9508e94a08dd480ca5f241e882684e9e00d8941224670a241cfeaa4990108ee9429148201a1448f656a81450880910a6c01398941cbaf6a085032ae701cd40b44a15b8af1c941fb495747654d6781b46c9e93728a2a64e524357a824652478a7c9e86904a1285d2cb471ee9d3274a8d124924903ca5398099385528209d284822d063d53626123dd41eed3bc49c29381788de32cedaa577ff2b49f905e2de28e2ff9aad5ab557125c61bfd1773f883c5052a02d299fe23b2f2390e8bc8788d6f32f349ff004e90d4ef71cbec1659def4e9e1c7ed45cd67319e5b49f36b607ff113b9575bd3f29a29b762067af74259d37d6aa6e6a83aaa1868e908faae14cfa77234859de9d1add0fc4eb8141cd9dfd200e690681498c9d3a40307a205ce371c429306c25df219fd516ef5be49f88c25bd1c5b45de4d2756d89303e680a8ef269e49ce4fba32b81e60a64ffa63538f7ff8593745d5ab403f172e8ab1a9cba393a6df5992e7991edff2b3eb3b4b747f33ce51d76f12c68d998fa085925daee5ae2700fd55cacb2115aa1a6d70046a210372f3860998cfb957d676aaac037273f213fd10c1a5f786760554a9d76d7b29a6c0481a5adcfba6b6a86bd6af573a5a00ff0084aedde4f0ec0f554f48f9256c3c9b58130f700b3dedac9226e25b5003b3413f3dd02fa829d1a8efe677dc9575f5497be3962500f779d50308f4ff0044f1f49c85dac86b491818f9eeadbeae29db86b4fa8eea0d0e6b1a790cfd50d51be75c35866067fb2a1234381d2753a2e24197194697835441c3709a916b19a6998d2d54b5c30312495328d24c9a951c39734d5adc138071cfaa2eca8ea0e763ba345b4b26308b4fc1956fa29ba1e02d0b634c126912c79e53221097544e41991b21db51d4b279774ae5b1e2d7a8e6482f63873d4d3fba1ee9ccd19797d2263232100ebfa94fd4d383823a1eea9fcd32b970074ce4b7bf6536afa35469a755d528bdaf69c39a71843d5f4898c1c8eca9b87b985da4edbaa695c171d2e2089fa25aa4b99574d433f0946d2b9004492392cdaadd24c0df2026b7acd04077cfd9166e2b1b5d670dbe0d80f3e9c0f6eebd03c23c57caabe45474b5d10eebdd7925b566b5c61d83121753c2ae0536b4871811a4ae6ce785f28db5339a7b50c895205637873880bcb26f98e06a3707e5fe05b2018c2e8c72f29b71653c6e9362b984e150d0e1bab5872ad17b10d848a661faa794d283940eea6e5028a0ed4e4266f34e321233009fb2700ca406f29e8959dd283fe1532147ea9041c208486ca513b94b9e1009448c29f24c76ca02b1eea5298f6507d40d12613906d2240dd54ea81bbaa6adc000e4206adce305578ed37290554ae00de167d7b99060a1ead62ed952e3305693045cb6954a9279a4a9764e125a6a16deb492494a8324e146529f7404924c0e3748208e9c264903b48a4709b298ec81a37393b041df56142854ad520358d2728a2649118195c3fe20f16f26dbf2ad266a49772c744b2ba8bc71dd701e25e286eaeebdc38f7f65c810e786d2065f54eb776cec8ce2551f50e99cbcc9f60a9b668687dd131bc7600725cf6bbf1c7534ba9802e035a70c023dfaaa3885534e938b49d476fd3f44a8970a5ac9f53e4fd4ff004840f17ae038b4643440ee7aa9decef49f058d571707b31bed08fa61a0f98e234b723e883b1a0ea5674585deaa84bbd87fc236e5cd14e8d2047a8cbbff0010a72bdab19d02a958b584bfe2a84bccfe883b574bdd54cc376c7353e2958baa69004bfd3ec019250f5ea7976a29818dcabc6748cb41ae5ee76a89933f74031daaf0e9234811efdd1170ff002c070f8a0903d90962df54f2195a4bd32bdaed5fc6d6461ad207cd3d9b4bebbbb7ea546a997181826422b84b06a69c64eaf60116f4731ed771671f3ede8019193f20882d0db7a6d3f18c8f9a058e35f883ea3b90c7b9c226a3c9ae74ff0028002cf7f4d64806ec9d0003ea7b84f6850b66fa8bddcdd03e4abbc79f39a33804fd55f470c6089204ab95959dac7541e7c39c035a27e6a362ef3eaebd9b323d82aeb99a0e8dde63e489b0a7e5db69e67013b4e4d8ad52701264beac0dc0e89361a04ce31089b4697d404ec5c028b57316e70db7fe081188cf7256b0b51e53400970ca034b5b8006cb69b4469e59516eda48e5eeec65a4c00b0aeecdc0911b765ddd7a039fe8b2eeed47aa00ca9f2d53f18e0aad1d25d3307759557cca5536cfecbb3beb3dc81bae7ef6d8c9919fd55cc99e58b3aa54d4410771286a80b1e4b4c8392a5501a6e88fba8d4abe9d8180ab69b0550ae2b536d17900ff002bb98f755dc5bd46349d3b73191f5e483656a7a860b4fea51b4af1f47d54e756ce0720845103d1b83ab06483b765d3f07bdd40b403a771dfa8f7587e658dd3f53d82deb1392c120a7b52fb2b968241a4ef85e363fd1679cf28ac2eabd77c2dc45acaac0dff004cefd87fcaf46b6aa2a536981d3e6bc2f82dd3a9d5f4bbd2e123319e617ad78678836e6d980ef001cf4597165abe239f0df6e8a664293428b7bab1a3a42e98e54dbd54f928810a69ce8ac41ca077537281dd1291379a93545bcd49a9c23f64924e8062a2476524c808907a26e7952330554f781ba3413507bc3464a1eadc46dfaa0abdcefd5398d2b9685d5b819840d6b9e90877d624e4c0433897192b49833b97e96d4ac4e010a92e9dd248c4775731fd22d408512a65448dd3087c9248c0e6925b87a7aba8b9d032554eaa04e44a1ebdc000e5256849aa03a094855693125605cf116b1e4121514f8ab49dc25b91531aea9ae1c8a707185894788b7fdc1154ef1ae0208ca7b2b8d69027aa794232e1a79856b6ab481fd505ab1726260a8078e49c1077211b1a46ad41468d4a8e980093ecbc3bc61c44ddf11af501305d0074017ac78c6f5b67c12b38cfafd2392f05e25561e4bc992ed5fbac792fd3a7831fb035dc5ce2d00e618df99feeace264d3653b5660b886e3effbaaad61f74d773682f8e8a9ab575f126b1c492c6177ccacafb754fd8b382cc0d2323b4080b9fbb71b8bda6d6ec5d95b3715453a2f2270227b2cae12cd779af9341767b258dfb2ce7d37e9006ae3310c6f6842dcd469ad51c0e04347b0fee8869f2d8e71dd83ee566567e8a45ee39c94a76d3d4d051fc7bbaae27d2d01a31b67fb1545d542fae438e1a255b63e9a6f2ec12e9f97f8501775886cff0035425df2c085a7f8c6a8bcaba9f9380212b3f81f04e4421abd4d4e0204939f922a97f0adf97fb95df5a44bd9557091efa47c8232c0f97635ea13970d2df65972748249274ea5a9731438632778fda545542e1a35d593ddc7d80575374baa3f1cca870ef458d47c1d5a40f994d448d2f9da00f9a9fb693d02ab156eb03139f60899d346ad53b3440841d139aae1b93a5bde55d76fd34a9db8e646af60aa33fa574c1206a9db19eab5e836041fe5027dd675bb26e5ad390049e6b45b2da7b19799f60965558ce8f5086b24f22656d705b52e734b88c0d43e6b25ac151f4d906064fb05d5f08a70d6f53cd456b236ed29e921683648010b6bdd16cf74ad345ecdf641d7a5aa7647ba6312aa7b7a8595aa605edb02d22173d7f6848274ecbb6b8a608310b22eed83a473558e5a164af3ce216a412442c870fe842ee789d898240c4e572b7d6aea6f24b4ad656566d8772c206a1b26b6ba730e9713a7ba2aad32dda48e9d50b5a8822585692efa6394b28b735b5407321aee7dd5f6d72ea0f2d702ea2e80e677ebd96650aaea6e0d71f4a3201931be37dd4d872ba7e1af86814dc48065bf2e4bd0bc237c597745dffb554409e4765e45c3ee9d46a4b5dca7de177bc06b00c3e5b89187b7b4f25c9cb3c72f28e9c7bc74f6eb476a646708b6b639ac4e01742e6ce855072e1a5df4ff0095badff25756396e6dc19cd538e8a4a38984ead28b94548a89dd2233774e3784d29c264984ba148110365173801984c11239f35073b4e65535ab81b13282ad70aa44dc8654ae061035ee37ce50d52b13b2a1ce9e6ae628b92756ab9c772152e24ce523da52e47d95c9a45b51dd44eea59851273b26218a4522ee9ba83dc214dca4126ce541cee4a3ab384c413cd63972fd35c7045c525214c9e692cbcaabc5d956e21139121675df112e0402b35ee7b89c9faaacd324e4adf7b69319155edc3dee304a0c54aa0c871c23bc893984ff0097ec86b2e3a468dd556804f446dbf107b4649428a31882ac65bc8e7847a45d35a9713c892328ba7c4846eb085020e138a6e6ca25d27c63a5a7c4018f514453be0e3872e475556991303bab29de3e9ba49c0f9a2e45e013f12b8b4d365bb4fc227e7d1793713ae1a49765d9031fe775d3789af1d797ee73dc74b7d47b6cb85b8adf98b96e4e92f803b01fdd616ef2dbab0c7c7168597f0ed6b5778cb8e27a0425b90f7d77824b9ee0c07a0193f753e255c50e1ad693b0d5efdbec86b469a3674099d505c7dca5f5b54f6b6faa0f25e5a4c13a7e413704a63cbaaf8f8c86b7d87f7286e22ed3458c0725a49ee4f25a3c2748a2c6c6198f9a99d6276762af5de5dbc1dceff3e4b138855d3460ec6251fc5ab135994c4e731f2589c42a6a752a6208904a78cfb3ca89f30b6d5d8c9100f72b26f1d358e70d6e91ee8cbaa9a431b388d47e4b25f5356a767d4607d56b8c6195a770352e181b3b49ec651171f086176234fcca16ca5f7759d274347dd5ac76ba8c932356afa2ab538af60d751cd68c87003e48be2b2e652a424cce3fcf74370f048350f325df556d5ade65c01390d8faaced6b8c14c769b463270f70fb2adf5036caab811b93ee02570ed4e6b460536171f7d821ef468b4a349a4490263ba8df6afad23680b853930275909ea9152b089df0ac68f2ecdef3f16cdf6084a4f2e249990255ca9d34787b7d751dff00e3f44797105bed010fc359a587188faca26b0cb00037536b4988ce1b4fcc7971dce1759654f4b1a00e4b1784d00d689017436e30214ae46851108964f554520512d181d5166e090fa88de556ec9feaad2d262428b9bd14789ec3546efd109569fab6c2d12d2464a83e8e2651268d83776da9a4467d9735c5b87ccbc0d977d52d89693c8acbbcb31071bf6553a2baaf2fbbb42d79c0fecb36bd22392ed78b5a0a5560b49a6e903b1e8b9ebbb7d2d20640572e99dc5ced4690e3ab2d53b4ada2a6979069931ff89fe8afaed00e6106f8a6fd60123989dd5fb6166ab55acd2f6b9a0e99fbaeabc3579a0d22ef849d27dd725635c48224d378fb85bdc2c0751a8ea4ec88701db75cfcb3ad3a78ded1e09b93a2e2d8ba7cb748ec0e576f48ea01c3621796f826e0378c517998b8a441ce03a257a7d94682dce09470653c5cdcf8eb2111cd229c6c98f35d0e741c98ee9dcab73b1929c12a5f30a25ca8a95f4e01ca16adc1eaaa63695b073eb86f301095ae8c402827d791c952ea93bcad2608b97e9755af24e550e7c9dd44c1ca6eab49233dfec8ec98754e7a28cc6c50569499298982531705071195372d092da917755073956f719eca2249df0b2cb95a4c08bba24013d54db4e4e1114e8616172b5a4c741994c9390ae6d03ab23ea8ba742364436973844876cd026d081cfe892d06d3493f120660010140b80dff0045639a636e482b80ecc4e16f2aa8aa65aedca203444acab673e73b4ad263896e42adc4ed0c0719f64650a608c2080f5f6dd1f6c76090dae14b6cfd9555980028d6931b2a6e1a2364ec9a1bd0314f50391082be0295bd6718c3091c9693460c2c7f113fcbb1aa09dc63da56795d45e177969e63c6ebc1ac06c06827bef2b97b7a85d5846c063e78fd02d4e3b704d17933264fd56470d9a95e46cd027e4b9b0f5b76d9de96716a82a54a3448c12357601115c06b2852698939f6dd0370457e2cd026183efdd14e707ddea33a58c242abe8b18a2edc2a572465a0c0f92d6e163f80e7838f887792b0ae5da1d4a0e5d2e3f2ff0095bd6b14b86d3d58073f2846fa39ed9b7b5755d54a9381e86fee56535faaedce990d575d569d44cc124fd4a0438369139d4f3f64f188caacb9aba9ae24e76f920eb02df28620493ee9dae9a867a12abb8a9e90244913f22b5c59dbfb3da3b45ad5237cc291716b9e3fdacfb951a60368b180e5c934eb75771061ce81ec0ff64e88d9b2686db81124aa2d879d7b55e70dd607d3fe15f6c7cbb57b8ff2b67da50d60ed168e793b93f559efb69ae9791e632e2a03f13c307b4ca85cbb53da0ffba7e413d3975bd360db56b3dd2696f98cd47024953a54d542eaa61b441e89ed981f5400304e7d87241b5c6a5c3df9c93f7e4b5786b0beacf4fd516ea1c9b6a516e8a702255f4291ad5446c3aaaf6719f65abc268fa438f3325672edae9ab614840c6cb62dd80418e683b566c42d3a0df4e5515134db990ae6c2853e4af6c403084a5a41123090608d922e01b0556eac06c501314c46ca7e5348db71d50ff9a6377284b9e27498d3351a23ba726d36b41e034440415c35841246eb0eff00c42da6d2293813eeb9bbef105c549879079413ba2629f26ff17b4654a351a2323fc2b88bda6ea6e21edfa2b8f12bfacff8dc47254d6ab70e70fcc30f4053d2b1cb6c6e216f39681d42c8ae30677382ba4ada5edd226475583c42910e31202ac6a339d2be1ced2e2d1d4c2dee105f4eb7a4ed8f92e6ecddfc4079bb75d05891ac386e647cc2cf957c4f48e037418cb2b83e9752a8263980633da0af63b4c3cc6c4023e795e11c15e1d6ee64fc591db7fe8bdbb81dd7e62cac6b03f1d200fd07f7587c7bab627e4cea56a4119299d112533ea00d4156b9895dd25ae1b74bab540dd8fd9035abcc8c615156e0999250afa8495a63822e4b2a56f51439a85c60a6c7d523ecb5911722909249bea846e9d449e41339d9553de212b6439369b9d9e4ab2ffa2839d2a22498ebcd63972fe9a4c132fe8a1249d94c5392af651cecb1b95ad24d296b09dc482ae6528288651d95eca3d94e8f61d94910da59d82bdb4f130ad6b79c0957216d4b69e158d6e158d61de548370ab45b8af48e8525769491a1b8cf61611c933e9b5c0602cba57643429fe7fb8dfaad1568e6d168230255a1800e48065db6449dd14dad202089ec01d80afa318ea10756a8909e9d68200fd501b148ca85c02e0004353ad014cd704f246f42c386c7bae5bc6358b2d607c2e303b4495d3b9d2400b8bf1dd46b6839b3ea6b4c0f70b3e5bf8b4e19f93ca78d55fe1bb6894270a245173ceee98ee14f8b924b5a3a171555a3fcba0047aa09f9ae79fd5dbafc91a0effb97bc7c44e91fe7d5154f26ab9bb98033c90568097e67049328e005369267a9f629ec49a08e06addb5a768807a4ad8be786d00c111a6164db81e636a13f13e07b6db7c915c4aa0680d13b613b4e4eb6c4ba7fab71032827d430c0499267e4a774f26b3872087ab1ac44c06ad230b565105cd746ee21bfd50ee3aefaac13a0181ec1116e4368ea323489f9941d999ab50939009dbbaa97b451209f371c9a55b69069b27fdc4fdd0ed314dee3bba63d9116a4075307f94007f5fdd3b4e356b3e38755119381edd1507f876cd6ec77f9953bbff49ad1b13f654d5a82a56a4ceff61fdd4469456a8aad60801acd90d56a69a0f3de061307ea739c6732a9a8ed434006499f6536aa4e93b6669a609dce7f65d0f0ea429d2271b4ac5b4697d560131385bc48635ad91dd679569844e90352b35827242ea6ca880d6c0858bc0adc54a8eaa6626061751418d6c258aec176cc8195a14c47b2129472c221ae919c7b2b4d10d7630a46a6064218548e685baba14da5c4a7226d836b5c35adcb842cabee2f468c8d4172bc77c45e5873291971c6eb8fbbe295ebb8c1327bab986d965c9af4ed78a7899ad86b5c232375ce5c71af39f00ba671cd6452b3b9bd77a7519de574bc1fc3eda403eae5c4670afa8ca79654251fccdd7c2c775cf35b7c3f82beae97571fae16b5a5a53a60434405a14ea8640110b3b96db4c145b708b7a4d074091d52bdb1a552938686ed8c234dc0889087af5da762a15269c4713b1d15096b6231f25cff0013a2ed049f92eeaf981ef71007ab0573bc4ed7f864007aa732d5559b7154b355bcb30ba2e1ee01e038e4c11db2b02e81b7bb820c133f2d96ddae0b0f30972deb69e29dbabe00f05cd69fe5311d7fc95eb7e0ebc8e134185d9a4e737e5fe15e35c29e68d661064ce7e8bd1fc2f5cb75347f31d5f55cdc37fe4d2be4cde1b7755eec9182827d573a5541c5c04933cd3af5e63a78f965f4624c948ec9ca8954997b26fc212e49a4002494e5c0028dc87add45ce819c2a8bbba551f8c2a4c92b1cf935e973149ce5132edd58ca64f556b284912b1b9dad2621d94891b14453a38d9134e846e0a229d21d14ead3d87a74801108865312ae65318956b69e64055214aa994fb2b5ad68df75686c4754e1b955a2dc43448809dac56b5a9c84f45508e89c0530dc2700735520da01a125384904e36a5b96b561dc9a8cab8380bb234c398642e7f895a91509109aadd33a857a9a81270ba2b571348493b2e680d35002ba4b120d11ec838aeb3882950a87565595da094add8dd6022d03d92598e887b8aa6991dd685203481010bc4690f2e4725345576f740b81246085c778f1dadb54eac088cf73fd16d92ea4e032b97f17d6069bc16c97189ff3dd61c97f16bf1e6f379e716707570d6ec37ef255145c09239440f60a17ceff00b9a9bc08f9a6b6121e6701b3f5e4b3bd62ed9374450f84c0c9c7d4a9dc3cb857888034cf453b2f82990048f567fceca8aeeffb7ab9873dff00694a53b12b603f31488f818093de70aae275b555907b7d14ec9ae16e49d88c1e8b3af9feb3046f0abec5ea33dcf0ea958927070a975497911be145865ceee65469c3aa8c73cade39aafbb7b9b4dd4c189804854590d3e667e231f251bb7cea3c814a9c796d93dc04149dae0e96b1bce49289b176aaf27920c10d049e9089e143155c7f97f747d1c9db46bd418938047d1094dc0d46b9dbc13f54aedc4cb41c0502407800e7490129d45da2038369d268c923ea55149daaa543d30146b3a39ec2135a196bc93b05366d71b5c299eb24f2847d6707bf40392442cfb3a818c3072023f878152bb5eee5b2cf28d31aeaf83d2f2e8b46c02dba2075c2c7e1f5408056d5bc100855268f7b154c056cf7c05537a0e499ce30500d5ea6906392e7b8f5cbdb480a6e32775b174e3e59cf65877ec3503840c1578b1ca387bcb7a952a93924ef845f0fe0c6aba5d868fbae80d9b1c44f24553a618069c0e584ee5fa44c27b358d9368b1ad6802169d2a7a4c0e7f6407e659441754203467a2a2b5e57baa6e736a36d6d464d57ee40e6029d5abb71c5a97177468487d5683beeb1ebf1fb40e2055113182b06ff008c705b62d21b52f6a9f89d54e09f6d963d5f14b29870b7e1f6d190244fcf65ace1b676caf3c8ed68f1bb7a8e01b55b9c0ca2bf38d70dc6579aff00f5150a98b9b1666734fd251b69c6e95320d273cb66035e6482965c4273caee5e43b63baa6f2df5d0c2cee1dc569d7240dc6fefd2174d4eddcea035082e1b745867f8b6c32f2796788adcd2aacaa1b21a73ec5156526dd84e606fd56cf8b2c5ccb77d4032dcedd161f097eba2d0060823b045bbc5526b274362756902643413f25def856aff0014022791f63c979ef0f743199ccaeefc2e479dcf0d9fa2e4c7ae495a72cde15df03aa09df9a73d9401ea71099ce0dcaf6a6535dbc4b3b4c95073872dd44d40a92f93859e5cba130fdac7bd5524ec0a70c73b96eafa548c642c72ced69318a5ad2e3042b594673071d9174e88e8af652810a356fb55a1e9d1d910ca402be9d21d15cd64615c9083b58005735815a183a2906aad16d0d2312149a07252d32a61aae4d11a3b241bce14c04e0234368e9ec9f4a9194f081b4212ca91ca6299231dd24e92039da55a58073545d439a64042d2ada4cc72563ab6a0769512fedd378d8d7547f8d23f45adc3e4520093b2a6a3438c9015d4bd2dc6caa545c74b6bb8207f36da4f927656d724830b0afe9d52e3a6534d9a74f6bc498e813944d7ae2a531077217116c2e1ae1befb4adeb475534c074a566d32f7d8daf4838e00c405c3f8e9868d4637aba7ecbd06cd82a346a13d5707f89502f2981da3e7bac7967e3b74f05fcba7965ebfd7534c6e07d9596a3f870378cf7545f88754702249c7d15d6874b5ae2419699cf4cac72feb1d73d8fa04343a0c0688d90175e9a40b9c7b22a74d9d72d32e9fac98417102000019f506fc94e3d9d176ae2cb3a732469cf658b78ff0053a775a8f779760c8399207b12b1ef4ee46fbaac2f6594d40349d877629e89198892a9a67f8550f393f54ed696804cc41272ba1cd517973a01e655ce2038003086d50448324e14aabbd6073408b5ee9640ea8eb270149dbc480566b880413b01f744db38e86013ea3252cbd2b1f6baabc97064e4bffc0a4dcdc35b9c7eca8a2355d349d9b24fd55a019a952730614ed7aecae08f2dce9e69ec87371108777a8536fcce56952b769a6d698e4512e815ab9da4920facc047b2bbe9576b5b3039a4da2d2f6068c0c7cd68d0b204c9dca53bbb55ea3638656739b26775d370fadada2485cc50a7e5b047485ab6355cd7360ee8a78dfa74ac4cf0639aaed9da9b3945b581c23f6495b67d612d831959b70001056dd7a50d22164ddb3aaa4d8ce2730142bbf4b4c4a91066610f7e3f8240e6113b2b3518d77c42953f32e2e8834e9186539f8dfdfb2e438b71eb8e297269b1e60e03060057f1a656e217efb4a04451066332e8fd573769458d235ea6ba4871e608c2eae3c64f6e0e6cedba59c4adebd021b55c0b88980671f253e034bf317a2daa7f3025a7d86c88af4687e55da6a973c09ca6f09db57abc6edaad1a45cca64971e5190b4b64638e36dd2de2bc30dabc01999c1e4153c3ac2b5d560ca6baee27646e1ee6d33a9cef88f4ecb4bc37c15d6f5185c244ccac6f269d1fc3bad9f07f86c5adbb2a54d2eaa733bc2ec0db80d21358343180423c3642e3cf2dd76e1878b91e39622b507b48dc41e78385e61c383a89f25df1d37967d0ff00c2f6be2144104c6f2bc8f8ad016be26baa6ec6b7878ef227f64b1f5a57aca569db82d7b636dfe6bb5f0cd40da94ddfcb107e6b8ab53201e982baff000d8fe1827fdc3e8b8f2bacb6d739bc5dfb6a87531138c262ff00754db31ce0627728da7436dd77ce4b63c8b86aa9634b8f62aea74260a2a950ea3ec8aa7440d827ab44a129d001134a88e6110da59d95ba3a4e15cc4ad56ca51c82b1ad56066ca61b198552276ac37a4a9b5a6721581bd14834029c9423a520d5611b612015482a11d93c6ca69e02648009e1492ca01a132729202277494884c808c24a49203cf43b30548388d8efdd549099584af4b5b5ed71246cad0eee876e3d94e7aa72a6e117e1c37559a01cecc4a4c74199cab58e1d55cc99658202d1a048194b41675e88b0f6e9dd0d5ea03b4caadb0cb04e8dc9a4489db65c17e20dc0abc45b07d20030ba7b8a8e0f7004e5713e2e7eabb712448803da161cf94f1d3a3e361666e0af038b9f110247d5116bff00b4dd38f2cfeaa9b931e6f53fd5116be9009dfcb202c32bd3ae4ec65bb1aea752460c11f233fb2cbe2603480660be47cd6a597a5af0660347ca67faac9e221ceab4d847a8d403e5d54e15560abb3ff6d48018324fdd61dece904ad9bd76a6320e01207758dc423412671b2ae3bd9673a67327cb7c7556b8431eee431f5555382d71e5201fa29563fc3001c1cae98e5f4a1875d504ce0ca93e5d50b8ec4e1350321e4f2c291f8467b2653b3d4935003300046d3f48601b86ca12a826b413ca518d8d43b314dbdb4c22aa0efe2d47038c0fae55cf77f05ce9eca8a4400e11b99f653af1e480632654c8ad1e8105e27905b141d310b0e93e083cd68d9d6d40b8cc01fe42329af458d8d9b68933bad5b792d5cad1e2403ccb4800eeb7f875d36a4411072aa6360b94be9b54c8819c232d5d040eeb3a9b838c8384653e442562b1f6e9387ba704e16c516930573fc31db4f2eeba6b421cc10a5722aad47d3b2c6bfa444e0c2ea4d205939597c42882d3e9ee8b45727a08741072a8e28d16f6356e1d30c6970f92d8a940f98080aae2566dbab3a942a4e9a834bbd9395366de67c1ee1b4c9ac5a5d51eed4e03332afbaf0c7fd56e9d7548bad4bf2e6e9dfbc2ed6df835a5ab41a5480311b298b739d208fd96bfcbf4c7f865bdb95b3f08f0ba14cbabd4ab735444b4e07d96b5a70e6d16865b5265100408183eeb599664bc38024fd1174ad4e3054dced5ce193b66d1e1f4dc43aa35b3dbaad8b2b50c0035bb2be8da981328ca34435cb3cafedac9175b530009e88a811b89553200e81584ed1b2c8e40d76cd4d88e4bca3c774c51f11d8548ff00518e693c8e9ff95eb9548707755e6df89f6f03875c346595cb7db534ff0044f12c995692da0d2664182bb9f0a53350e983103eeb8ab3136e5d38247e9ff2bd1fc0b4c1a4e900904103e4b9acde7a5f25fc1d770ea33498e20e727eeb4a9d198c2af86d38a61a77063e4b45b4e0442eec71923cbcaf6a1b4a0cc7dd5ec68818568676fb2935816b233da01b9c6cacd22148001483729c89b500d2a41aa607ba7d2aa40881d14a13809e3a260c0754f013e5284154613e13a640284a1229734199344a9639a5ec80899e698a926e4824524924079d8905480caaa9b893bab86d079ae6dbd690885229a13a608182a53b46ea1309c108de9362d6bb692145fa5dcf6eaa04f64c4fd112d4f8ed45660f331b10792e03c5262e1ee9c4ff00817a05d3f4d32ee8bcff00c4a41a8f044e0bbebff0b9f9b2ddd36e2c6470f70406d427991f21fe04552f4f96d3996ea1fe7c951794ff008463a844519fcc8047c0c03ec52fa3bec552934ae34ede9cfb4e7ec83aed0fba73dc445321dbec2168526e9b7aed31902566dd7a6d6e08e6e007613fd94cabaaeabb55161232467ea565f10cd3c95a8d04dab4932e185957c3d1079ecb4e3f69cbd0060f402362546b9f437a1c0f92b28ffe9daf8fe6fd10d52a3452127398f75d32b97287602d65493fcc0276497b5b39904a8d4696b5a246727eca4c716d56e326134ce8446aba451e71c821294fe676c9469101c48cc29b1ae3fb505ad6d2711cb09ab980d06270a4c24d31ff00c9ff00a154dc99ad0220044f62dd205c1ad22324a9f10b936f620077a9d843d071ab5e483a467fcf929714a352e5a0369ff0d9003bbad319bac32cbc71016b737155cef29e5cedc89e416f709e26ea75e2e9a6993cc4c058fe1ca5ff00eb76cd700039fa4c9e510bb2e3542d1ad7b00639c71812442db291871dcad745c39c2b3039a4111820ccad6a54cb46579df02ffa850bba638787b87f3b5c3d30bd3687f1e9b4b9a1ae20123a15cd97b7771eefb1160e878c60aea7873bd223942e6ade91695bbc31f060959dae8c5d0d30e7376c21af6dc69ee8cb53206cadab4e5a71c913bf69b3b72d52841eea87d29e4b6ae28c38e3ec85ab472764fd2596684f22a54edc09c146168054a9b04ca366a596cde8ad141a360886354fcb3212b4f4a053c6ca429e642bcb364e1b8537b38a43719d931900631c95c46392a5d80a74afa54e3ea31cc415c77e2251153805579049a7518ff6cc7eebae76e56178b698adc0af01ff0064fcc11fd12bd235b70fc31d36e187e7dffc95e8fe077865e0a679b71ee2179a70a7973192209123e45761c0ae9b6dc76945482d749f6202e7ff00ed59e3f8bd82d07f11e06dae63b42d0d38c206cbd755ae04439b3b6eb4a9b491041c617a38fa795919ad4e0654cb4472909693b85a4d334614c7784a3214bd9511a0427024a49c03d5047d239a6220a784f080827929e124036fba89dca91c1488404524924024924fc90103d52e4a453138404124924c3cbadea4bc85a0d9204ac9b73150ad5a5302572e9eb4b2a794938c9809c883948d1225203d9381d52c7d13d91baa64e6121b4a641b8862d5e7b15e7de21f8491c9b0bbee2a4b6cdc46e4e3eabcff008f6d067d20039f9ae4e4bf936e39d392aecc011bb84fd0a9517975779f97eea7584907ab89f643d89d55c09dde67b003fb04fe8afb6b59b9b5a9b00c97373f20167710700c7d26ec1da8fd7647f0ea8d632935a3d4e2e07fb2ccbb1aae6b4ce4ca8c7dafdc541fff006c207c263e4503c441d3b6515ac790e9ff00747d650d7b2ea667685ae1ed195e80b47fdbbe393c47791280ad1b11d4ad103fed5c044b5c0acc79f58c64123eaba717364b9eed5518d8c691fa27647e640e4042ae62ab26660056b1bfc691b47dd522afb7769b9048dc14757f4b0cf340536ffdcb446fba3aeccd1a903e16c7cd45bdb5c674ada345bb0818d44cff004427c4e738f327e68babe9b566792143629920f3fd512e86515c9a42a163499100772a56f42fae1a194cb98091b947d9591aa1a749395d1f0be1de59638c9c95ae39698e5c7e4c9e1be1d141ecb8a954beace230012b7ad783b1cf0e3273b15a96967a22018216adadae41030a32cf6db0e29229b2b46d30031802d6b7a240023215b6d6ed11204a359480130145ad2491551a7c91d6c34b846d2aa6b73cfb226dda41c8853573a6ff000f331ecb4cb258563f0f911256e501a9b9e69965599714644c059d599132005bf754f7c2c9bb64490109ff00594f10427a63054aa8f5151611295f6626937656e954d370eaad63b271283d6cce8061279f4880a6723651a80691ba2c548a0ceea97ba4c2b9fb88543b72525695382cce36dd7c3ae5b88349c3ea0feeb4dd0b2f8cbe2cab77610a72293b79d707cbc8030d691fb7eebaaf0ff0a3578b54bdbc716d0048653072e83bac4f0758d4bbaef1459aa21b9e43a92bd87827842835ad7de5ebcf3d34da23ea7fa2cb1c6dbb567949355adc0aa56ad4dbe596d2a4203493331d17434fce6103cfa7539ed1faac7a76ff0093706d37eba5c8c6dd9165da9b826574e3b8e3ce4b4736f99a8b6a31b2307aab9b5283e25bf42b06f03bcb35193a9a271cc7f5435b7110e0327a9ca7fc9af63f871ca74ea4b68ce1c42adfa47c0e0ef9415902e2448263dd057178fa6f6969320a7fc8c6f04d3a304e54956d32d69ea07dd4c2de392ca74924bb264497349240310374bb27517028062993a7c75404539d9367648ee804e513d14ca81dd102292729261e554c01501c992b4293f015628810a6d869dd7357a926aaf693ba9124f5550a8dde52f3c0de612d1dba8b33ff0029b3cb743d5b9d32630867de8ea132f2681d8cc6e98bda02c8a97d830ec2a1d7da8ef198994a979468715a81d458d0440327e5c9707c74fc47aae96a5c3ab50a8e130010b98e319a4750c83f485c5cb7f374f15e9cd57f4d46c4e44a02caa86b9a644f9da7de51f7e22ab60ecc25625277aeb1ff006d70ef94ada4e9197f6e9bb64f0e7d36f3150fdc154dcffea1d31fed3d8c6eadb6029dd3fdc119f9650976ecd71dda7eab1d5db490057769a35003f0969f632a55fd76c1c33a9b3f64d7cd8a159c07c4e69fdf0aab27eab70d76ed118e416f8fadb2caf7a06dff0050b493a6ab3a731940d610d3220832b51e3d4d6c19a6ecfb11cfea165dd7a9f51ae064483dc85d18f6c32355115584ec408fa95730915889ee156f936f45d82623ee935e3cf3388c42a48cb77cdc027a232a383db70013007459d6a66be790fbca3689d4ea8dea47da1656b69e92be2050a4236689f9aaa953269b0737107d95dc4bd4f6b4472088b2a735a9b4c40c9f9225dc3d6db5c32dcb5a246cba4b4a18120acfe1d4303fa2e8ace864744fb54c565bdb80365a56f440e49a8d13bc61194a99ee9ab47a54a07b2b9adf60a4d6404e5a7928b4e4fda3a44aba88889055464112ac6384e4eea65d0b1a766e1a96f59b8e9195cedb1c8c6eb6ecea7a60c2732dd4653a1b59ba81599754c190b57e21210572d00e4e555a99b73b78c2dc84036a9989cadebaa41ed3cd60de50348ea131cd4c54e85523215ed3d167d0ab204144b1fdd54382c3942a3b0983b0aba8774966a8440c843b9d9202954721cbb33cd2b549c8e512b9bf17dcf93c36a9ccb8696fcd6eb9fb99c6eb97f1111717d69449f435e6a113bc6dfa95169c9abb6dfe1df0f36b64d05bea71d471d17a85bcf96171be1b753a2ca6c244b9b3f45d95bd4691cb0af8e461cd7b5a1b2d2084992c3a4edd5593cc283e0b4cad2c73ef693c0891beeb9abee1f5697146d6a7522c9d9d006ce9da7a6c5740d79d307754dc343d8e0762a6c955865710f4be1df03642de0c8255f48c4b4f2dd5379f0046a1daea011e5d3236215add84a1ecfd5696e49fe40891b2e8c7d3cecbd949848fc49679425cb60a9249c7b252949ff02018a47629679a480824a43098ee8043f44c524bdd00ce50532a2edd00ce0000524e79248d8795baec4ee152fbc6ff00b971f538b90624caadb7d737074d0a2fa84e0690b198bbef2fe9d6bf88341f8b3eea87f1468065d9f759963e1de357a64d3f281ff715d1d87e1fd77c1b9acf71e71b272488bc9587578b86925aefba8dbdc5f5e380a140d49eadfdd7a1f0ff00015a522d2ea5a8ff00f25d558f00a36ec0d6d2681b0d91a4dcebcaecbc3bc4ee0cd46d3a60f40765d070ef058739afb82f7b8759fd17a551b0a6d00690886dbb5a400d13bfba348f2af31e31c0e95ad0acc631ad6c0004720449fbaf31e34c0759a725a4c8c6d985eebe2c6065b577900fa09fff00b4fd70bc5b8c502da45ce691e61c8df0e2723bae2e6c6793bfe3e5b9db8ae22c0daa48c86b485cfd991f9daac3049223de79fd56ff001825a5e06d88ef95cf51691c4db9e84fc88feeaf19d2f2f6dda92388126353848f70553767f8d55aee6d0e288a87ccbc63c89c1fbc1435f9ff00be98c3a9c0f92ca7b5cbd03b97eab271e6c23e9b4a06cea015dec0444c7ba26a3a29576ba482481d89832b2db2caaf201dbf45b613734cb2bd8e740bca8c07fd46e93fe7bc2cabaf4dd9077741fb7eab4ae4970a35dbb73f7ff2167711713e5d4118247cd6b85639c36bd36cd063d2e549c56d5982a524b2a86ffe43b2ac1927acc85a205da18ad1dc23ed9d172e59b68479ed04f3475a381b83ef25679b5c2a75c97576cf4c2dbe0b4c547c9dc2c4201aee13c9749e1ca7e99ea4a58f51b6337dba9e1b430090b7add81b00c20b87b25ad85b949834e613ad349d207103ee8ba6dc0ecaba4c12890d81c94dbb2d101fa2670895331a556e382101554dc28b1dea09aa132375167c4a286cda89d24745a96f802792cab27604f45a2c78000094fda6c6ad27cb4043dd7c449d9574eb0688950baac20e4e157974998dd86aae001405d96b9b98ce0f70a17578d01d91858975c45b05bac071384b74f5df6be8b34577b06dcbb22c0d24203865515eb498263eab4ab4088880ae09754c1d8dd273f041543df1baa4d646d73da755f9dd0eea913950ab53b9433aa614dab5d5ea80c719ea572967e7f16f10965ad3754d1831b0fd91f7d5aadede52e1f6eed2faa25eeff63277e93d17a07867865af0eb7a546d29358c072632e3d4f5254cf632be317f03f0cd62fa35af6b961683e8a7dfbf3f92e9ea59d2a2d06839c5c06438eea74a74e313949cd2e19eb2b5c66a74e4caf92ba6ed58e6309ddb28d56969f31a3dc7f45210e008932ae5df4cef4a5c77298fa993214deddc150698f480a44a06e3f87543bf9762a9ba74b019475cd2151a5a46fb7baccad3a083b89fb215be9d470d25dc36d0f3d011a364170cff00edb691be808c69ff00216f3e9e7e53b3a49258954924924900924931df9a01394539d9320114c9e53201f794c9c6132019dba499c920384e1df875634dc1d5296b76feacaeaac3c2d6b6fa453a2c6c7410ba96d200c80158d681c967236db2a870ba54e218041e88da76ac6810022631b27039265b405200e0614b4c6ca519c270103660ddb099c324f4ca9c4283b7210276e2fc604eaaa0ce81409741ea480bc778eb9d4d8d6bdd968693cf4b809fecbd73c5f55aebf65b48fe316513ece3c8f5ccaf23f1031d4c38d5070f20f720c2e2e6fecf43e37a70bc6a25c7b93eeb18b432f98e047c33ed885b5c6b21e06d923e6b0eb92ca4cab226037de328c6edae6d2a0f06d19563e1601bef129f88479ed772123eb9fd9516f3ff004ea8d71133204ed27fe54af61d48be4e0348ff003e6a2cd539dc67dcc6aaa06750c13d8a02a1c553060b3185a571a4550e81071ef281af4fcba3a4c924e47407002db0bde99e515dbd42eb714c9c800a1ae1a5d6d506e4198e8abb4a85b7629b8fc52dfdd12e035d407f987d56bad563bdc096c7d4d738ee3491f25493159cd9ec3b293496bdd4c9c8dbdd57758ac08fe7cfecae33a22812eaf4f201133946d9bb4bf2772b3ed5deb8913323b9575bd4f89d3b3a54e51785683fd359f13db2bb3f0cd31e5371985c7321ee6b80c1195db7868801808dc28f4e9c2bb0b0101b85b745b004859364d05a3aad8a00c04ad6c229b400af6e01955b7004ab1b0427a08b8c82aa7e31d558e06700c2890954a9736676540c5600846b59a953754221cd0646ea75b21146a691b80ad6df341826162d7b82da6ed3b85c6dcf14e36dbe71a029be8ce18e6f2f7dd48d6dea038846c71d90775c449040715cc5af12a9529035e99a6f8cc19563ae07fbd1a126845f5d6963dee3800939e4172768fb8b8ba7dcd427538c35bd02d1e2375f981e5519827d47db9045708b5060b9bb6405a49a2b76d6e08d36f4c6a92f77c4b55eed410b4581a040e4ac2e21bcf08b4aa9acf1f243b8cec535cbe27b1429af062542a2daef3104a0eb54d20eeada8ed40ee83b9769a4e27a24b9346f093055bbaf74ef8aa3a27a34720bd06d2f99474c91921a3dc95e71e1da869f0c639a25c33f757dc71fa546ab1d55e6996bc120cf2211658594f27b4da56d4d1036108a74c4e07c973bc12f1b5e8b2a35c1cd7364106641fd96fb5c348feab6c6f4e2ca6aa0f3d55149de5d52d24e93b7f457bf9f74339a5c4ef20c84ef452ec53802223250e590e95730fa44ee9100cec95a9b14b9a08d901c56df4b45468f4b841f70b45d2099e4a0f0dab49d4de7d2e107b25558fe86f0a33c3adbb300fa22e0ee14bc3ec6bb84536541eba6e730fc89fd91e6d5a4185be3e9cf971b3a73fdd21d708dfc99990ec26a96a00f887d15b3f0a141c27e525354a7e59904384c2494a8b2cea9e7a42893cd2ca6e4991ce4a64924020910904c8047a4a47092676f8d900c4f6492c2480df829427949434201284e23384c81b3a5ccf64a7a7dd40bc02661013eb90a248133bf2553ebb5a0c140dc5f35939db295aa91c478bab369f17f3751961f3037a96b801ecbccb8ed675cd2aadd1905cef724ccfe8bb7f17dc97f12796c9d4034f60495c05fd57ba9dccb4b4b6a47d1707265bc9e9704d471bc59dadef3d000161d776bb7631b10c04fbcff00816df11c9aae1b90b05b3246332b4c15988a4fd64ea98a8d81ee31b22a454a4c69032dd27be16653769a74e48c3f1de4c235cf2ca4c79312448e86612ce769c6a87b4696b9e0e0111d60a0ae09f32b199d4357cd68543155c1d904e3e683b9029904e46c5563ecb2f4c4ab8afa9bb8321146a6a0c70d8883ee142e5830e036c151b621ecaec261cc878f9e3fa2def6c27574aee416bc541b8c2aabb0d4a41eddda79f7463b2d83cc41f742974482483b1ee9e35362ba6e8824ecad63c6b701bb950f05b524810544bf4b9b1208cabd16f4dab2ac343409d4d905771e16a82a31bd5b85e6b63701b572603f75dbf83abc54d27ae7dd65947471e5d3d46ce3408dd6b513b42c5b07cb375ab45c602c6babd8e13d4290c6e5521c4a9ea3855285a48502a05c79a41d2729da1752df65786872a191ab088a6e004a5bd33bfb67dff0d65504810eea1669e1603b3903b2e9490760a069ea398f928bdf6732d39d770f00400103756659900c12bae7511ce109736be661ad3828928976e76d38782df87b95ab69665a7011f6d685a3d50027ad7942d705c3eaae4a2cdfa4996f1bcfd142ad02d049303759779e27a548383227f45cc718f1a318d70357d4766839fb2ad09856a789afa8d85b3defa8350f85b3971e8b0f8457bab8a42a570013b01c82c3b775c71abe65c5c021b3e86ef1fdd76f676c29d30008880a72e8fc74604e9cf459dc52a69a2e1cf647dc9f2e60ae7f8c5c1d0ec8513baa4fc3d713c3991c8907e44a0f8ec3a9bdc63624acce0dc469d9507d2ab51a353cb9b3ce547897131743c9b5f5b9c4347cf905a68e6523d3bf0e8f13e1dc02d1d7ad755a1525ccd20cd361c807a8fd365ea16759b5a8b5cde6b07c356f52cf84d9d0ab1aa951630fc847ecb76910320013bc612c77b72f2d957b8fdb0ab71cf34ef709df75538abb5849a5a1f88296b1ce10f55fa44a0df760189096f47a6a55cd39938cfc90f4ab4edff281adc45ada500898ea85b5bad44e4464a9df6731765c1ae992fa4480e3eaf7d82d86d48cae2fc3f50dc71721a7d14d84bbe70005d255af0480765bf1de9730f2137578da34cb89020206dbccbcfe2557b9ac3b00b2b89d7352b53a4088272b428dc06b434463012cb2ec678cc669a0db2a4c10d7bf3f3517db16e419caa1b7471957d2b89de5132d3972c377b54e611bce140cf24792d7379090877304f2ecaa66cef1fe942442b1d4cc6157eeae56796362297248a794d263b18512719522a05009dba4989ee9206dd10094a839e00ca1ea5cb583272a36da416480330aa7d468e8b3abf1068900e567d6be7389d2a6e47a6cd5bb6b6723ea81adc41b98fd56554a8e7e4939caac7b25721311756f1cf38941d57b9f324e7ba96db05189693d145b6b492388f13b62f2a12e8c0f944e571f7beba578041779a09ef202ecfc5ccffba05b104c1ee49fee17194e9e917c671e647d02e2cef75dfc5fd5c4ddc4bfa4ac1788710449048dd743c41b159e1bdfe8b02ac8a924f39faf55af1ab39b5370f7318ff2c06c8fbeead63fcc6bda72da803875cff743d47113b483d794ff00c29d230c0e1fc848f6e7fa2d729d309d55ba8d4a21ce3ea69d27e4546ac3ded6f58955dbbfd4e647a5f29c1f5693b83f5533a5ef6cdb93a6a16c738cf2e68763b4d5711125b051378cfe39319383de108769e7b2df1f4c325ad77a5c09da27dbaaaee9b80f1fca7d5ec79a6a6ed2ed4448d8e3752a9f11041803ec5346f616b02e11d364880ea6498d5cfdd2aa0b8403dc7b2adce6b5b0498e6ae54de83b2a16093fcbbf65d7f852f22f40d432015c85e36354441c8eeabb4beab6b569d4a6e21ed23e7d93b8f94463cbe193e8be13701cc190b7a954c082bccfc21c769710b7639a407e039b3b15ddda5704082b8f29657a58e5329d3658f92add47194032af29cabd8f31944ba5ec56fcc4a43021542a63b848d44f656886bb3d95cc7e465673eb06893b0423f8bdbd27e9ab598cf77425ed3b95d2b2481b7d55d802490b9e6f1eb3a2d045663cc7fb842c2e31e3063438527803965126eaa6372f4ec6f2f68d1925c31dd635cf881ac7c537085e63c43c4f56e1ee01ef23b05954b8adcd46bbcc63b58260e765acc62fc7c5ea377c7dee63807e7dd725c5fc401a1daaa646c2572f55fc42e767b9809c4614a8f05b87bf5576b8822720e53d3498657d445dc5ef2eea546b80d04c3601103f75770ce146b55f32ac9e795bf63c1a9db526baab4131207f54751a6209d235bb1b440f645ad261309d89e01661a47a440e70ba530d6e08c21b865bf954b6124226b021b82616395db9eddd64dfba6722065725c62b497341ecba5e27534b5cb87e2d5fd4f713800a584ecb2ea399e2d53f8a18d26499f60b6bc222b5cf88386e9b6a8fa34eb537d5d0d274b41dcf65b3e03f03dc789af85c5c0751b06ba6a54ea3fdadefd7a2fa0782f87f86f0bb016b656b4e8d18c80327b9e73cfe6ba2fad393777b68dab5be50220839f757180d311943dbd3fcb5114a6583e13fb283eb6f0544e8af6b9cf81b855f999890877d4c4a16a5c68249230848bbcaad0cc1830b99b8bc3e6900ec48dd4ef7889738c131c961d5ac75933d545f6b906d7bb7131aa02b6d6e9e0b594c175479d2d039ac8d65c72ba2f0a065bdd0baa94cbea4134e766c449f7ce1131dd698e3b76dc26d5bc26c053306e6a43eb3b7f574f61fdd5952b7a490b35b726a3b51703abba7bbae1b44c6c015b5ba8db1c350351ac6b5fd471fe5c05ab49f38eab07844b985ee325ce24fd56d521959cbbedcfc9fd8635d05114df941b7272af69c6ea986431b50e0290a84942b5ddd4d8ef74e5e8858a981ba4e01c360870e536be364a5d15c6545cc83851569776553cc09e655cc98e5c660544eea05f182a3a81ff95acbb636692709384944b84734932d08af7e5c4c1280ab70f71dcc7754e7aa477cae7b6d8ec98c845ce3894e263ba609d0346e69109e32967920b7d19df0a4eff49dd6139fd545c7d0eea04c7585344715e356196bc12075ec7fbae3a9b4b2d6e1ef27d5548fb47d5777e32836e35096167d2083fb2f3e1705f4efda27cbf3dc583e83f65c79fbaeee2bf8b95e2a052ac4818073dc15ce5e340aae0d2749185d47186ea25dd70572f7a087341dc60aae2abca04aa74d6823e31851b677f0c93bb9b07bc13fd557744bb626402a05e18ea35091e5b87a8f4931faaea9e9cf7aab18e2f639ad30f61c91f59fbabdf25c2a0dc904f643479372676d8abadea35d55ec7736977b91fdd4d9aa78dd28bb6eaa8ed033f1b50120c3b1ebc11d0ad42d2f608dc0247f45995c7ab508ce4fbabc2a334580b5fa0833b8523b99ddb9ff00c874f9a86a2e6878225b8294ba4c6fbad19a8acf6b4123e484aae1a240c01957540d7d3d6c9dfd4dff0069ebedcc1f92ac343e8d469035812ae46395df4839da9801323fcfb209ec2d7990ac6bf43c6a30d274bbd9278201638ec775726995a2b83712b8e1974daf6ee323e26f270e87faaf68f0a71fa1c52d195293c6a101ede61785b65a328de15c42e3865db2bdabcb5e3044e08e8428e5e3994e9b70f35c2eafa7d2742aeacca329ba579ff853c596fc4a98a6e70a77207aa99fd4765da5b570e882b8ecb2f6ef994cbb8d404a4fee550cac060a939fa860946ceda1af1c7cb86b8ce572b7fe1f37d71e6552e7769d975da438e5114693639252f62570dffd2ed633e1303baa4f87d86a8c1d24fd17a39a0d7041dcda3483033faaa9976df0e4f171d4bc3d45a65c62306422e9f03b368243dc472c05a15db529b8ef086a972f020c42b95d58f34bed3a767674192da40b863d5fd14ae1ed2e97c47b6c10756eb5000033cd51e6bea752af7349cb924ee2771503de1ac92022b875b9754d442aeda817118cfb2dfb1b580d9193d96795db0cf93cba1141b0d11b42aee5a6082b469d186c7242df86d3a6e2e381f25954c71dc7ea8a6c27a854f843c135fc4570cbae201d478683aa321d580fd1b3cfe8ba7e0be1f1c62f1b7978c3f936bbd14c8f8c83b9ff00e3faaf49b4a0da54dad6801a000001d3b2d30f4cf9329e8b875951b2b6651b7a6ca7498dd2d6b440108b3f0e004873098ba02d36e5caf6a2b20eabcb46cafaf500e616757ab893c92a532be91b9b80d104958b77785c48070acbfad9264c85915aa4ce7394af7168d6a92e3d150e32545ce9249d92a7ea788533be978cdb4386da8ad59ad76c5749c4ea32d2d194a846a644f79c10b2b853341f31dfca95d543715f49261d8dd54e9d58e2d6b1a87d0493d54f89dc16d0d0265e63ea86b27eaa4d3ce23e9ff0a3508af7cc61f858252caf4d32ea36b87b0329b5a276016a525996e74846537e37538d70e5dd1c0f45634ee866384472560395a46362f69530e5407614da70124d9a5ed29c15534a7d51cc2702d2ee8ab7bf0ab2feeab73f1ba015574889cf240bae0b5d077072ae73fd480bde4f69cf3578e5f4c79309ad88fcc94965eb3d525b397b6e01909ca609d73bd030e69faa8829f082a73ba63b94ce77255bde3e896e2749b8e4267b806932303fc0a87d5004f40b32faff00434c185196531872333c5d5054b0aa07f2b4c7cc42f34b5aa5d6cf988249da39f3faaed38a5d1aac7b4c10442e1a8cb693d8edc3880571e57cabb78a6a33ef479b49fb02d242e678881ab1eeba47ba2abda7f98985cff1196d420855c7eda64caa8039ae04660908069f32879633a4123b83cbea8e7921c41c4647741380a57cd0df81e2472e6baf0ee39b2e92ab50d4a6c7089101d9d8852ab5053d151b19233d0215c7c8af50380735e3227783faa7a9a8dbb9a7965a7af7548990b150876f8e485bc10e27f94efda5429d78218e3f1e07bab9deb6693f10dbe49c9a3dee02182f6ce54e9b838107ac1286ae5d4ddac1cb0c3b1b8526bbf981c3b255ebed96fe95d771a4ef3299871df1f68e699afa6eaac21ba75021c0673d8a9d66ea10858d19e60ad232b35545cd30c7b813ec99e3531a75663f4575c7ae9870dd0a090d2d3b4aa95954838400019f7531d82a55cc24e392744ec4d0a8fa6e654a6f2da8cf85c0ecbd13c2be32780da1c41d9e5523f51d579bb37cf346da3b43f31bacb3c664df8b2b8d7d0167c419598d70702d3b106656832aead9dbaf17e0dc5ee2c5c3ca7934b7d0723e4bbbe0de22a1741ad73b4553fc8e2067b2e5cb1d3b71ce576d4e110d042cab4bb6bce378eab469d40efa28b55a18d763299c03810556c20ab03529552740eb5a87cc2cfb8e1e09270ba00df64c688392154a6e57fe9aecc0fb2b6970b208262574eca2d0083ba89a22648caa97b366db59b2980000b4a935ad0a21907053bb11053bd92dd58db2b31f45fc4f89d3b469fe1321d58f46f4ff00392baf2e9b6f6cf7b8ec36ebd87d96d785f879b7b4156a81e7d5fe23cf73fb42993676ea366cad9b4a931ad6800080074e48d000eaa0d5273969269c79657644c6dbaa2ad4201054def89dbe8b3eeaae4ccecaa4676ed5dc55cccaccb8ae20c4295d5c74fd564dddc403044a5578c557b5a490b3aa3ffb27ad564e79a02fef29d9db54ad5dc1b4d8249fe9d4a9defa5c86bfbca76b47539c353b0d13b952e0f55d5c6a76f32b85afc42af12b9756a92d68c31bfed1fd5745e16bdd35f438c878fd1298e9b71591e814eb86d00d044939ed0a14087547bc640fd56753aa353c0889908ba4e0d66304e4f754ecc674d1b3aba69bc980067ea9f873b5d5755272e718f9610970f6b6dc4112e90aeb13a18d03601679547365d69d052a87489dd1545fd4ac9a55098cf646d07677532b8f26a31eae63a67281a2e33945535ae37719514c2a60aa99f0e14daad356872671cf251e498fba24231304cf455bdd13d949c554fd8e52a1554273084aa4169079e15f50e50559c89d5d959d6831ec924f30e496fe4e2ae81230989951271bae7772448848900493c95356b329e5c70b278871565369878c0295b2156957b965306489f758d5b8a03534b4c67695cd711e36e738863953c21d52eae8174b8051becadd3b66d43518d8e6165711a673d02d8b3a43cb18d8420b8853c11b25cb3a185edc8deb4826171d7260b88041d641ced2bbae214f0476fd970d758d4d31133ed185c8eee3bd32ae1c5b501e624fbacce26dd74cbc0ccfd91d7cf22ad23c89872aae5a2030ed10b5c67db4babd39ba8338f6dd017902e69b5d104fa4f421695dd3f2ebb9a01859f7544560419c9d4d3b63a7be174e15cfc98dd7416ec925d03d41c5e3b67fb14d49e1b4980edb7580654a45c4bc1881eae5b7255c870c6c765ac73dba5178c34aa919c41067628ba754540d76c624f7854dc8150ea138107f4286a350b607369fd556b625d0bbca6d738b86c420edddf15370c0c846871c8703c90570d34ab8789d07ec8c6fd165fb88d4716be333b285570f2f23d5faa85427cccf2949ce983cb92d233b4cd838e5c950f682e81becad69f505555ff5242719d8aa37055b4762140804cab294653a9c7b5cd8067089a505c021e37f7455210e18dd4d6b8b4acdc7008c85a0de444c82b36848f546cb4a8fa9a088cac6c6f8dd3a0e0dc7ae6d5c195497b3b9c8f9f35ddf09e334ae008709eebcb298ccad4b1ac58439a4823a2cb2c656d8e4f5ea170d7090518c7072f3ae1dc6aad223ccc81b2e8acb8e527fa4b8025676359974ea999c8d95836c958d4b88070c382b45ef70890f6d2739b382ab7d48188403aedbbcaa6adf0189edbaa90f639f54804e15352bc02490b22ef8a53a0d73aabc340dc9230b129717771be20db2b02ef2898a956231d9558371d7f04b57719e241e41759dbbb1ff00cde3f61f73ecbd02930318000b27805ad3b2b3a74a93406b40016bb9c08c4a78c659e5b3b48eb80a2f774513319055359da5b855185a8d7ad12b22eeb99c6c88baab00e56357a85c4a65228bbadbff0045955ea1713288b97133250155d92a2b4910aaf0d1a8c0037e50bcc3c4dc78f17e22db7b433694898ffe676d5edb85b1f88bc73f2b6cce1b6ef02bd713508396b276f73fa2e1ed5ba069a63d47e23d156187dd465977a6ed0aa5ad6b49c9223badbe1973f97ab0625b11dd72b4ea8a65ae0092d1033cfa946d8d4701e65478d6e74809d95ae1976f51b0aba994c8397c735aa6a6a7b5a0ae6b80d5f35a1c3e16b63d8adbb73aeb133b612fa7a7c7eb632f2a4ba8d30763271fe7445d0a9b4745925e5d7cf83860d2b42d6644ecb0cbdb939b2dd6cdbbb02495a140e166dbcf20b4a80c2239f2ad0a1328ca684a03328ca7b2d31a8caaf6ec15a0735553881d95a0e0ad19d28eaa24e5393d5314c2079aa1ead72adfb29bec04a8489415539845d6d8e5055b128811df72125166424b68e2caf6de2e8dd077771e5b710ab6d735320ee85bd04b4c9395cd94b26dd7bfa65f13e247d5a57297d7556a38cb8c15b57d4ce6560dcd300993b12b9fcad50112f72ebbc21443dc632b91244e301761e0874552d27d9698d4d8ed5b48b1a08d8acebf661cb689fe1c4f2593c41c33d93e4bb2c7af4e5788b6249f9ae078a322e1e06c091f75dd716b86ebd33824ae338bb66bb88e795cd963aaeee1bb72bc50e9d2738395655f55bb1c01302555c55ae2d7c7290a5695054b2601196c7cc2d64eba69b65713a60b7cc032307bf7594d32eec7d4d31b15b95a3d4c744641f9f358d734f48d0676c7babc7aa8cbf4cabaa7a1cf0d04341d42391eeab6ba5b88dd19580ad4e48873707dbaacba950d1710e12d1fa2e9c6ee39329aab5d525efc46483ee84aed20b8806308caa03b4be9b86a20477ec86ab0e04641823d95c45ed26d6268b483ea027dc29f9acaad2d7fc24083dfba05c743c89e705475c3dd9c018f655e29997d2772c734c673991955b49d30770ad15c3800e98503be139d229b2ab7c92ac06677c28bf04269aac9f8a7e4a740fd545cd53a420e505888039a2a9e749e8a9689d95f4860639a9b7a6b8c695b67d279232dc063b4ec264650744416bbb008fd32c046e0e1676b69b18299857d2f49032a16d2f6fcf2896b332a2b482a8ba237d910d74ed284a5be512c2604acec69f42a95dd6a5f05470e9944378c5c347a8b5ff2859e79aacccec52906eb51fc76e230d68405df17bb7ce9786fb043ba39a1ab0fd569242b687bdad5abe6abdcf3ff00c8ecbadfc2ba4dfced72e83a48f9485c8541badff00df0b3e381952036bb74f4c8323f708b7a2c6f6f79b370f2da023034ee0c8e6b2787b8ba987b1dbee16bd1d51998538ecf2893700c82a8acd2e04846693d7b2aea330a98d8c2bb660995915dbbae8aea9c8303758d7748ce7f445f471857260c2cabdaecb6a156b55700c634b8fb012b6ee6964fd570ff0088f73f95f0f5663641ace14be44c9fdd44bde957d3caaeee6bf12e29717d5c4beb3c919f85bc80f9615a2af963cb6fc47e228763834800fba790d7388c92332ba3fc61b142a6a7409db7475a1fe235a36024fbacea1a430bcec33ee8eb170d427777d92b1a61775e93e1a8166d71fe6cfd02dfe1e7e27938130b9ae18f751b36376740f91395d0b7f83c3b50f8dd8faacede9ebe3758a76597174ee495b76cdc0e9cd625837d2236232ba0b5f86163bdb873bbad0b66e005a5446d081b703785a16e139195b075088128b6f64252dbd910c380b4c633bb100f7560d8aa58e564e3dd544a476c28a5cb75072a063be554f7614dc7baa2a6c769537b01eb4676ca02b1dd1b548fb202e0ee97d00ceba652741724b86f18f1b758717f2598f434efd525d38fa7067fd9e97634c860956ddb3d18036ca2ede886b320e028dcd3f415cd9f71d53dedc971066488c6573978c8715d7f1266eb99bf6004ae5e9a46296c384ecba8f08541f9c6b44410b97ab24efb656df866a0a77b4dc677558dec58f4e7c966236fb2e5fc417828b5f98de57442e99f979244c75ecbccbc6bc401acf1a868133dfdd6de1e4cfcb4c3e29c5a6a38b4ec7265557315a853a809cfdd73b7371e6b1fa5a4827195ab6773aa951a4e880d8f9e374f9f8e4c5bfc6e4ed95c669101ce1b1fb2caa1500a234ef248f75d35fd30f6b818dbebdd729781d6d5c813a1c67e6b9f0bb76e5eb626a86ba9ea046a8faaceb860a800c070ca98aa03810ec3bec99feb32601d81eab467b653dba1e44083bf759d754466418feab76e182ac96083b39bfba01ed0e7418c44e169865a659e3b621fe1d5f22a4e9c693d30a47fd4db3cff00cf922afadf5970744132d21062a39a745480e889ea16f2edcf658a2b34126263707b7f542d490611e0402d3dca12b8f56d8572a6c56d398531d955041e6a630329a3b5ac764cc240cd4f5010999b6774883abd8209610ce723ba54bcb0e1f11fa054b8ee14a91f50c140c60d691abd32afa7b2183620e11149ddb30a6b591a945a74b08f75a745b2c1dd675a39a6989895a96a03800b2c9b6335055ab60f2ca3d8c9d90d4d9ea002d1a20168eaa2dd2e4fb56da79d87d14c3481ba23cb11848d3c28b55a531cf92ade0cee8914cffca83a991260299747d8577dd54f0110f69e8a878fb2d25016a340930a14cba9d4151b8734cb7dc6dfa2bdc329064a68d76f72f095ef9d6748388f5b03dbf312baea0e96f65e69e01b815f84da923d54e69bb3d0ff0042bd1ed44b01538c3caf42c048b77109d98522272a9981af4a6600d965dddb92480b79ed91b216a511300045ee095cc5ddaf385e4bf8c2c732c2cda09835ccf7869feebddeee84d3db2bca3f18f871a9e1c75c53001b7aa2a3b1300fa4feaa31fecabe9e1a61a32730a2d749890a2f2c7923519eaaca6e631b01b2e5d8e5df6bd8d3a9a0ec365b7c1e91a9734da6209e8b1a83a4871dd747e1d1155d54904b71edd965957470cde4ec6d8835a9d31b15b77eff005d0a00e00d4b138134d6be2e11e80b41ee353883cce1be91f25965fe3d4caeb1adab11b6765b7686402792c5b31f095b76b10165a70dbb69d039008e4b468acfa0368847d17098e6aa7b451b4cab9a4e239a1e91fecaf6098ecb49a450d4f8adbbb8a9b0049b86b7591b803b95a808dd094eda932b9acda6df31c20ba04c742510d38cee84dff164fd941dc8129e545c9ec9077354bce3756b9c86a8ec7dd201eb1de3a206b9c91c91554c4cacfaee827a262bc2bf15afea53f19d6a4d2619469f3ed292c5fc53adafc75c4bd5869637d8e9092ebc27e31c39ebc9f5fb1914f96421eea211409f2c47440ddbf75c595744ac3e22d90e85cd5f51d5380ba6bd78ccfb2c0bc70926573d6b2b06a5b9d471c91962cf24877cf751aaf6ea59fc4b88b6dedc80e125398eeea0b74378af899f468b98c26461703c638a54bba92e713295e5e7985c5c4e09e6b22bb838170241f75e8f0e1319bae5cf2dfa3f9cf32d6f3c7dd6bf8758eb9b9ae1d229c83abbf658d6f48ea2ea98004c6dff0001763c2edc50b62f9f8c020740b3f91975a747c5c6da6e2143454383a66015cedfd06b896b87a49c765d7de161b76b1e46a2469fe8b9cbba6e9734b72375c13aaf4ece9c9dd5b55a4e769710019082178f692caacc8e7d7e5c8ae96ea93a3207d392c9bbb6d44034c19d8c642e8c7297aae7cf1b3d04172da8490e8775fec99edd43508d5b11dbaa0ee787b9ae25b50c8ea550d75cd1383a87bad3c67d32f2beaafaac206061055a8b5f8709e9d915f98ff7b4a83dcc2641cca7dc16ca00d30de671b28d6a40c38337f9a22a4e615325a641c744e5b59d9023a90193ecab70c9c7b222a3864c40543dc34e260ad233b0c0e71c9383d54700e37486fbaa6769df87181d15b4849d940ef2ada5052b550501f6dd12299e9ecaba0dd82d07531a01036851956f8cd95b37002d8b49d2209c21eded8686bb310b4eda81c46cb2cab6907506486c0ee8da0d838983baa2dd902093845d1a45ae27f94a8b771a49a5f4db29cb6429b187e70a65b8d941a82ce8a0f61cc220e0a811dd000546143546f4e4b49c041ec82ac06ac2a94ac07ccaba9b010481dd22c92202b6930cfb2a94bd3b4fc3bafa2ad7b627a3c0eb18fe8bd66c9d34c6375e23e12b9fcbf1cb68c0a84d33f31fd82f68e1e65adcf21cd12a3269b3264a9fd156de7d14c26cef64554f856395350140d761ae4fa4ae57c45634f8958dc5a568f2ebd3753748da47ecba9bbc35615d8d472a329dee2e7734f93af2cdf63775ed6b35c2ad07ba9ba473063f6fa2853641caf44fc60e0bf93f1052e234d9146f592e3ffee3707eda4ae0625d0365d38e5b8c2e3aa4d275405d6701a7e5f0f7bdd32e332b9bb5a61d55ac12670bae63453b7a74cfb28cbb75fc79f6e9b80452b67d6702046a93cd5dc3ceb79799c9e7df2aaaa45bf05a54c7c4ec7d54b877c216593a79f2eb4e96d301a56cdabb610b0ec49c2d6b57001439ab6e811808ba444e1675b3f1ba3a81c8ec888a3e99c845d23941d1391945d3eeb488ab86e14d406148268a72405124244e70a2e279a04ed53ce4a1eac42baa3b250b55dbf44e28356763d967d6320f7d822ebbb1959d59d9264c0c9f64b7da1f3578e2a1ade32e32f339b970fa63f64967f19aff009ae317d70ef51ab7151f9ffc8c24bb24e9e7e57b7dc741baa8820f2415fd0204e63d959c2ae9b52dd90771d9155fd54f2b8ec963af5db8dbe6105d93f458178d76649fa2ed6fe8833b2e76fa8360c2e7b34d71bd390be7f96d2e3bf25c4f16bc7d7ac5a0fa4745d5f8aeb0a348869ecb82f3349739dbbb2ba7e3e1beeb1e5cb48d7ab25a04ca661a6f6eba8086b7720e09e8a9a8e041214cd235ace9b5a4e5ce2ec730bb72b246384dd1dc06c8df5ebe9d47eb1506afff001079f495d9df16dbb0800c36098585e167f935aaba9b0696b06e3985a7578951693e6419e406cbcde7cf75eafc7c35360ee2b1ace63835c39811333b7b2ab880a9a7506907a233feb145ae6e9a793da15175c428d60438013cc39653bae8ac4ad52a34c16831d9665dbc989d43d96cdc3ed3275139ebfaacbab46939aef2bf52b5c71ed8e55895e41201959f59c649923e68fba63b510d270b32aead5ea81eff00d96d276c32b035773bfdd33b7641b8bc986ea251759ec070c923e5287a8e919185ac8c72f6a854aad39767a6ea0eaef9dcfd127b8729553dc46dcd56916e8cf7b9c7d44a5aa704a893333099a73855233caf694a983b10ab31384ed25161ae071ee55d48edd90e0e02be8f29d94d5e33b69db65e3d96a06c96b630602c9b59d4202dab46f995d83d8ac7274e31bb46886d16c05a367443bdd428b40a30afb67687e39a8b1ac14ca507657b1bb40c260ed92f33a28b152ac9d2e981098b8672a9a950c77556b25235ce7c9512e9c2ac024eca41b8dd20476284a8d0e248dd12f10ab03aa62c0c5a5499f35639bba66883efb2369b04da54342e29556ccb5c1df45ee3c1ea0a94d8e110e123d8af0a07d392365ec7e0caff0098e0b675799a6d1fe7d154b2d464eb1bc949469ecac8553b66895076eae00462145c2065036cfba6cccac7b9a6754c616f5c44159770cfba59454ae1bf13b837fd57c1d75e5b7557b522e29e37d33a87d257cfae80646d0beb514dae1a1ed0e6b81691d657cbbe2ee0f5382f89b88583a7451aa4d3eec3969fa427c57e9394fb0dc30875e52246015d3170a9c428b1bb485cdf0961fcc8906225747c1982a714619c372af275707a745c69e35db521bb73f54470f70006563f13ac5fc51c06cdf4fd96a58121b9dd6594e95cd96f274368fe7cf65ab6ef18eab028d6f2e98277445b5e6a7800e0959dacb4eaed5d202d4b6e5bac3e1ced4d0b76df64e1583e90d8846310d476089a7be56b1955c094e49510a528498a85452270a97932501555210755c2392bea93283aa774cc3d774832b138e5d7e53855ed73ff00b745effa34ad4aee3ab7c2e2bf13af0da783789383a1d518288cff00b9d1fb94b1eea72ea3e7d049873b739f9949213dd25df31e9e7e9f5b708beab40069320405d75a5c8af4015c35b540f706d3827f45d770aa6596e0195e6e1bfb7664b6edb2b9ee24dd2d7b8f204ae96b8318d9723e2bb8fcbdabfd94d96d16f4f28f185d3aadd9a6d95ccdc3bd21a168711ac6adf55a8ef864feab32b39ae263aaf43871f1c5cd9ddd0b59c6090a7c36eaad12e382c9e6263e4a17074b0c112a9a069005d51c7faa79cd9e175771d459f126ba8e9a14e099d46627fb2a2f855a80b9b5194c01241ccf6858cdbba8e6345280d3886fba939d55e664cc679ae6bc52f6ed9cfa9a1342e2ad47f974e93aa12625cafbb6d6a34e5d48b01e44ff00446f850075f5bd52d0e874169e71c96ff8ead743cb834064fa488da363f65cd94f1aeac6db36e06b5dd7681a486c764255e2158308350fff00c427b979735c192d70306792c87eb6921ce79e60ef2b6c3b639dbb4ae2f2a124ea27af259efb92e279e55d5bcb8d551af70ea00047cffaa1cb28bc38b0b8c6f913f45b631cf95b6ab7540775178d40c26d54f66c38774c5c4180d0ae749b553863215152651358e063743be1345433cfe49c60a4d1ba99e4ab5d227bdabe6a43684c774eddd2daa2e68c0ec89a4d11943d29270112d110a2dd35c2342ce373b0c2dee12c9b804f4c2c4b41e90239ae8b8530820fc96395dd7549d6dbb4fe01d9484c82392549b813d8fc959105ca5425af980a627973555b8944b59233b04afa0ac36792953a44cabdb4e0e40faab69d38dd66a943b69c6e149cde7014ea1d32a873ce7a20d5bc099557c95ae2abe7d9068ba152f304ab5db199faaab776661055219057acfe1b54d5e1fa2d3bb5ee6fca67f75e50cde30bd37f0c9f3c36bb47f2d6fd4029cacf2f4f44a7f0cf65600632aaa5f00857b775a4647f650a9b6ea699cd912a802ac27641556ef216956183082aad5272833bf2e6bc7ff1e384e8abc3b8bd26087836d54f7196cfd5c3ecbd8dedc405ccfe22f083c67c19c4ad5ad06b319e752e7eb67a87ce010a71baaad6e3e72e1750fe64670415d4785d9aefaabc8c346172bc39b158113002eabc2af875738dcc7d16995db6e0e883fccbeaafeae3f65d05998009e92b98b577fdc3ccff0031fd56f52aa03264c428ca15fec2afef1b46912761dd15e19d75c0a8662642e5788d4a975714ade9824bdd1f25e8fe1eb016f6d4db02602cee25b74160d3a5b2b6e80c2cfb3a511f7cad6b7688558c2b45514553dd0f4c40d95f4d5c6756279c24123ba128bce0aa2a1c2b1e7743d572029aa50370e891f544557206e1f271ba7440959dbaf2dfc6cbdf2f8458da0766b562f77b341fdc85e9958faa095e21f8c979f98f125bdbb4fa6de8007dddfd8055c537932e6cb58b841329243d925d6e27d5be0ba5f9a06a3b79c7b2f41a1443296170be086f92e2d27a2efda4160f65c33d3a6d037420765e5ff88d7be5d17b46fb2f4ee20ed349cee402f0afc42be2fbf14da71394f0c779165751c7567cd324ee4acfab21a637dd1b7004c202e1d139d977c9a9a73ec13de5cec93d6154f985634cb893b2aab44e27e8958a94f4641904ab9f72e6bdb3044e7fc0ab6086e36545532fc94ae3152fdba3f0b5eb6db89b4d40f2c710d2d7644f5edb95e9bc4a88bfe1950b41a8fa601682738ecbc76cea168f339b40f990bdaf801ffaaf02b3e21690db8a8c878e448c1f6f65c3f231d5dbbfe3726e69e4fc56c1cdaa6ad367a4e1dd47f658d756afa591219ce46005e87c6ec1d46eea1d1ea187082b99beb79712012c3db659e3969be78efd3957369496c804fd0fcf920aeaccb4eaa60fc97415ad990e029820e448fd10ce0ea6d12d1a36f65bcc9cf960e76a5396cb9a750f94a83304492b6ab526b812e6b8b0ece07640d6b3041751248572b3b00d48763bcec86a801762515569b98dc8324216339572b2a4d013ba255ada7d2541cd24ec9ed322a23d584948e14704a0e4826d0660a288f5001536add2013cc2207aaa6369519574611ab654cb8b1a064992ba7a3445165320740563f06a45cfd676000185d40a61f4401b8c858dbdbd0e3e2de0258d05a08da3eaae14f330a36a35b00cc047369fa7fcc24c2cd74aa834631cf3d9174dbea2392a2837d6012b42937aeea685629a77371856b9b031ba621409e815519eca87b64f346d46eea92d128540c5b8f92adc211440f92a6a09d90619ff00092a0d6e55e5a0c82983608e882a660cc15e85f860ed342eda7fff002031d8b7fb2f3fe785dd7e19bbf8f78de7e977ec897b4e53a7a852f801578e887a47d2072857b37cad639d348edfdd210918230a84bb50f1ba12a846bc6e86a804a9380de152f6c8f565bb476ca26a0c602a9c30959fa54af99f8df0a3c27c53c52c621b46ab8b3bb0996fd884bc3448ad5980e0925765f8cbc34daf882cb89d369d37547c979ffe4cdbec7ecb86e135450bf789c1578f71d1c774b297f0eeaa34ce1c7f55a4eb80d66fecb3f890f2ef0bda4e97c3be6a9d4eaa5ac6ee48012b1197b753e0fb137578ebba8d300e96fee57a759d1d2d11c82e6fc2f68db7b2a4c03200e5cf9aebad9b8195394d8196cd80b4288842d06e02329029488a269ecae6aada04602b0030157a4d59c9338a62545ee38427483ce610958c0443ce250958a70c3d433305015e438e51555d050370edd2b4afa0570edf7d97cebe35ba37be2ce275a6479a583d9a00fd97bbf882f458f0bbcba27fd2a4e78cf303faaf9b8bcd47b9ef24b9c49279924cadb871fb7373dfa30f9a4a6125d0e67d63c01c1972deebbab774d3c735e7bc39c59598e1382bbab1a9aa9085c2e8a0fc475bcab27e40c15f3c7882bfe6b8ad527f9495ee1e3bba146c2a4f420af9febbbccaf56a0266485bf163ded9e7405c3ff886392ceba7992251d58fc44f559772ff005c1c15d2cd49982a2d0e710ac24691047752a4313288721aa3cb5b050ad24bb24c2bae092627654b3a94538b9f58b1a349c85ea1f845c64bedab70ea8fff00f72989e60e42f26aa447b05a7e19e235385f15b7baa3f131d2e1d46c47d173f2e1b8df873b8e4f65f1ad3d5a6f2982d71807bae285c51ac5cd7c35e7eebd1eaba9714e172c8751ab4f5348cc4f45e5fc42c4dadf3e85496bb511d9706abd4c6cd2ab8b46d4738b003c8f2859d71400003b007f9055f56b687e97b9cd33878e487ab7ae6b8b6b80f1fef199f71fbabc6df4cf292d075a8b1a06905bedcfdd0356d9924b41048fe53b2d1abe53bd4d7104ed0647f642d5058642da5acec8cbacc2d6c3981f279a0aad3a53ea6169ecb52ab89241842d593c81572b1b88170a4dc027e8a878001826117500ff0068943bc2b959dc43b9ba8a7a74a5e049532232a74c9d58dd3393b15a34d294ad1baaa6028d6a87435a39ad0e0f6dac97721ba8be9d38cddd474dc1e945a30e64ae8ac580c03f3589c247a0b6365d0d8b74bc4edcd63f6f538a75a4ed585972fa679e42d2f2f61d153774c31d4ea803060a35a353038422d727363e3903d3a2a02791464c111cf2a15d81cc27123eaad67f128070dc0516b39268ee6fa6556e0ad3b47250a879a5d1581dea87efbabaa6eaa7349d9239553892140856969c262d4a1a80dc94ce11856b844c2a9f308a7116f785d97e1cb83789dc09c1a609f91feeb8a0e3aa25759e00706f1a89cba991f420a25ecb29a8f5da0469844379216d8fa3ba2592b68e65839a5ec924551695d49dd0cfe689773954b84eca4e05a8150e9ce37443c1caa1d3253fa3719f8a1c33fea5e12b8731a0d6b522e19d71bfff00d492bc25ed34eb878df057d45714db5693995002c702d708dc1c1fb2f9c3c4162ee1bc66eecaa4cd1a85b9e6de452c2fd37e3a8dc69b9b51fef6891fd159e18b6fcd71160703e8c9f74053ada1d1385d7f836dc798fac009740d95d19f7dbbce1944358d11ca56f5b30463759564d303d96c5bcc0e4a1168ea0d3d5194db843d01808b6fc221112b19857018caad83aeea53c90548f650718c29155d4392825550e0a12aa21eedd0959db7529d39025c18d966d6711ba3eb992566dc3b07b14ba16b83fc58bd36fe18a945a46ab9a8da5de01d47ec178b81d57a1fe31def997f6366d38a6c7557679b8c0fd0af3c0bab8a7e2e0e6bbc880494e01e892d193ea1b774119ccf5d9757c16e43bd3d02e3a99f5092b6b8556f29cf71e4171474f4c4fc4fbd0db7a8d0ec1c2f1b12cb673873332bb7fc47e206bd634e7057115a596801e6bab8a74c32acdaf5219f359b5ddadc48dd1970ef499e6b3dc727bcad5315b9f0e845d12744f64146aa8272251b21b4b08381eb125ea225a36c2627d49aabc066c8354e05c4a22911468b9e77881da50f4897131d614aedc03431a64377eea32fd2a57a87e13f1e35293b855c3a4d39752249cb4ee3eaba0f1b70c15e8fe669b3d6cde06e3baf19f0fdf54e1f7f4ae6918731dab1cc745ef969774f89f0ba75a9c39b51b244f50b879f0f1cb6f43e3e7e58e9e4f5d81e0b5cd3a86d9e4b2abd37b0ea61079415d4f15b7142e5f4de060c7ca770b26eacc3817527169faacf1b36dacbed80f7071887517fbe1541f5048a803ba118947d7a159a4b6a512e6f22dca16b52d13870f71b2d77fa6565055aac497348437e62969cbb9a2ea0107d44cf641d56b488d20ad31ff58ddab7d5a7d550faad23031eca5518d8f4b482152e91c95cd22d40b8f45651700e9202a5c5fb069fa29303a44eeab425ec5b59e7566b40e8baee0d6be5b0b71b7458fc0ed9ae3e6182e1b6175168dd2e11bacb2af43e361d6ea5600b6bb990ba3b66e5bb7658141b17b3d44ae8a9002088515db8f4d1d1e6d020e71f74dc3dd21d4ddb830adb63800c7555dc37c8b96b8480e4ac4f3e3e53622a53d4090392a2d2a001eccfcd13aa5b07a63baceaedfcbd5f300f4939f9a8b36e2838ec3eca0413c94db0e68208d94b40ce025bd008e67555c6f846960d260601553a9c1900257fc13a51e5ce141ed84569e6a9aa072dd2d8811fb10374355982112f06488545518283814ba083dd757e09769e2f40919748dfa85c7567e9701d4c2eb3c2dfc3beb524ff00381f5448793d86d8fa4046b361280b33e81d611ec2202da39aac133d939885105399f92a245caa78c9571da42addd764a80f5067dd0ee06513504fb21df02709052f13d178f7e30f0bf2b8adaf106801970c34dc7ff9b7f78fd17b160892b96fc43e1838a785ef18d135a80fcc33ddb93f690a77aabc2fede0355bb1fd17a4783edbcbb0a3232403f55e7d4a9f9d569347f31007b15eabc0e89a7469b48186c2d72f5b5dae8ad1a3185ad6cd803bacdb468c405ad4063d9426d1d447a510cdd53487a4222981f75455734084e463609da910a51b56446556fd95ce85554dbdd07205aa704202b65c4846d639280ad8984aab40ebbf799fa2ccba764a3ee0ee42ccb97068738fba254d96f4f08fc41ae6e3c537affe5611484fff001c7ea4ae7077dd767f89f6d4e9f1b35a93406d6607c743b7ecb8b83395d9c77f179fcb2cc921292449e492bda1f4d34e51c2b0659d532674e1674c1f9aa7895634ec5e4745c7276dfd3ccfc5772eb8e246792cebeaba68b010ade28e3578939d3cd51c4c35cd6c485d987a616eeb26e1e09c7459f51d12422aee1a206eb36b3a442a0ba91978255f5dc34408959cca85a77537542ec4a0fb594bba67cb8e029d161d32ec42aea5501d0d41c5b4c863623286aaed4f9e4ac353d1b6ddd50df53fd94d86b69bf40057a8fe16f127b683ac6bbcc3a5d4e7a741faaf2d20449d82dfe057f5681a756891e6b1c1c396c563cf8f962df832f1af50f1370f6dc5373c344819ee171f4dada61f46a7c432c713b81c977f6f74ce27c359714a21ed870e87bae438c5a1a2e2483a499f62b835abdbd19658c0b8ae69bbd5a811db74154baa2f3eb7b3a6708ebca65cd2d049e9d961dc51390f6fd96b8d8cf25d5996af992c9399083ab4ad9a27563b2a1f43493a5c63f45439b51a44831dd6b8cfb6169de28027250953cb325a15959cd3b90610d56a3230000af57e936a0e769516c974848bda488194f4dd2f80309a6775b9c16b39875098e6bacb77b2a06e98c88df65cdf0bb68a21d1f1656858d575bde329bb2c76c7a15965ef4efe0cbc7aadd6322e1bd7995acc7e82013859555d1a1e0f35a0e74d3691bfeaa5db2efb6ed9bb03babf88512fb62e132dc84158bbf84c9de216c53f5d22091108697b8ceb6a9e65199f5052b8607d120c141b0bad2f5f49db38c84788703b4429bfa79f94d55764f9a61bcc60a2a10945a295600ce976415a5a439a08d94e9343b86ea3a111a237f6c28b9b1b128d14a11cd89854548894555036ca16aec004ac30953794356220fb2b6b3883842d676094952336e7d572c1d4aecb847f0df45d996907eeb8b73c3b88d20bb6b28d2d23a26593d66c5dfc36f71fbad266c3a2c5e10fd76d48f5682b5d84e90b49e9cf9086ee9f7ca80394e0e2156d309fba8394de76507229ef4a6a21ea73844bd52f1b94937bf4148d95555a0870700410411d655ee0aa7f3eaa728d31783d4e0c6c7c5d7164410ca354b9b8dd8723ec42f42e1ec0d68c2b3c53c31a78c50bf683a9f4fca7fb8383f430acb3a7b76572ee29a36cd5a96db20add918cad0b703108ff00058329a22974e6a9a63088a6d8d922ab4274c1242748ba0843d557ba33942d64e2a40d576415c1108ca8725037054e419f5f658bc66a369dad52e3023aecb66e0c4c2e3fc6f59c3861a74f7793abd93c2795d233ba9b795f89aeff00ea15ea553b0c37d82e696ddcb34b5ed3bc2c53f1193cd766334f3f2cbcaee9a124f01255a4be97a98f7e4b2f8e55d162e9da32b4abe0ae7bc4b548b3703cc42e3c3b6f7d3cf8d42fe22e77f2ca8f133355bd0a95b7aaec82a3c584566c1c05db274c2b12f8721bacdaad21866656adf10723b2cfb8914f1f34c4005ddb213d273b50242986839213b5beb083824bc9a79e885892aea8619b2aa9e4a152954c3546941ca8d576709e8ee211616fb4ee5fa406377dcab2897b983cb2647c9555699f3c97401ba83dda4fa4fdd459b54af43fc31e38fb6e22eb0b971f22b0f46afe572f49e25614eb30b4804112be75a55df4deda94de5af6ba5a418c8caf78f0571a1c6f82d2a8e27ce60d3504f30b8f9f8f5dbbb8397cba60711e01569971b787b20c83c8765ccdf5134416bdb24f5057abdf3619a80c2e338ed16bda5da467b2c71ba6f66dc2d5a0c73a412df9a0ead110487b81faad4baa2e6b9da4059b58967c60adb1ac72802a531cc89f641d5b7693b91f35a35031d994339a320382da56360034da0c07129e9c34ce558fa59310aa820c155ae91eabaef0eb83a8804c93b09d96c56b46be08c10642e1ac6bd5a351a69b8b482bd12cdde6dbb1e66480b0ca3af8b2665ddd54a344b5ed388cfb2dbb4ae2a5a537b7989f641dd50151ae6b87d90f635db6ed750a8600f854bb78f275d68e9a0d20ad9b07cb33d573bc36a6ab3611b4c2dae1e6460e50e98a7c454cb0d3b968120c1f652b4abe653691125695e5117168fa6ecc8fbae7f85542c7ba93b76984561cd8b62b519a7ca55f62e2ea603a65bba7a50e609517b5d42bea689a6edd4b97d89737942a9ed20e6615a1fa8020f24d5221548904fdcec85b8101175a325075ce20a9b34719f7077d9655dd5d2099db7cad1b95cff17ae29d3713180949b6b26a6c10b91ff56a435735e81c39e5ec01b92bc5e95f3aa7186166d30217b4f06ffb6b06dc571bb44057961a470cfe5af4ff000e389e1f401390d00fc97414f310b8ef03dd9bae181e4643dcdfa2ec291431e5c7557fd138fb2883b14e865b22545c13ca464a0f6a88c2a9dce4abcf454d4e7d9072057e0caacce55b504f355bc40f6459d2a32b8cd0f3ad1edc4b7d43dc2cab26c093330ba2aedd4208dd61b699a759ed8c0247c944b5707d0c946d1067082b7c01ec8fb7e4ae15194f6d910ce5eca8a7c910c415583b28bb64e133b6f6425554943549c226aec50955d84e2fff000355e681b870c8465576e6167d7764a9bab4815c3bbae2bc5b5812ea63f95b3f55d85c1dc755c1f19ac2b5dde6fe93a7e8b5e09f939fe45fc74f39bb07cc703bcac5a834bdc36ccadcbe739d74f900006161dd7face5d37f4e2d2a94920d0524f61f4a5d4ec172de28ac1b6c5a7732babbc119e8b85f17bce98cc42e4e3bdb7cbd394b17875d10a3c5c9158051e18355c10664152e2cd8ae24e0e176cf4c37b62dc1938273ba16b41642bee658e201c6dbaa4805b1cd07f4ab480d9812aa67c6af7fa5a44655031b84086aceee61574dd124a954c9dd4437d3329054f70252d4409072a31ea299c792285cc25fcccfbaaaa6a0e8cca6061b2094e2b12e8700e1b7f851e8e2398caeaff0eb8ebb84f170cacf3f96aee0c74f23c8fdd730e14cec489565bb4329b9fac48cb567c93ca2f8ef8e5b7d25562b5b1d3905b2392e3f8c340b3ab5232010328afc39e3478b7056b2b9fe350f438cef1cd43c496e5b6b5dad070495e759aaf531bb9b70374d7d46eaa464ee46cb39dac939d276c85a53e98921e36842561a9dfc49079382d71a9ca0375303fd6a58d83987f642d7b71bb4820ed95a6e6be9905af0e69086aba20f98307e4b5958e53b6454a6e6923491f3423b0e33b42d5aa29cc349cfcd05598d332b49595c7b59c3dec6d76baa02e6c85e8b66f6be853d0441185e7964da61ed2eea1777c21f4dcd81d3195967edbf10e2c3990b1f8b5b38b5ce6cc80b78092a8b9a3ada4424eb85e1573ffe9ad6d432412ba8e1ee89e8b96e10f6d17d4a260199f70ba5b17e0c1982a5d585eb4dca2640d9739c5681b3e242a01e8a86775bd6cf9e7b2ab8dda0bbb27691eb67a9b085593287b478348743b6512f05cc11fd1737c2af48029bfe218cadda15839b93ba7a70e5355225d4e0b761b84e2a07b4c1823ba5227755576890e6920f3490854220cf5405c3b7df9a22ab8e933072b3ee2a8ccc884ac39360eeea69072170fe2bbcf2e91139385d3712ba6b58e93185c4fe5aa71de36cb7a72e6ce7b655638f7b572f58ea353f0e7809bebd17772dfe0d33231b95ddf18be2facda147e16fa42b1eda1c0383b2da835baf489fa2cbe1ed352a1a8fc9dc613cbb7470f1ce1c74f50fc38029f0da94e4ea6d4d47dc85ded1381ecbceff000f5c43ae9a763a48fbaf42a1cbd94b8b9a7e5448ed29c6ca2dda7a290d90c21f9e5310392492148ba5535372af2a978c2006a9c954f9957bda624f2543e6653d6c4aa1f9859776dd158380f8bf55aae19281bf6073060fa4c859faad31bb2a1b047d0890b36d9c2206d30b4686eae7ece8da5b84437743d3dc7744350cea69894e7df655b88ce50a915d4720ebb867d91153ba12b904928381aabb79405c11d91755d9280b8260f494ac5567dcbe1ae33b0242f3dd54ea8b87833adce71f9995db719a9e5d9d7702010d31db06179ff0ea65b6cf12ba7e3c70fc8ae4f8a69176f0d5857a3f8a4c656f71401b7ae02265625f7fabeeb6b3edca1671b8492803a2491be99bc9874ae1fc5f4e6983c9775763eb0b88f1798a3b7f995c9c7d56d97fae2b8788bac4ef0a7c69b0f04f44359bcb6f31b4ec8be30e2749c671b2ee9db0ae6ee1c3567d952e774575e37392308691091fd9aa3b1854349c92aca870ab9f494c541e4ce1298098fc41354200d920ac7c52ab71f518520a07e3e69848fc260a8332e929dd80402ab04f38408bf00173be9d54a939d52ab5904971d200ee870493195d5fe1e7073c538e532e6934e999db0a32ba69c78f9e5a8f63fc31f0b9b3e0ac73845478938de7289f10d8b9b4eb308c9fd576fc24d2b3b463701a02c3f17d7a1f97ab5da5b86ae0e5eebdd9c3ac3a789711a0693df8832679ace199d409e6ba1be8aaf73a064cc2c7af443092d241e52a70c98653408b79c1050b7504044d5f3372d3f2e484acf00e5e36fe60b5958d8ceacd1982650357503d96954f51d8216ad32e385acc98e58dd84a6f32bb6f08173e9b83be4b90a56ef73c690bb2e034dd6ec687387553955714b2ba66b4379293db22428dbbfcc64c655da4e92b375e37b655db4d37798dddb9f75b5c0ee857648398048405cb25a467643f0079a3c45d4c9f4bb286d8e5dbb6b674758995a0d702dec5665138dd176eee49c6f8d72fe21a0787f1015580f9550ccc22f87de35cd990b678bf0f6f12b1a948fc712d23aaf3835ebf0aba750b905ba4c09100a239fe44f1bb77c2e06e2133ab82085cc50e2ad7b412429bf89b5a3e2469cdbdb66b5c35a37df0b0f89df358d2642cce21c698d63a1cb91e29c6dd5dc594a4bb64e623f926305f1be26eab53caa24973b0005dbf827843384f0c37d70d1e73c4e710b9ef03785aadddc36fef5bfc390e008c15d278af890f4d9db1000f498e49e575d46fc38dff00b33037b78ee23c40bc93e583004ad6b164012b1787d20d60216dd3a8d63012a5b5cb6ee3c10f02faab1b19603f42bd1adc888ecbc97c09725dc7dad1f0ba9387cf0bd5e81c7d111c7cdfd86038530554d3b4a982939bed24c5295128322a0f95290a2fd8c2049b50fdf2877ee4225fb21aa734e14aa6a44aa2b09691d95d530ab78c28c978dd00a7e9a9a7a15a36e7659f55ba6a4f2465bbb0154bd2fdb4e92201ce10748e110c282b1693bc2aea7ba912a979de50726d55523b20eb1cf3445576f084aee02652b57205aa73b840dc3b08bab027ba06e1c7609ef7d158e63c5f5cd2e0f705bbba07d4ae2b8687fe49ee20fab2ba9f1bbbfec194c6efa800f60b9ba01d46c5c0cecbaf866a3cef91779390bf6e9bc7876e4cac8beff5169dd073af1fa899959d7ad26aeeb4c98058c6c929b774949be9abc1cfb2e23c5f4c9b7242ee6f046a95c9789da0da3a63bae1e3bb6f976f34a32dbccca378b341a0d70070827fa6efb4ad3bda42a5948da17a18fa73d8e5aedc1c60764239bdc226e5bea11c90eed933914bc609558cab9c4688ea556008c2058a9d21d855bd5afdd54f941213c805493eb5713854bb2ef7403971982a06352707d504e53c677419d99202f75fc1ee0de470d170f68d4f333da178b709b53757d46934497b80fbafa87c27662d384d263444340587365a7a3f030f2cb747de7a59a41c42e53c4ec79e1d51c01d3201f65d654a2fab52339dd1977c1a9dc70aab49c06a73718fd570eae55efe59638e1e2f02bd2413a7108237241d15db8e463f75b5c6ec5f6d7559a461aec8f9ac1aaea7059564663d5fd53c63cacfaabff84e6c888285b9b6a6f125a08faa616a70e63a1befbabe9d1a85b0f22392a974cf4c8ab674da496820fcd54da2d6192011ecb66ad220e4c827aa1df469b4993de157926e2cbab02a6aa6cd246eb478652ab73598d9307a72536d3a55dc1b4e9173b9e1745c2787fe580a8f024e001c91b548d2b6b76d1a41807cd5a59bc2b1a30123b14e2a5d04a8c969079ecb363f2f7f4ea7c8fcd6cb84a0af28ea63b6f7455cc9d05a54d4012e191d51f4fb15c9f07bcf51a550fadbdf75d252ac081d61274639743e8d5825a489f7dd65f8978251e33425a1acae313fdd121fcd27dc682209faa7f6abaca6abc9f89d9dff0008aefa75e9bb43721c2621635c712ae5a437563b15ee17352d6f29165d526b8111301643bc3dc0cc914c0e6ae651c99fc4eff1af19a54efb88566b29b1c752f41f097822950a4dbae2913870693b2ea43784f0e6836f41a6a0db0b2f8a7167dc9dcb29ff00b652b96d5c7f1f1e3fcb2ec6715e2d4ad6dff2f650d6344630b95634d7b873de4ea3950af71e638c110a74ab329b49244429f4d6e5e5db4e996d36648848dc071dc42e72ef88d5acf2da0313129e85bdc5432e7ba3dd1b67791e91e07baa43c4168c6912f25bbf63fd17b351e5d23ecbe79f065abadbc47c3ab971f4d6139eabe82b73809461c996c7b09531dd54c38560d90c53e6a29d44a01b12a2660a94e145c7062504adfd10d5064a25ca878c929c1605a932a04edeca6ff88e7655ca5674a81ebb4c67dd2b67c8cf25654120f743b09654c6d2b39755a4bf4d6a2ec225a442cfa4ec0dd14d38395a9697176556f70f9a6f655bc94d5220f8324a16bed2af7bb724a16b3f24654ac1d524e167dcbb28fadbcf20b3ae0c931394a7b4d709e3bace6dcda5364c80e77b6c3faac7af5dcde18e2ef88885a5e30787f17634090ca63ea72b238b56653e1b040988c2eee2eb1795cd779b91a8ed558b8eeb3ee9c4d42423899738c083941548350c4a7ed9aa0277493b9b389493d437d3b7c325721e241aad1ebafbc1bae6b8bd215283da7982bcec3a74d8f29b9c5704ce3a2d60d2fb221a71a501c5291a770e1d09e4b47859d56c1a7223e8bd0c2ee39ab96bb6439dee506e698c02b678bd234aab8473596763d951ca0de0c6caa18455412d33cd0da20ee81507753baa6a444ab6a361d95554ee84aa242ac932ac381d94210688cca7dcc612e729e0cc08ca289bdbb2fc31e1c6f38fb1e5b2da71f55f4b70fa3e5d16b401a621794fe0af042cb537351a66a389185edd6f6e30001f45cdc9dd7b3f171f0c36aeced7538123eab42ad096e945dbd06b5a30559529e0f48594c74e9b9daf2df1b785fceaafb9b761c892009f9af28e276268b9d4ebd3d276c8c15f4e57a2d7e085c278ebc2b46ead3cfa0d8ab39c73f7e4a32c75dc2cf1963c25948d1702d90d0656c5b7e5abb40a8749fa21ef2ceb50aae66874827ecb3eb1700410e0a676e7b2c74152c2c725d520f67043becf86d3f59aac711fee325730ea6f73a438fd4a54ecaad67000f3e6890a3a365c5b35c5b4a09e51faad0b42fa83331b8c2cbe17c2c5120976a2ba0a14bcb681b7346d516b1be98cc84a14dbc927f2c2b94a8778dd53544c844bc0543c0ca0b6c8ba6ba8d41529fc40c9f65b5c338832bd3f880701913b141576070cac5b8352d6b79944c01f742f1cac76e6b73950a95069e64ae7f87f18a75db150c3f03e6b43f301c241dc27a6b33d897d5207ed284ab54e65c63dd46a541060a02f2e1b4d8497242e5745775dac69739c008e6b93e2bc643ea1a744e060a8f15bdad76f34e94868c639aa6cb859992dcc4ecae6a30cb3b6f4542b57a9f0cc147d0b7a950fac933ba3ad3879c632b56dad007090a2e50e6c0595834092c0b5eded00dda21134edc3790f92368511910a3c95245dc2290a7796eeff006bda7e857b25a3a5a0af25b6616969cc8cfb657aa583a6853279b414f1bbacb91a8c2ad0a864c05634aa6562d5176c520539210489e5eea0ec0522556f4191543e72a6e3042a9e49984150ee9d442890392b4850708194e9c52e43d410e911ba25db7cd52f6cce16566953dada0f90328ca670b2a938b1f049c947537e3b278e4d0513d156e320a604c42671d955bb38a2a1c91c90953e29ca26b0d4109506dd9230f58eeb3ae4e11f5ce0aceb877a7ea9c46574f3de33734ddc7ae5ae1241681f20b13c4952936dc35c609e52b42b06d6e3172f3cea13f45ce7895c1d580076e4bbf0eb17939dfcab244697420dc3d44845103cbec867e09e884c4309253cc248d9bea0bc6e5c1615eb356af62ba3bb6c92b22ed8330bcec6baec79378918e65e381eaa9e07548a85bc96cf8cadcd3b9d7023d9733635bc9b86f75ddc57a72e73546f8829073838730b97a84b5c71baedb8953f3acf5377195c85e34077f6d96a501b8c98854810f56ba009eaaa71f5ee83555635775454895756cba50cff009cc213620fdbb265283194d08084222ce89ad754e90ddce007cd53d5743e09b4377c7ed581b3a48252caea2f8e6f291f4a7e1ef0c169c1edda1b074fecbbcb4a5d47cd64f86eddb4ece9346207ecba2a65ad6c95ccf6bea48b594e0094cf1e9210f5afa9d2905d8f7427fd5a8b9e5a1d9380a76db1c2eb629d4e5d83941f11a21d6ee6b84b48cad2a2e151a1c0a1f88b00a04a2ce8ae5f4f1ef107056b2e6a39ade73b2c0adc1e85404398d5e8bc74349db2242e5aae9d65ab9acd56b970ef1f28e4dfc02841024283783369bbd2e303b2e99cc033c90955a24846dcdad33295a8a64004a234c402ac2c8dca818077426cecc0666764ce384c4e1317752894ac45c7eea97c09856bb69e4aa3dc2b94b4a2a42cdbba61d3d16a5519303082ac306554a5aae5b88d2752717532411270614385f881f4ea8a3724cceeb538953d4d2b0d9c33ceb91239aa94aee7a757f9b1519a9a41e680baa756e5c03674f747f0ee15a58d1985b74387868f84051965fa6dee76e62d384e9ddbbf65ab6fc3c34469e50b71968d03015a2801b859dcb624919946d401808965be4c239b4c6215a1800c44a5b2b42b28ed21134e9c1568103298c4a3657b5b4c000e365e8bc1dfaace81c65a0fd979c35c242ef7c35535f0ab7279360fca42bc34cf3740c76cad6f643b0abc1c2d2b2ab67aa69951487748b44e0ab2548933d941fd90368b8c9c7450c89c6e9c4fba93a08002a1149185554cfd55ceeeab3d4a54d4b9bdd408ceeae7e555eea32861ab0ce15b42a0222729aa01cf9854b4e97e5673a698deb4d19d8a7760aad9b2b64466263a2b955e953f6c84257893033089aae001842557e0aa00ee0800ac7bd786527bba027ecb52e3232b9ff115534b865d169f506103dce113bacf92ea570de4ba98a958912e249cf52b89e26f754bc749312ba7e2972fb5e1f07e22dcc95c6baa3aa3f512bd09351e55eeed63cc5380867e489446ad4d31c956639c2542a0d3d12561212483ea7b968ce1655d3375b570d899d9645d4438f45e7e3edd77d38df175ab6a5b124090bcdaa0d15810362bd5f8ed335ad5e00d82f28bda4ea75dc0f22bab8aeab0ce3a2e1cf6dc502d2e331d7b2e5f8cdb9a755e08300fd969f03ada2b10307757f882df537cc20191f45d2ca38ea8d5454f8a5175e99d4609fea8773489908528a83010ee19f9226a641843c184153386140f50a59e6a3073ba08c32f0bd17f096ccd5e2de7168201c2f3fa6cd4e0bdcbf087858a3642b3865d9c8519de9d1f1b1de6f69e1f51b4e931a08980b458da9584026162d87ac800ec42e96d800c681f35cd63d8de99175c30d4749713c90cce0ed6d40e24cfbae99c1bce32ab7d369e9d94f8b5fe5bad45165fc3606f450e27507927bab4fa36859dc52a834ce53b751126eeeb8fe2ef0e73a6173570c97920735d1712873cae7ee9ec69209185cf93d2e2febaaa5cdd4c884157041384436e99aa1ce10abaafa551e43082422471fc8e2f1be500d4e5eca87ee516f6f33b21aa0439549263b289e72939dd4fdd56f76308072e110ab2531204caadee23209c2a97e9361547610d50cce158f74899545470e653dc840ee407608e68be1163e61d64084331aeab5dad6e7395d470da3a29b4010a2e54e4ec4dbdbb58360afd2149a401c939214ed7a57a441849c040f74e5424e67aa41268d9486ea2d7262ec2a88bed6130aa73b2a9755dd52fab894e4145f9806495dbf836b07f0d027e1791fbaf367dc1ce70bb4fc3ab9156deee91dd8f0ef6055e3d33cef4ef69bb13d95ed3286a67d2110dc1ecaeb2580f5e49c95029b57594824e3b2ade7d4a4a273c90521b9048a594c4aa341e0cf6507ecac7ecaa76c838a89c2810ad7881b2a8f385191a2e1250f586246e15eed954fe8b3116d0a92d1279220910b358ed2fdf128c6ba42256877890507546084538f2286afb6154bb1bb005c1c2e53c555436c9ed247a9c07dd753747042e1fc6576db7a203c88c90b4e2c77930e7cbf179ef892f454a8290d82e7810d92515c46b36b5c6a6fce140d22f61d2330bbb6f3650fac0183ee939e2242b1b69509cb4ad2b7e0b52ab30d39ca8b6438c535239a4b56e381d5611e93f4493d976fa76e9c33bac7bb3e87725af720c139958f75810579d3a765f4c2bed88277c2f38f135b79770e73660af47be38395c8788a987db9246419eeb6e3bdb2cbb71b6af34ee1a4122575ac0dbab434c805da65720e7c3cc0ccadae0f76fd401230bb71ac2c61f14b6750ace041596f060f75d7f1fa26a7f11adf8bee573551ba641194ce5db2ce09077551df21175d803e47354110739940aa084c0765638428819410ce1d4bccb9a4d0065c02fa47c256cdb4e0d480107402be7df0dd2f338a50681fcc0afa26c9c29f0e6b41186acb92bbfe14ef6e9780d4d40c9cadefce0a2dce570de1cbd3e7bd84180775d652d35773858eafd3d0b6790fa7c518e39047c95ff009a0e182167790c190ab1534989384b4aff00c1f52ac8e4b37893a68e392b4d49086b86eb6111c9434c71fdb88e3f74f635c1ab83bdbaafadc4b8ef85e85e20b120b8905709c5a8f97a8acf2c5e870e7a9a73b717d73e710d7982afb4b8af4ebb6a9738f593c951e4b9d50902728bb7b3b9aae034e3d9561c76b2f91cd8e31d2d0acdb9a41cd39e7eeaaa8c3903dd096946b5a3b5127b8eab49af6d46c8f7dd567c5676f2ee72d65d46c12a8760c2d0aecc9e8837b4e56272a8712a973a042bde0f3543dbbc046c694bdd037545525c4c2b9cdf576565bd0d4e13b254b4bb835b7a8bdc33dd7434dba40842da536d36002113e646e92e749a673a012ab350113955beb08c8c253b16acd5eff24e5dd65082b09299d5b74f45689d633255756a0880e0837d6995455ae04e7ee9c9536f622a54cee3086ad720734257ba8dcee80ad733b3a073c2d2628b94832b5d662575df85b787fead774093eba41c3e47fbaf397dc0067505d07e1d712f2fc6168c07d355afa67e60ff0065a4c7519ef7d3dee913a72896ba50541c48ca299c9095c09c2755f2c14e1c612d048ee9894d38c289775dd3349c5564f54c5d9dd271052f4645c1437c26272a127522913d567a15371dfbaaa7ba9a70c541f11ba771855bc88c2cec01ea60c828aa353501d6106f39575a381392250a9e853f6943d43e94498d23d90b5b9ee88a665e1c19385e51f891701d72da21f90d923dcaf53bf7434cf75e15e38b835fc49750e90d2183b46eba387db97e4dd62c4a14f5be0ccae978570d059a9e307659de1fb337172c698c95debad59458d600301745ae1934c5a7c3d93f02dfe156ac0d82c55b180661685a546533cd2bdaa40f7b64d25be94968bf4d5008491b377d70ec7dd62df19127a2d5b970e4b16f9d831c979f2ba75a625f3b2765cdf1501f4dcd3ce56f5f3849239ae77881de16d85679386ba6f975883b0255d6171e5bc11d559c5a91358911080a64344cedb2ece3ac328ed6df45d5a1639a248c762b96e2d68ea75490310b5783df3410c2b438dd117543cc69971e50b5a995c05c3099dc219c0c6792d4bca4ea6e748d8940969333d12011e312935b9cab5cc55890e1b261d7fe1fd99b8e2cc807d22765edb498743298e785e7ff00845c1ea54a6ebc2d2276c725ec1c338713701ce1214e5c5e576ebf8fcf38e1f84f0914e9eb23272b62d2daa4ba256951b5101a0764652a029b7612b4984d698e5cf95cb71c9713bcad66f2d7091fa20e8710355f241cad7e356de6dc6d84136c435b86ec965c334d38fe5e58dec4d1a85c01288d20e4a0407531cf083bce20f6086832b872c2caf638f9b1cb1dec6712b7657a2e06244af2fe3f6845c9a7eebb375f5d3a74b499ecb36b5855b9ac6a54619f64e71655a63f2b0c3edcdf0ce0de738639f45d5d8f04a6c6805a169f0ab06dbd325e001b994d77c6f87da54d152b343b68eebab8b8fc7dbccf95f2e7265d33afb8136a3096812b997f09ab6759ce83a4fd175777e21b76d3d6c63ded8c901056fc6acf88b9d4c35cd71ff70e6aee12f4e4c79f55cd5d52204c2ccabdf0b7bc40f6da4eac8395cd0ba6572749e6b879b83c7b8eee2e799445ea97f356d431cbd90ae7f55cda74ee106e61194406e7a2083b3b895632b6330968ad6b32ac627927350750b37ce8e6141d7036108d0947bab9cc1c2a5f589e6807dc8130aa75c98dd3913e4d07560064aaaa5c0e4b36a5c75285a9751cd5cc4ae4d37dc60c404257b98997656754ba9085ad701a0c9cf45731b6a32e490755b891baccbcbf6d3c492ed80085ab72fa84b5a0c7ba6a16aea8fc832ba31e3fdb973e6dfa0d52a5cdc3b121b380b6bc2afad61c7b87dcb9c6195da5ded3fd119c3b861c12d39ec8abcb07d101d4dbb67657719a658dbbdbe8ab67873646c44a31ae0573fe1abb177c26d2b73a94da4f63cc7d56e30e5723aa76201dd31c26067d93f24d721812765171fb27123e698f74040a6d5c93bb9aacc4a5b23948a6079274820e54bb7c6caf721ddba0cdab0a9a8eca77154b89fa2cecece2150993b28d0716d6c1517bb9aa7ccd2f9483635602a2b3a673c9469d405a239855d7389ec94559d32b88bc3584bb6124af9e2f6abeeb89dd563ffb955c77ee57bb789ae3f2fc36eaa839652711f45e15c3e917d7683d72bab8638be45755e166f90d155cd04c40c2e86ad6f30647b2cbb4a7e5526847d300b04adec72cbfb54eaae1b12932e1fd545edce5547064247bfa6f595c034f292cab5a8e008ca481b7a8dcd4c992b22f5f39051f747072b1ee9de9395e6cbb76d8cabe7ccac1bec8c7b2d7bd78ccac3aced75202db0ea33ca31f89db5414c3e304745cebdae0e33332bd4ee385b6e3856a03d402f3ce2547c8a8f11ccae9c328c72c74a6ceaf955011c9759c2ae29d6806321712c26616b70bba349e249e8ba71bd32ad1f1070f0d7173403225727599a5c7aecbd1e8369de502d306462572fc5f869a559c0027e4aac0e5ea34f4c22b8370d7712e234ade9892e39ec02b5f6555c4e96931b61761f86bc3eadbf1da752bd176838920e139dd4daf65f047051c3b8652a41a0401c9771636e1bea8c159768f652a54e22206c16b53bca42980d249f6576c9d14ec7536b790563dd0321668e204121b49c7eca352f6bbc7a6986fcd2d8e90bc6b5d50954e81190546a9ab53e23bf4543e8d4734cb8f6ca7e47b4ab794d075968004e4c2c9b9b9e1cd7ff12bd26fbb82e57c6d71e539d49f5483062095e736d5d9f9b732a4cba402732b2bab5ae19593a7b3d5e35c1693737940f60e9fd1665cf8d380d0306e413b40692bc92f2e1d42ab98d800f540ded073582a6b90738e48f23eef6f54e25e39e1556d9cca0fac491b8647dd705578ddbbaedd5431ce13393bae61ef7969148181b9ee830f7349d44ca5e69b8ede943c6dc38db1a2fb3abae226442c8a1e2ba56b5cb85b87027fdcb86ab51f3807748b8e93aa651e74fc76ee38ff008b1bc4280a6280a7d1daa561d9de160754689037eeb9f6bcc169274fba4dbaa94039ad77a4e085372dfb3c65c7d3a2a9c7019903a60a19fc621d05ab04d4d4641cee99d5750c93202caf1cb5b4e5cff6de77186876cdfaa9338b877211eeb970e978067bab83b4b4404bf8e2a72e7fb74a38ab2320fd426ffa8b08dd738e76267dd41cec40947f143fe6cdd1bafda672aa7de03b1cfbae7b53b724a5e65493a5c97f1c83f9b26e3ee667f75454ae637c15926e2a377727376e7403042a9844df9197a1752bba7d32867d6f5664956d379a8d07cb9037517866a12c2b4c71639676fb5dc3a93aeaa00c6f35d670fe1646e04ae6f875e32c9f2c00c98cae92d7c4d429b40a940cf62af4256fd9da0634023ec8d36ada948820191d1665a788387d660d4e730f769fd96a5a5ed9b8453b963fff00c80474b963acf04d4d1c345027fd17168ec0ec175d49cb81f0f5e5265f9a4d7b49a83001dc8fecbb7b674b449cae3ce6aba70bb839a447ba9cedb2a0156039dd4b44e711cd34a6e532a05d9481dc556ef9279ca8b8a28a81c04ed2133936c911dcaa7ee548b942a1dd0714bc8e6a8a87a2b2a143bcc6d2a728714d43250cf7e9573df827a206a3fd4b3a7a6a5b383e9b5c08feaa570ef4e105c31d1434c93055970ef4e0a20be9c77e235c8a5c02ea0e5f0c1f33fd179a703a05d5c3883885d7fe295d175adb5b0397d52e3de39fd4ac8f0d5aff000f5b8775dbc33a707c8bbcba6b86e30ad6fc300a7f2f184e1bbf45ad73aaa997ba152e6e31bab5c32530e72a643418e2252527000ca4aba0f4abb6197482b1aedb82bb4bcb569276cac3bdb51070375e5cc6bb6d7157ad73a46566d3a47cd04fbaea6f6d9a098859cde1f5aa558a54c993d1746185acb2ca37b80d06d6b37b0c4c2f3df1770b751bca90dc492bd4781707e24ca62290123995a8ef0732f2a36adf0693d3fe56fc7c765db3cf3963e75670db9aaf029d271f612b7784f8478add3985941e01cce985f42d8f86b875a01a68327db65ab468d1a2229d368f92eb98e986de4bc0bc0f7ed6015416e332ba1a1f87d42a383ae5c49e6375df8dfa7ec9c12364c6dcbd9f82784dac4dbb5c4672b62df8459d00053a14c47ff10b41c79a6e48245b469b5a0068ed852c0da3e898e79a6903dd3073b825392140ba7109c9c20162255359c035c4725603ba03895c0a16d51e6348046e95a71e4be39aaea9c51ce2f80c310b88bcaa5f53f86c3befdd6f78aabbabf12ab55b25b2712b3ebd5a4fa0ca9460102088d8f42b3b5a4ea32ef9eef27f8a7d5de5074eede69f90e32c190b49ad65e5478aae3ab703659d71485b9730340271329554a15b7268547080e63b047eea8ac65c5ec8214ee2d5cd7073888287274b4b592472482da9559559896b808215345ad7540da8e02799c4155697cce5a4754d5dc220e7aa02cb9a7e53881b7f9b2a7cad4d2e2764c2aea018e981b2897e9718882810c7d23030aa7876e3dfdd58f20990a0e87733ab603aa0f755b7ba229b8b87655b000e82896b469c10a6afe9539d008e499c44023fe149cc07ea9110cc27f4667bdba7632872e0094ef99c2ae60c108d82de72138682730aa2e20c84ed7133040286763bae106950e156edb7ab6eeaaf3351a5c263e7946badadeb871ab6f4a00dfcb39f985e725e5bb8042b1959ec8753a9519d34b88fdd5cc9171dbbe6f0ce1b534cd00d2ecfc647eaa2fe0362f780d359930310e195c7dbf18bfa4469bcad8d839d3faad4b5f13711a65a4be93c8cfaa98c1f9225392fa05c6e8b786f15ab6f6f5cbc30e4f43fe6156dbba85b05d2610b76f757aefad50ea7bdc5ce3d494cc888536f6bc636b807882b70de336b70e24b1955ba86adda4c7eebe92b0aeda94dae6196b9b33d410be5178f5100fd97bffe17716ffa8f862d7cc74d5b79a2ff00ff001d8fd161c937dba38aeba7a1537600c2b03bfc84353718cab5ae119958b79576ac289de4eca1296fba011385027b2771dc0551741dd04b4cc6ea2e274e48551719feea25c4f34c245dd4aadee9d933bb9ca839d02651a35750ee87792ac7ba73d90f51d8290515dd1d610555c263aa22b911ba06abe0c859d87b1960f824295e5501884b4a9933b143f14ae1ac712761f4c2525b45bd3cdbc6f71f9be3b4e90322953037e64ff485b5c16df45a8242e4e8d4ff00a871bad5c9c3df23db6fd17734086516b0720bbb1eb1d3cdceeeece464a838449522ee6ab73a70aaa1173756c30a0e601bcfd158c239a8d4326014a6c94e9ec929e9f6493d9bd4ae78c0af5832d693ea99891b7d79a63c2788df54181469c4f530baab3b0a16d4e194db8ec117ea8f480213c3e3e389de5b5ce59f8568361d70e351ddcad9a1c3ed6dc014e93411d822813cd4b6180b698c93a676d266d801484f301566a670120e382ab436b48c4a61d4289763b94d38c44a3447713c9366329a7aa44a3408bb10931d3bee9b0989e411a1b4f3ab31099c7385100f384ce31ee8d0dac91d93151693cd44bb74824eedbae77c60e7378654cc020ade7b9719e3bbe6d1b7753a8770422fa3791715bad3ae9d205e677dd675b79fac3cb3d07e25a02b31b7ce15045379dfa1547136be93dda4fa4f4e8b2ad005ebdadaa1d4c996943bea9ba6c90246ff00d56832c69d6a06ab497103ee81ab3ab4358356d8c65230a6bbf41a3561cd1f09e63fb2ac7f02a496823f509eb5b3daf26a9001e41357b86f94d610096e351ca0f6b6e5b4eb510fa647b7740369c9823d47ee953a8f93a418295570f4904c820a06d555616188553e93a03890118fa9f9a746801d1883baa8b4d22438639f64008e96801544b8bc6905135a98c39b949adf33e1df9e6107116c1124410614d8ed32090a3a0cc19568a7a46652b170c4f30ab2ed4083b8563f1b4aa9a1c5c639a0c8efb2a9ed9338844b272d76eab7361c408eea7d52dc9ec3f979cc277b072dd5da757bfeaa2f8072a84b2a973606fb2a9a48767922606e99f4c118e8816451aa493956d1764824c2a5ed32a7480c49c840904bb690aa63bd7047b2b1bb639a6232968d32398d9777f84bc5859f1d7d9547c52bb6fa679541247ea42e0838839d95b6d5eadadcd2b8a0ed35693c3da7b832a72878dd57d596f5303faa25a7aae7bc39c4e9f14e156b794a34d6a61dec79fe8b729bb195cf63a77b8242521403b11d12273cd4ecc9c727a2adc3061489e8a0e7267a4008dd3970e4a2e30aa7b80d916e8e4d9defc2a5eecf6512e3d7eea0e294bb1619ee3c90f55d0558e76e85acec14c94d770ea10354924abab390755d839c2594d94ab69bf40eeb97f1af1236fc36a358e8a957d033b4e09fa2d8ad5f43492770bccfc45c40f12e2fa187552a3e91dcf33f555c586eb2e5cf5342fc376e039ae388ecbab699db6593c1ad853a0d201cf75ad4da400bb24705a9e49caade0e6110d6c98ec9aad31dd2fb01848dd4b11b26782252693b260ce89fec92996e79a4907d020868ceca25f293b232a2e81cd7420e0e4642b091d554c7032a698d9b1261238098e09338489c208b7291204e5303994c4e404022e9389529da53001448279f7482c0449d931999c77502223094938e498584e12643b7dd4261b94cd7c1c1c25685b89feaa2e8de5338f5dd3482239a471179318fbaf28fc4173abde81ac00cc95ea95aa0a6c7127002f14f1f56f3388b9cd71d39052a71caf11af48bb4b5a27655d07bab53f2ea87023e12673d9176d6f4eb5b1ab4c0d6dc1ec80af5eab9de50893cf65155bd2a6d7758d63a4cb0982d999feeaabbfe2456a44e720a7ab62e6926e1c403b4054d6a8db7a258c71208c04afa39560a8dbca07cc115db8f71fd50745b45951cdb868d33831b14236ad4738ba9032dca22ad46d6a3add01e3e21d4a521dab2ea80a79611a77085148d404e246ea56d5cb1a695424b07c33fcb3dd22e75025d4c8fea9e8b6ace9a6411f137655ddd7355c5c4098e415da99734cb9b878f89bd0ff454d214f516be04f3ea8d1840e20491e953c1cb499e454eee9b9bf0a1e98738132476495289690fdc9d4a61c5b82a96306e09d5fbab4bc112624255a427341120e4a8c088044f651150038c856101c3503bec816ab21dcc9517b49dbe6ac68930ed8ec9ded20c47b22c677b0f05bb4a8d52215de9748c48553999cec8d16f4a83a0e4121489e84a45a730a276c7242a53113bf34830b71984e1b233cd4984b000488434f712a4264056741d1541c019004f357b4870c1208cc2022f6e93b2a8093856542e07b26035491bc2287a9fe0df172695c70baaef5533e75393c8ee3e58faaf5ba0e0400632be65f0af133c278f5a5decd6be1f9dda7057d216d50398d73488206dd0895cf9c6fc7771a63610a2e2a34dd812533f62b2deae9a117e4892ab2ee9299d850d50ac43b9c150f3332a6e77395538f42a6c54ba328b8f5e89179060f2553cc8c224d15bb42a3b1be10759dbc2baabb742d77434f7548b4357760caceaf5631255d7157044ac4e257ada14dce7b8068fba5addd15ba8caf16717fcada1a748ff001ea61b9d8752b90e0f40d4aedc1c90ba3bae1838a35d70f734981107e11d15fe1ee0758d579a4d351addf4f25d1863e2e2cf3f2ad2b6a65949a33004ee8ba426010ad341ec105a4460aac0d270168ceae000ce2548b811b043bdce9de126b8c14c15468dd541a254dee3cd330c9405a1b239a4a436491a0f73abcd439a492d999d8adfe54924c556523b24924213533be24924058dd93734924033d24924046a266a4925427c933774924a809c4fff004953ff0012bc43c55febd5f9a4922fa54f4c6e07feb5cffe081baffee0dffc92494287f14ffd1b7dd72f5bfd409248be8256dfe955f7433bf9924913d183aff0391bff00b2df6492442a1edfff0054effc5575b7f9a49246b2b7fa67d95747672492151377c2e54392492690a9ecad1b24924591395c7e1a7ff8a4922a0237ff005014aa734924c2ae4e503b14924813146a24923eda4f454be2440f89a92488a9e93a9bfc95547fd4492452a85cee7d97d33c03ff00b659ff00fe967fff002124963c9e9af1fb6cb3e109ddc924973df6e857515652495c083956e4924820ff0088aaddb1492415075fe2fa7ee82b8d87b0fd524934df6c7bad8fcff65c778af6a5ff0097ee924af0f6cb357c27fd077cbf75e89f86dfebd4f63faa492e871559c7ff00f5cfff00c87ea1618f887b2492a0856e7f2516feff00ba49240d5763ff008950a7fcbec7f74924d22a972ffc424924987fffd9', 'Hot_Asian_Babe_Unknown_31.jpg', 45510, x'ffd8ffe000104a46494600010101004800480000fffe003b43524541544f523a2067642d6a7065672076312e3020287573696e6720494a47204a50454720763632292c207175616c697479203d2039300affdb00430006040506050406060506070706080a100a0a09090a140e0f0c1017141818171416161a1d251f1a1b231c1616202c20232627292a29191f2d302d283025282928ffdb0043010707070a080a130a0a13281a161a2828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828ffc00011080096006e03012200021101031101ffc4001c0000020203010100000000000000000000060704050203080001ffc4003c10000201030204030602080603010000000102030004110521061231410713612251718191a114b115233242435272c1243363d1f0f108a2b2e1ffc400190100030101010000000000000000000000020304010005ffc400221100020202020203010100000000000000000102110321123104223241611351ffda000c03010002110311003f00e9215f6b106be8a2a00cabe33051924003de6be3305524ec00ce4d2af8d38cfcfb87b4d3df1047b3c9fcc7dc285ca838c1cba1897bade9d689cf717912afa3673f4a17d57c42b3b694259412de11d4a6c05272ff0053323e0b90b9df07b56a5d5d93f670aa0e1401deb3906f1d0ecd1bc44d3ef6610dc44f6f274c139a34b79e3b8896481d5d1ba1076ae6179226f367518c63940f7e3ad1a707f174962880c8413fb5139d9be1ee340e6e1b7d04b1a9e9763bf39a837f7f1d915f3158f374c557695aedb5d5924a242c4f5cf507dd585f4d1dd480ae4a81d0d1b9aab42b8b4e996b63a845763d8c86ee0d4cce37c67d286b4e9e2b29242232ccc77353db58403fcb6ae524638b2d1ef8c63021dbd6b5c72823db619f75515dea0d337b39418e955779712a2831b127342f26cd500c45642862eb89d239d44303c89dcf4a990710dac807981e327f98533923383283c53e216d2f4c4b1b66ff001375b1df754eff005a4adc4ffab739242923fa9bbfdead78ef5d5d4b896f6e0373448e638fd1547fd7d684750baf22d2342ded7273b7a93ff753ca56f45b8e1c62479ae79ee0aa9c8e6dcfa0debecd39f340c7ec8c91ea7b556da4bcc7989f8fccff00b54884f9b75f3e63f2ad72d9ca168bdb7b79eeadcac40b2c782d8fde3d6a36a1a82c31ac6ad2ab2766ea28e784ad043a7fb4bed49b9aade2ce1c17b1b496eb8940c8c0a5bc96e862c55b467e1cf16b43a92d9de3feae5db73dfb1a74db7435c8e8f71a75f22484e55bd9cf6f4ae9ee04d47f4a70e5acec4970bc8c4fbc562f5742b2ab565e632c6be32d7c925488e5d80155d77a9e72b08dbde69ca2d93b6912e7923854990802a96f350cb6225d877351a798bb65d8b3560b6d34db85c0adf58f7b02e52e8dd1dcdbb4b22891c381ba91d2a55eddc4ba6c920239962661eb8154fe6ac97066c00e5794fad46d52791346ba178c842c4e632837e9b56396b43b834d589a926699e6627762dbfc4d53eb37a5eee60a4728f647e5532372b6e0ff00a9bfde862e6526673dcb1a9f1bb65991522e6d260b0824f56fc851070adbfe2ee813d1cffea282e39488803b6c7ee68d3841fc8943c737372e015a296ce86bb19b2ea16fa469e669b3ca83a01927e1546388b53d494b4689a7d99fe24b82e7e5567a95ab5c69cb320e60706977ade95ae6a57ef1452986d15f0064ae7077e9d41ad8a4fb3b25ae959b78c74e57b76bab69cdc151ceee40cfaf4a64f843ab3c7a0cf6ca012ac1949ec3143bc2bc2a965a7dd25d3bcaf3e40e76242a9ec33f9d4df0a2d66ff1902e47967cb627de091fda96e494d7d8338b78dde98c1b89d9d8991b2d584704d39181cab5696ba62ae19bda6f5ab28adc28e954b94a5f879f4976555ae9aabbb0c9a9cb6e1474a982302be15ae5148db17b6e79e256ef8a85c42d8d1aef7fe191445a7f03eb97001d4350b7b553fb902173f5381f6acb8bf846c749e15bb9bcc9e7b9c001e47cfc7006d489c5f165f1cb17248e74760b6ae3babfda85af3d9b823de49fbd10cc70b743bf984e3d286af64ce09eaa0a9f88a5e2ed8dcbd13444f32c51c432ef8028f383784e5b6956e249087662cc0746cf63ef0286382235bcd56d91b70a093f6a795a40b140303b537934a8e8e352a9169c3d6ab2d8c96cfbe06d9a8ff878e2ba64600115858ea9069928374fc85db0b9ef516e3574bfd50ac319f2d064c99f7f414b4ec36b64db90a8b85c56bf0dac678750d4efbd9fc1cb3baaaf7241ebf0ea2a9f51d4481ec11cd90a33ef271bd1e70b436906836ff8195a68f7e6727258e773e9bd725723b2d2897915ec4d308b91d64e6e539e953b154a2273796e577c4807c466af19593f6d4afc6a8836fb3cccd149faa3591bd60d5b09ac0d30493ee356822c84cc8de9d2827c45d427bae1e913644e75d854dbabb82d21696e2458d0752c684f8d752371c3ccd0a1f264c3863b1c0352659fab2dc714a68e7abd90c37b329ee4e6a8af4013b8c6cdbd5bf1282b74d228fdade87ee262e37fda5dfe22bb17563f2bdd1378535c4d175fb69ae18fe1f3cae47eee7bfc2ba26c6fe3b8b74789c3232820a9c822b946e8e4e568c38138a2ff004822056335a1fe131fd9fe93dbf2a6e486ad0ac39da7c58fabcd7ece089d5ed6e6e25438558e12413fd476a1cb9d73567c47a7d845a7239dde5c3b9f80ab2d0f5cd3f56b50a5c212378e4d88a94f0e9762fe7b3a67b73367e9488b2f84a35b4506a961a83c56ba7e951b4fa8cec1b2c7ab672598f603b9a67f0f5b0e1be1eb7b4ba9236b8452d348830aee49248fad6dd1edd2cad4dc4ca16e2500b7bd4765ff009de8378e38963b3b5966989f2d760075663d00a24b44d9276ebe829b2d765bad5142314b546c96efe83e745b65a949712c9264152d819f70a487076bdf8db3776239d5f98f2fda999a05cb3c48074c575d6839c1282fd0cfcc4704e394fa5469ae2346c33807d6b473909d6a975390b48013d29b193bd9e7e482ab40e71d5aca628d98966c6e2a878bf88ed534ad374e8cabccf185954754edf5a28e37b989f871f531cc8163cf293d4f41f7a42da6a68baa35c5d92eeb96193d5b14a8e3e5c9be8352a92442e21408ef04fec9527958f423dd4177d1491b10b9c8e8477a3ae2abc5f2d4cf0ba34b18917243641e8697b793b1c942401da8b0a743f3b56452739e7183e9577a12e654041008a1f5662c33de8e7836057566750c146d4e9ba44f8972761458db308815f9d6bb912c73c4e09f32360eb9df70722ae2356e402350abef351ae5016c939c54b74cb6b43f74965d43478263fc58c37d45257c7bd3e6b18b4c963c981a570d8ecdcbb7db9a9b1e1b4a67e13b3e6ea9cc9f426a17899a08d6f872fed557337946487fad7da5fcb1f3a35f4c4bdda13fe1c12b667fd571ff003ed4f4d04858971d71482e14bc5b6b4819b65442e477ec3fb53cb84ccb259c524ca5598038f750bf90e9fc52ff00029e76f2873e03637c74a5cf8a7afcba269b05c5bb72bbdc08f3e9cac7fb0a3eb9939223484ffc81bf2f6fa659a37b4d2bcc7e00003ffa34d82b9244793516c33f15f5354e0ad2ad63600c870c3d107fb914839a4e6676046738a61789976f2cf1c3cdecc30ec3d4b7ff0094ad3337b6ac3a1cfc6a9c4aa24b27720ead5e0d6b84e3e78f9ae74f2629707daf2c9ca37d723e9415ab595be58c64afdaa6f0c6b29a56a9e74e0b5acaa619d47743fedd7e5577c5fa4c966cae1a196de51cc8ea32181e87e95349384ff197424b263df685df92a2751d8761be69a5c15a7f258a79830c0fb5f3ff00829728047a8445f08a1c6580e94d7e1a9c2dc791280091be3a3676c8ad9b1fe2462ed32f044161e5c648d8d57dc45b648c0abab54e6770fd41e46f88eff315075a2b6f1331c00bb9a9da61d53a193e15481b86828fdd99ff00b514df2e4671d2813c19bb4b8e1f26339562241f039dfed47f703990d3174227a91cff00fa08da78872e9dca45bc731b8418d8c67da51f53f6a76e931058576ed545ab697136b96fa872feb7cb3031f4ce47f7a26b018847c2bbb09bb447d524e588e4d733f8b97c6f38c248b3ecdb44b18f89f68fe62ba3b5c9311b64d72df1dccd71c4f79339cf33607c074fb5370af625f23514829f11415d5af46ffe5a11f534b7b86dced4daf11acc9d67dace2785907c46e294d7aa179bb7a53f13b822692a6caf69307d29bbabe8f259701e829793335df212c8cbb229dd573e808a5e704e8e75de2fd2b4efdd9e750ffd2373f615d79adf0b69dac68efa74e579f1ce0a91cc840c034bceae922ef0609a9499c85aada4a6405231b6f9edf5a3db1e64b7b4bce5cbaa8c9c6320f5a9379c3175693f94ef6ad1c6d82dc996a9ae8ab104f70c54fcef4ca63078e56595fdcbda462f628da588ae26541923dce077f5a14d4b54fd3819228e54d3c6d34cc0af30fe44cf563d3d3ad6e1ab5c594f1da08e49118e2364eabe87d2b549a5ea5a95d896f2678e21b2461b7f99adb4bb1926a4f90c9f076e63335f42bc8182231443b20190140f701814d17395c52a7c30b28b4dd4a548d5559e2c1c7538229a2cfecd6277b27cbb95957a8ae41c751b8a996928fc383e95a2e8736f51ed9caf347f3158dd3322af455f14dcf9565732671cb1b37dab9a389cf3ea6f9392363f415d07c73308b48bb258005719f766b9d2fe537172f2ff003b13f7aa70f4c97cbf92438bc525cc2b321c490389171f7a51710da00e2e211fa99fda5f4f78fad3a78934db9d4b514b478a46576e57e41cc40f9551695e17ebf7704f6b7b0c305b124c524b20e607df8193835de336e34272e983be0559f37164b79e5b48f6f16100fe66207e59ae9992fd096882224dcbd860e08ef427e197052705d94eb2c905d5dcf273b4aaa40000c01bfbb7fad49f11b59934ad24dcc2213712c81143ae4631bd3a7894b76370795fcaa35a01353b7d62e35db9822b559614397e51dbe3543a947240e558153ee61822aaf59e36d69db91265850373058e1500eddf1d7e742f7dc45a84ee5a5b9e76e50b9c0e83b54f2c0ab4f6553f39e49db5a0db4a44495ae6623980c28f77ad4bb8d52188125852d3f4c5f7963329fa0a8e9a835cc856eae7ca5c6cdca4eff2a5af1db7b673f2a29690d6e07e244938d6ced958912f3c676db254919fa53b7ccf66b97f45e22b2d09ed9e3b78ae4a11279b1310c083dc11d6ba3ecaf12e6d229a260d1c881d48ee08c8a29c14348084ff00a6d926570462aba69423ab03deb7c92804efbd52ea93f2a3114a92d0c40c78bb72cba3c56d09fd65dccb103e9b93f95035970be94c1d2e6476906f90c40a26e319d750d634f839b6b789a66f89c28fef553247ed641cd518af8a21f21dcd9d050a470a9486358d476518accb9af57aad2531e7de95fe33dcb16b0b7ea811e539f90af57a864721317ceab332952ac3a95355774a397380403be6bd5ea58d4cc300e07715a264c760457abd42324d98c4a00237db7a7f7839ab4b7bc28b04d92d66e600c7bae015fa038f957abd4bcbf11d8fe417dc4c707b50debf766181dc82428276af57a903e4f40558c73492cf7d74cacf3bfb217f75474152822b39c02075c57abd564568f35bb767ffd9', x'ffd8ffe000104a46494600010101004800480000fffe003b43524541544f523a2067642d6a7065672076312e3020287573696e6720494a47204a50454720763632292c207175616c697479203d2039300affdb00430006040506050406060506070706080a100a0a09090a140e0f0c1017141818171416161a1d251f1a1b231c1616202c20232627292a29191f2d302d283025282928ffdb0043010707070a080a130a0a13281a161a2828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828ffc0001108004b003703012200021101031101ffc4001b00000203010101000000000000000000000507000608040203ffc40033100002010302040404050403000000000001020300041105210607124113315161152271811432a1b1c1084291f15272f0ffc400190101010101010100000000000000000000030401020005ffc40020110002020300020301000000000000000001020011032141041214223151ffda000c03010002110311003f00d24285f11ebd69a0d978f74d966388e3077735ee2d66c1e568d6e53a94e37d87f9a43731389be2baf5e4c24cdb4198a119d82838cfdce4d63b00353ac78cb1dcb4ea9cd1bb999a3b410da2ff00cc0eb6fd76a25c27cc795ee05beb663756dd6641d2719ee3ca906972d2a8218e5daad775a1dd8d0d2ead1baa764cb4646f8ed8a36c95d8eb86f93494fa9c72d9ac9673217700af7daa59ea486dc1ba9504bdf0292fc95e2396fc5ce95785bc7b7f9e3ebf3e9ee2999713c30a9f11b7f41e75ab90b417c61616b9d6c2392332a2f976a954ebcbf96762b02f48f619352bd67a671ae09c075168adae0e108e872180c0db719f4ace9acdebadb20c9cc87a89ff00df5ad0771a2eacfa35dcd258bdbc4903b335c3052463b28c9ff359af5d9018a3076e91fb1a066258097a2285241863862659b52b65906635c12334c6e27d4f51b2112dac773242540586d8749727bb3765fa553f971c3d6fa993a8dc02c2260106760714db7b9b34b1b58cba7e251ba3c3f338ed9f4acb00dc5084ad4a8f085b5e69fc5fa75f880db497f1488f0ab757491efee3069b1069b34e7aa72403d81dcfdeaafa1a45a8f11c12ab002c95a500360924606ddc79e7ed4c1b09249165f147e56c02171b5758c9d89379494419f086ca38530aa054aed6152980124b8038bf5a67d175086498293031f0d3cf1efed59035c97a279626fed7257e94f2e626b4345d4e5b7b6745f89469d5231c858c1ce7ea771488e336863bc75562c479636207a1a940258132e42021a86b969c6df03ba974fbd566b299ba95d77319f71dc1a6d5c4971a9c11cf6daac496c46ef174a301ff006dcfed59cf86e1377a9c68a707d48a67cd6612d5421208c1cf6cd75900062f8eed5b8d7b6b4b4e1486e358b89dbf10f0f42231c24518dfcbd4f73f6a2fc15c48da8451c8b3bb898f89fc01f414378d74b6e25e5b39801fc54b68b2c64799600363ef8c7deab7c9e9d3f0b040b92eb1827d87fb35cfe0d4d06ec98e5bebf30c218282def52a95ccad6468fc357172642a53a0039df7702a532d91a90e455bdc4673675837fc50e5bf2c51ac2be9f2a81fbe681de74eb7a12dd04479ed944371f2ef81b23fdc6df515f4e6340f0ebb7848c0f15bf7cfec68df27383ae788b46e23bb8ba03786b6b0091b019f21c8faec07b6691c7d011c9be3d9c9ebfd959e5ddac3f1591e4c021ba00f73fea9997b028b332b602283554d23419b4ebbbb79c3c4cd8c2b01b303e6288ea97d35fa986cfc6704f4cd0041807bfcfd94fa77f6a99a9b73e8a2d201d11e7c192adcf05e98ca430f0170477c508e09d05346bfd4d140e892e1a48fd90fe51f6dc57472d9a44e12b78ae028923675217c86f9fe68a87f06f19bb38c57a0f488aefea12ecfc0e0b656f9649c750f5001fe715281f3d2e7c5bbb5b7277c16c7dea5558b4b20cfb733c71b70eea3c41addc0b0d3ee26127ca191090aea3b9ec0838cfb5317975a44dc0dcbc2da99f06705ae6e220a094c9f2c8f36c6055e81e95c2ec3d06c2aabcce765e0bbde92465901fa750a518c05f53b86b9995bd975141aff00136941e610b5fcb2190b754a14000f61de83a717c5040b0db42c18ef972064fa9355fd477f109f5a1f381e1e7140d854f255f2b21b24cd07c9ed6c5de9d7d6b2ddc735cc720959141f9158797bee3cc55bf52ba11c45f3b8de907c9695e2e328d2362a925bca1c0f2603047eb4dde2095d6d252188205164517422a358b328dc52b06a3c4d797734115c2274c31ac9b8185cb6df53fa54ae6b100d9c2cdbb30eb6277249dc9a9542a500240cdecc4cffd9', '2012-08-14 07:43:09', '2012-08-14 07:43:10', 'user1@abc.com', 'user 1', '2012-08-14 07:43:10')
+[paperclip] Saving attachments.
+  [1m[36m (65.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 815ms (ActiveRecord: 86.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT id,name,email,created_at,updated_at,avatar_file_name,avatar_content_type,avatar_file_size,avatar_updated_at FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 36ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:43:10 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 13ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:46:12 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:46:15 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:47:32 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:50:35 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:50:36 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:50:37 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+Connecting to database specified by database.yml
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 84ms (Views: 45.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:52:40 +0700
+
+ActionController::RoutingError (No route matches [GET] "/users/1/avatars"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Connecting to database specified by database.yml
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 101ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Served asset /users.css - 200 OK (7ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/users/1/avatars?style=small&1344930189" for 127.0.0.1 at 2012-08-14 14:55:03 +0700
+Processing by UsersController#avatars as */*
+  Parameters: {"style"=>"small", "1344930189"=>nil, "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered text template (0.0ms)
+Sent data  (22.2ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.3ms)
