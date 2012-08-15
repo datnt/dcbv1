@@ -24,6 +24,7 @@ end
 gem 'jquery-rails'
 gem 'paperclip', :git => 'git://github.com/patshaughnessy/paperclip.git'
 gem 'pg'
+gem 'activeadmin'
 
 
 # To use ActiveModel has_secure_password
