@@ -60,4 +60,10 @@ resources :users do
 end
 match "/users/*id/avatars" => 'users#avatars'
 
+resources :common_toys do
+end
+
+root :to => 'common_toys#index'
+
+
 end
