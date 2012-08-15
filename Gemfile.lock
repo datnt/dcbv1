@@ -133,6 +133,6 @@ DEPENDENCIES
   pg
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
-  taps
+  taps (~> 0.3.23)
   therubyracer
   uglifier (>= 1.0.3)

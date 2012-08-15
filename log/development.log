@@ -1450,3 +1450,51 @@ Processing by UsersController#avatars as */*
   Rendered text template (0.0ms)
 Sent data  (29.7ms)
 Completed 200 OK in 120ms (Views: 29.6ms | ActiveRecord: 88.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-08-15 08:37:08 +0700
+Connecting to database specified by database.yml
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (154.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (10.9ms)
+Compiled users.css  (52ms)  (pid 28566)
+Compiled application.css  (65ms)  (pid 28566)
+Compiled jquery.js  (3ms)  (pid 28566)
+Compiled jquery_ujs.js  (0ms)  (pid 28566)
+Compiled users.js  (83ms)  (pid 28566)
+Compiled application.js  (180ms)  (pid 28566)
+Completed 200 OK in 546ms (Views: 378.8ms | ActiveRecord: 154.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-15 08:37:10 +0700
+Served asset /users.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-15 08:37:10 +0700
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-15 08:37:10 +0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-15 08:37:10 +0700
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-15 08:37:10 +0700
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-15 08:37:10 +0700
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/users/1/avatars?style=small&1344937780" for 127.0.0.1 at 2012-08-15 08:37:11 +0700
+Processing by UsersController#avatars as */*
+  Parameters: {"style"=>"small", "1344937780"=>nil, "id"=>"1"}
+  [1m[35mUser Load (84.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+Sent data  (16.0ms)
+Completed 200 OK in 102ms (Views: 15.9ms | ActiveRecord: 84.2ms)
