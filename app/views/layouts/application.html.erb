@@ -6,12 +6,57 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+
+<body style="background-color: #F1F1F1; padding-top: 0px;">
+
+  <div class="container" style="background-color: #FFFFFF; padding: 10px 30px 30px;">
+
+    <%= notice %>
+    <%= alert %>
+
+    <div class="row" style="margin-bottom: 2px;">
+
+      <div class="span6">
+        <img src="http://www.woodentoystore.co.uk/csi/1727660032/i/bnr/wooden-toy-store.jpg"/>
+        <img src="http://www.woodentoystore.co.uk/csi/1727660032/i/bnr/wooden-garage-bricks.jpg"/>
+      </div>
+
+      <div class="span2 offset3" style="margin-left: 244px">
+        <div class="row">
+          <div class="span4" style="background-image: url('http://www.woodentoystore.co.uk/csi/1727660032/1727823872/i/btn/viewbskt.png'); background-position: right center;  background-repeat: 
+no-repeat; height: 64px; margin-left: 0px; width: 386px;">
+            <div style="margin-bottom: 0px; margin-top: 4px; padding-left: 114px;">
+              <h3 style="color: #E11D1F;font-size: 14px; font-weight: bold;">My Shopping Basket</h3>
+            </div>
+            <span style="font-size: 14px; font-weight: bold; padding-left: 114px">
+              <b>Items: 0</b><b>Total: M-BM-#0.0</b>
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4" style="background-color: #FFCC00; width: 364px; height: 35px; padding: 11px; margin-left:0px;">
+            <input name="search" type="text" value="search" style="font-size: 14px; padding: 7px 5px; width: 250px; float: left;"/>
+            <a class="button">Search</a>
+          </div>
+        </div>
+      </div>
+
+  
+    </div>
+
+    <div class="row" style="background-color: #FFCC00; height: 40px; margin-left: 0px;">
+      <div class="span4 offset1">
+      </div>
+      <div class="span2 offset10" style="padding-top: 10px;">
+        <a href="#"> Register</a> | <a href="#">Contact Us</a>
+      </div>
+    </div>
+    
 
 
-<%= yield %>
+    <%= yield %>
+  </div>
+
 
 </body>
 </html>
