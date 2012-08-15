@@ -23,7 +23,6 @@ end
 gem 'jquery-rails'
 gem 'paperclip', :git => 'git://github.com/patshaughnessy/paperclip.git'
 gem 'pg'
-gem "taps", "~> 0.3.23"
 
 
 # To use ActiveModel has_secure_password

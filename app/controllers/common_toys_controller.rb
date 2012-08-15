@@ -1,0 +1,2 @@
+class CommonToysController < ApplicationController
+end
