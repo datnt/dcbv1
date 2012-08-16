@@ -34,9 +34,9 @@ no-repeat; height: 64px; margin-left: 0px; width: 386px;">
           </div>
         </div>
         <div class="row">
-          <div class="span4" style="background-color: #FFCC00; width: 364px; height: 35px; padding: 11px; margin-left:0px;">
-            <input name="search" type="text" value="search" style="font-size: 14px; padding: 7px 5px; width: 250px; float: left;"/>
-            <a class="button">Search</a>
+          <div class="span4" style="background-color: #FFCC00; width: 364px; height: 35px; padding: 11px; margin-left:0px; border-radius: 4px;">
+            <input name="search" type="text" value="search" style="font-size: 14px; padding: 7px 5px; width: 284px; float: left;"/>
+            <button class="btn btn-danger" style="34px; margin-left: 5px; height: 33px;">Search</button>
           </div>
         </div>
       </div>
@@ -44,17 +44,65 @@ no-repeat; height: 64px; margin-left: 0px; width: 386px;">
   
     </div>
 
-    <div class="row" style="background-color: #FFCC00; height: 40px; margin-left: 0px;">
+    <div class="row" style="background-color: #FFCC00; height: 40px; margin-left: 0px; border-radius: 4px;">
       <div class="span4 offset1">
       </div>
       <div class="span2 offset10" style="padding-top: 10px;">
         <a href="#"> Register</a> | <a href="#">Contact Us</a>
       </div>
     </div>
+
+    <div class="row" style="padding-left: 31px; height: 28px;">
+      <h3 style="font-size: 12px;">           Where am I?    Spacer    Educational Toys     </h3>
+    </div>
     
 
+    <div class="row-fluid">
+      <div class="span3">
+        <!--Sidebar content-->
 
-    <%= yield %>
+      <table class="table table-bordered table-striped responsive-utilities">
+        <thead>
+          <tr>
+            <th style="background: none repeat scroll 0 0 #DA4F49;">
+              <p style="color: #FFFFFF; padding: 9px 10px; text-align: center; width: 210px;">
+              Desktops <small>768px and above</small>
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="is-hidden">Hidden</td>
+          </tr>
+          <tr>
+            <td class="is-hidden">Hidden</td>
+          </tr>
+          <tr>
+            <td class="is-visible">Visible</td>
+          </tr>
+          <tr>
+            <td class="is-visible">Visible</td>
+          </tr>
+          <tr>
+            <td class="is-visible">Visible</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+      </div>
+      <div class="span9">
+        <!--Body content-->
+         <%= yield %>
+        CONTENT OF THE MAIN
+      </div>
+    </div>
   </div>
 
 
