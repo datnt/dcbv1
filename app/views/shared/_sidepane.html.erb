@@ -1,0 +1,26 @@
+      <div class="span3">
+        <!--Sidebar content-->
+
+      <table class="table table-bordered table-striped responsive-utilities">
+        <thead>
+          <tr>
+            <th style="background: none repeat scroll 0 0 #DA4F49;">
+              <p style="color: #FFFFFF; padding: 9px 10px; text-align: center; width: 210px;">
+              Danh mục
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <% ls=CategoryObj.find(:all) %>
+        <tbody>
+          <% ls.each do |itm| %>
+          <tr>
+            <td><%= itm.name %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+      </div>
+
+
+
