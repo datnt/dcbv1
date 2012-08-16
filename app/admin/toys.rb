@@ -7,6 +7,7 @@ ActiveAdmin.register Toy do
     column :avatar_file_name
     column :avatar_content_type
     column :avatar_file_size
+    column :category_obj
 
     default_actions
   end
@@ -31,6 +32,7 @@ ActiveAdmin.register Toy do
       f.input :description
       f.input :avatar
       f.input :price
+      f.input :category_obj
     end
     f.buttons
   end

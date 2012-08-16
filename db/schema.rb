@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120816090850) do
+ActiveRecord::Schema.define(:version => 20120816095006) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(:version => 20120816090850) do
     t.binary   "avatar_file"
     t.binary   "avatar_small_file"
     t.binary   "avatar_thumb_file"
+    t.integer  "category_obj_id"
   end
 
   create_table "users", :force => true do |t|

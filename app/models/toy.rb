@@ -1,5 +1,7 @@
 class Toy < ActiveRecord::Base
-  attr_accessible :name, :price, :description, :avatar
+  attr_accessible :name, :price, :description, :avatar, :category_obj_id
+
+  belongs_to :category_obj
 
   has_attached_file :avatar,
                     :storage => :database,
