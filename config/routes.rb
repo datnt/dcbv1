@@ -63,6 +63,7 @@ Dcbv1::Application.routes.draw do
 resources :users do
 end
 match "/users/*id/avatars" => 'users#avatars'
+match "/toys/*id/avatars" => 'toys#avatars'
 
 resources :common_toys do
   collection do
