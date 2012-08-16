@@ -65,6 +65,10 @@ end
 match "/users/*id/avatars" => 'users#avatars'
 
 resources :common_toys do
+  collection do
+    get :showpage
+
+  end
 end
 
 root :to => 'common_toys#index'

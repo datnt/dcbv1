@@ -15696,3 +15696,230 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 13:53:32 +0700
 Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/common_toys/showpage" for 127.0.0.1 at 2012-08-16 13:56:31 +0700
+Processing by CommonToysController#showpage as HTML
+Completed 500 Internal Server Error in 50ms
+
+ActionView::MissingTemplate (Missing template common_toys/showpage, application/showpage with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :arb]}. Searched in:
+  * "/home/datnt2/datnt_prjs/dcbv1/app/views"
+  * "/usr/local/ruby/lib/ruby/gems/1.9.1/gems/activeadmin-0.4.4/app/views"
+  * "/usr/local/ruby/lib/ruby/gems/1.9.1/gems/kaminari-0.13.0/app/views"
+  * "/usr/local/ruby/lib/ruby/gems/1.9.1/gems/devise-2.0.4/app/views"
+  * "/usr/local/ruby/lib/ruby/gems/1.9.1/gems/twitter-bootstrap-rails-2.1.1/app/views"
+):
+  actionpack (3.2.6) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.6) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.6) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.6) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /usr/local/ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:414:in `_run__898536995__process_action__743272887__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  sass (3.2.0) lib/sass/plugin/rack.rb:54:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__588237749__call__1041348667__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/common_toys/showpage" for 127.0.0.1 at 2012-08-16 13:56:48 +0700
+Processing by CommonToysController#showpage as HTML
+  Rendered common_toys/showpage.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /active_admin.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/common_toys.css?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /common_toys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /twitter/bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /active_admin/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /active_admin/base.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /active_admin.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common_toys.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /common_toys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-16 13:56:49 +0700
+Served asset /users.js - 304 Not Modified (0ms)
