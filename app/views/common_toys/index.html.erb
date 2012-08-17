@@ -16,21 +16,25 @@
 
 
 
-          <div class="row-fluid show-grid" style="margin-top: 10px;">
-<% @toys.each do |t| %>
-            <div class="span4">
-              <div class="thumbnail">
+<% varray = @toys.in_groups_of(3) %>
+<% varray.each_with_index do |ts,index| %>
+<div class="row-fluid show-grid" style="margin-top: 10px;">
 
-<%= image_tag(t.avatar.url(:small)) %>
+  <% ts.each do |t| %>
+    <% if t %>
+              <div class="span4">
+                <div class="thumbnail">
 
-                <div class="caption">
-                  <h5><%= t.name %></h5>
-                  <p><%= t.description %></p>
-                  <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                  <%= image_tag(t.avatar.url(:small), :style => "width: auto; height: 220px;") %>
+
+                  <div class="caption">
+                    <h5><%= t.name %></h5>
+                    <p><%= t.description %></p>
+                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                  </div>
                 </div>
               </div>
-            </div>
+    <% end %>
+  <% end %>
+</div>
 <% end %>
-
-          </div>
-
