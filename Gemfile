@@ -11,20 +11,21 @@ gem 'rails', '3.2.6'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '3.2.3'
+  gem 'coffee-rails', '3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
    gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '1.0.3'
   gem 'twitter-bootstrap-rails'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '2.0.2'
 gem 'paperclip', :git => 'git://github.com/patshaughnessy/paperclip.git'
 gem 'pg'
-gem 'activeadmin'
+gem 'activeadmin', '0.4.4'
+gem 'will_paginate', '3.0.3'
 
 
 # To use ActiveModel has_secure_password
