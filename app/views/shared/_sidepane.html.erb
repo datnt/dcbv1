@@ -15,7 +15,9 @@
         <tbody>
           <% ls.each do |itm| %>
           <tr>
-            <td><%= itm.name %></td>
+            <td><%#= itm.name %>
+<%= link_to( itm.name,{:controller => "common_toys", :action => "index", :id => itm.id  }, :remote => false, :style=>"", :method => :get, :class => "") %>
+</td>
           </tr>
           <% end %>
         </tbody>

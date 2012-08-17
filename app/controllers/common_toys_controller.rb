@@ -1,7 +1,11 @@
 class CommonToysController < ApplicationController
   def index
-    #@toys = Toy.find(:all)
-    @toys = Toy.find(:all).paginate({:page => params[:page], :per_page => 12})
+    if params[:id]
+      toys = CategoryObj.find_by_id(params[:id]).toys
+    else
+      toys = Toy.find(:all)
+    end
+    @toys = toys.paginate({:page => params[:page], :per_page => 1})
   end
 
   def showpage
