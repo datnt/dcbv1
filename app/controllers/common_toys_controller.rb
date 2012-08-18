@@ -10,4 +10,9 @@ class CommonToysController < ApplicationController
 
   def showpage
   end
+
+  def show
+    @toy = Toy.find_by_id(params[:id])
+  end
+
 end

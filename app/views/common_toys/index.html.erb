@@ -27,7 +27,9 @@
               <div class="span4">
                 <div class="thumbnail">
 
-                  <%= image_tag(t.avatar.url(:small), :style => "width: auto; height: 220px;") %>
+                  <a href="<%= common_toy_path(t) %>">
+                    <%= image_tag(t.avatar.url(:small), :style => "width: auto; height: 220px;") %>
+                  </a>
 
                   <div class="caption">
                     <h5><%= t.name %></h5>
