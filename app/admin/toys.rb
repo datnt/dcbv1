@@ -33,6 +33,7 @@ ActiveAdmin.register Toy do
       f.input :avatar
       f.input :price
       f.input :category_obj
+      f.input :age_cates
     end
     f.buttons
   end
