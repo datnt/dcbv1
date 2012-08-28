@@ -6,10 +6,11 @@
           </div>
           <div class="span" style="margin-left: 0px;background-color: #F4F4F4; padding-left: 10px;">
             <h5 style="color: #747474; float: left; font-size: 14px; padding: 5px 0; "> Sort by </h5>
-            <select style="margin-left: 10px;">
-              <option value="1">Description</option>
-              <option value="2">Price ascending</option>
-              <option value="3">Price descending</option>
+            <select style="margin-left: 10px;" onchange="myfilter(this)">
+              <option value="">Please select</option>
+              <% @cate.each do |ct| %>
+                <option value="<%= ct.id %>"><%= ct.name %></option>
+              <% end %>
             </select>
           </div>
         </div>
@@ -42,3 +43,10 @@
   <% end %>
 </div>
 <% end %>
+
+<script type="text/javascript">
+function myfilter(sel){
+  var value = sel.options[sel.selectedIndex].value;  
+  window.location="<%= by_age_common_toys_path %>?id="+value;
+}
+</script>
