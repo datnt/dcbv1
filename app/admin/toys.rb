@@ -9,6 +9,10 @@ ActiveAdmin.register Toy do
     column :avatar_file_size
     column :category_obj
 
+    column "Lua tuoi" do |itm|
+      (itm.age_cates.map{ |p| p.name })
+    end
+
     default_actions
   end
 

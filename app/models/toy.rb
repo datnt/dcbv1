@@ -1,5 +1,5 @@
 class Toy < ActiveRecord::Base
-  attr_accessible :name, :price, :description, :avatar, :category_obj_id
+  attr_accessible :name, :price, :description, :avatar, :category_obj_id, :age_cate_ids
 
   belongs_to :category_obj
   has_and_belongs_to_many :age_cates
