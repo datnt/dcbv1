@@ -34,8 +34,11 @@
 
                   <div class="caption">
                     <h5><%= t.name %></h5>
-                    <p><%= t.description %></p>
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                    <% t.age_cates.each do |ct| %>
+                        <a href="<%= by_age_common_toys_path %>?id=<%= ct.id %>" class="btn btn-success" style="color: white;">
+                          <%= ct.name %>
+                        </a>
+                    <% end %>
                   </div>
                 </div>
               </div>
