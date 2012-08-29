@@ -8,7 +8,9 @@ module CommonToysHelper
 
     arr2.select {|p| arr1 << p if !arr1.include?(p) }
 
-    @rtoys = Toy.all.select { |c| arr1.include?(c.id) }
+    arr2 = arr1.first(6).shuffle
+
+    @rtoys = Toy.all.select { |c| arr2.include?(c.id) }
 
     render :partial => "shared/rel_itm"
   end
