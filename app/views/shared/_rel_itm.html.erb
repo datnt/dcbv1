@@ -1,0 +1,8 @@
+<% @rtoys.each do |t| %>
+  <div class="span well" style="max-width: 100px; padding: 1px;">
+    <a href="<%= common_toy_path(t) %>">
+      <%= image_tag(t.avatar.url(:small), :style => "width: auto; height: 98px") %>
+    </a>
+  </div>
+<% end %>
+
