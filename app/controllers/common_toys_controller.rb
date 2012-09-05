@@ -8,14 +8,14 @@ class CommonToysController < ApplicationController
     end
     @toys = toys.paginate({:page => params[:page], :per_page => 12})
 
-    response.headers['Cache-Control'] = 'public, max-age=300'
+    response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
   def by_age
     toys = Toy.all(:include => :age_cates, :conditions => ["age_cates.id = ?", params[:id]])
 
     @toys = toys.paginate({:page => params[:page], :per_page => 12})
-    response.headers['Cache-Control'] = 'public, max-age=300'
+    response.headers['Cache-Control'] = 'public, max-age=15600'
     render :action => "index"
   end
 
@@ -24,7 +24,7 @@ class CommonToysController < ApplicationController
 
   def show
     @toy = Toy.find_by_id(params[:id])
-    response.headers['Cache-Control'] = 'public, max-age=300'
+    response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
   private
