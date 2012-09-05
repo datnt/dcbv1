@@ -7,6 +7,8 @@ class CommonToysController < ApplicationController
       toys = Toy.find(:all)
     end
     @toys = toys.paginate({:page => params[:page], :per_page => 12})
+
+    response.headers['Cache-Control'] = 'public, max-age=300'
   end
 
   def by_age
