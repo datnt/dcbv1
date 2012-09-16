@@ -2,12 +2,12 @@
 
         <div class="row" style="margin-left: 0px;">
           <div class="span" style="background-color: #F4F4F4; padding-left: 10px;">
-            <h5 style="color: #747474; float: left; font-size: 14px; padding: 5px 0; ">39 Items found</h5>
+            <h5 style="color: #747474; float: left; font-size: 14px; padding: 5px 0; "><%= @isize %> sản phẩm</h5>
           </div>
           <div class="span" style="margin-left: 0px;background-color: #F4F4F4; padding-left: 10px;">
-            <h5 style="color: #747474; float: left; font-size: 14px; padding: 5px 0; "> Sort by </h5>
+            <h5 style="color: #747474; float: left; font-size: 14px; padding: 5px 0; "> Lọc sản phẩm theo </h5>
             <select style="margin-left: 10px;" onchange="myfilter(this)">
-              <option value="">Please select</option>
+              <option value="">Vui lòng lựa chọn</option>
               <% @cate.each do |ct| %>
                 <option value="<%= ct.id %>"><%= ct.name %></option>
               <% end %>

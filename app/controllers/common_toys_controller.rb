@@ -6,6 +6,7 @@ class CommonToysController < ApplicationController
     else
       toys = Toy.find(:all)
     end
+    @isize = toys.size
     @toys = toys.paginate({:page => params[:page], :per_page => 12})
 
     response.headers['Cache-Control'] = 'public, max-age=15600'
