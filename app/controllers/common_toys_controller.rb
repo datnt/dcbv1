@@ -6,6 +6,8 @@ class CommonToysController < ApplicationController
     else
       toys = Toy.find(:all)
     end
+
+    @sel_id = params[:id]
     @isize = toys.size
     @toys = toys.paginate({:page => params[:page], :per_page => 12})
 

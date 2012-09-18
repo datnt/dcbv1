@@ -1,3 +1,18 @@
+<style>
+table:hover
+{ 
+  background-color:white;
+}
+table{
+  background-color: white;
+}
+
+.table-striped tbody tr:nth-child(2n+1) td{
+  background-color: white;
+}
+
+</style>
+
       <div class="span3">
         <!--Sidebar content-->
 
@@ -13,13 +28,30 @@
         </thead>
         <% ls=CategoryObj.find(:all) %>
         <tbody>
+
+<tr>
+<td>
+<ul class="nav nav-list bs-docs-sidenav affix">
+
           <% ls.each do |itm| %>
-          <tr>
-            <td><%#= itm.name %>
-<%= link_to( itm.name,{:controller => "common_toys", :action => "index", :id => itm.id  }, :remote => false, :style=>"", :method => :get, :class => "") %>
-</td>
-          </tr>
+<% stractive = "" %>
+<% if itm.id.to_s == @sel_id %>
+  <% stractive = "active" %>
+<% end %>
+
+
+<li class="<%= stractive %>">
+<a style="text-decoration: none;" data-method="get" class="" href="/common_toys?id=<%= itm.id%>">
+  <i class="icon-chevron-right" style="float: right;"></i><%= itm.name %>
+</a>
+
+</li>
           <% end %>
+</ul>
+
+</td>
+</tr>
+
         </tbody>
       </table>
       </div>
