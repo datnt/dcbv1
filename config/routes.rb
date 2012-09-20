@@ -72,6 +72,8 @@ resources :common_toys do
   end
 end
 
+resources :contacts
+
 root :to => 'common_toys#index'
 
 
