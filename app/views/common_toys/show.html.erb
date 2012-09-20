@@ -1,8 +1,6 @@
 <div class="row" style="margin-left: 0px;">
   <h2 style="color: #E11D1F; font-size: 16px; padding: 9px 0; "><%= @toy.name %></h2>
 </div>
-
-
 <div class="row" style="margin-left: 0px;">
   <div class="container-fluid" style="padding-left: 0px;">
     <div class="row-fluid">
@@ -12,42 +10,27 @@
         </div>
       </div>
       <div class="span4">
+      
         <!--Body content-->
         <div class="span">
           <label style="color: #747474; font-size: 18px; font-weight: bold; margin-right: 10px; padding: 5px 0; width: auto;">Giá tiền: <%= @toy.price %> đồng</label>
         </div>
-        <div>3 in stock</div>
-        <!--
-                <div>Facebook Like button</div>
-                <div>Google Plus one button</div>
-                <div>Twitter button</div>
-        -->
       </div>
-
-
-
-
-
-
-
-
       <div class="span4">
+        <%= @toy.description %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="margin-left: 0px;">
+  
+  <div class="span4">
         <div class="alert alert-success"  style="margin-top: 10px;">
           Các sản phẩm liên quan
         </div>
       </div>
-
       <div class="span5">
         <%= show_related(@toy) %>
       </div>
-
-
-    </div>
-  </div>
-</div>
-
-
-<div class="row" style="margin-left: 0px;">
-  <%= @toy.description %>
 </div>
 
