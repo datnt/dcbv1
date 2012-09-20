@@ -15,5 +15,4 @@
 //= require twitter/bootstrap
 //= require_tree .
 //= require active_admin/editor
-//= require jquery.metadata
-//= require jquery-validate
+
