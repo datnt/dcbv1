@@ -17,11 +17,11 @@
           <label style="color: #747474; font-size: 18px; font-weight: bold; margin-right: 10px; padding: 5px 0; width: auto;">Giá tiền: <%= @toy.price %> đồng</label>
         </div>
         <div>3 in stock</div>
-<!--
-        <div>Facebook Like button</div>
-        <div>Google Plus one button</div>
-        <div>Twitter button</div>
--->
+        <!--
+                <div>Facebook Like button</div>
+                <div>Google Plus one button</div>
+                <div>Twitter button</div>
+        -->
       </div>
 
 
@@ -31,15 +31,15 @@
 
 
 
-<div class="span4">
-  <div class="alert alert-success"  style="margin-top: 10px;">
-    Các sản phẩm liên quan
-  </div>
-</div>
+      <div class="span4">
+        <div class="alert alert-success"  style="margin-top: 10px;">
+          Các sản phẩm liên quan
+        </div>
+      </div>
 
-<div class="span5">
-  <%= show_related(@toy) %>
-</div>
+      <div class="span5">
+        <%= show_related(@toy) %>
+      </div>
 
 
     </div>
@@ -48,6 +48,6 @@
 
 
 <div class="row" style="margin-left: 0px;">
-<%= @toy.description %>
+  <%= @toy.description %>
 </div>
 
