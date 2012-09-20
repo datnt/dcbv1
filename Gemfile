@@ -26,6 +26,7 @@ gem 'paperclip', :git => 'git://github.com/patshaughnessy/paperclip.git'
 gem 'pg'
 gem 'activeadmin', '0.4.4'
 gem 'will_paginate', '3.0.3'
+gem "active_admin_editor", "0.3.5"
 
 
 # To use ActiveModel has_secure_password
