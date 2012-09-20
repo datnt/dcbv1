@@ -1,0 +1,15 @@
+<%= form_for(@contact, :url => contacts_path , :html => {:multipart => false, :id => "tform", :style=>"margin:0" }, :method => :post) do |f| %>
+  Name
+  <%= f.text_field :name, :class => "" %>
+  <p></p>
+  Email
+  <%= f.text_field :email, :class => "" %>
+  <p></p>
+  Phone
+  <%= f.text_field :phone, :class => "" %>
+  <p></p>
+  Description
+  <%= f.text_area :description, :class => "" %>
+  <p></p>
+  <%= f.submit "Send", :class => "btn btn-primary", :id => 'f_submit', :style=>"margin-top:10px" %>
+<% end %>
