@@ -1,3 +1,8 @@
+<style>
+  b {
+    font-size: 20px;
+  }
+</style>
 <div class="row" style="margin-left: 0px;">
   <h2 style="color: #E11D1F; font-size: 16px; padding: 9px 0; "><%= @toy.name %></h2>
 </div>
@@ -17,7 +22,7 @@
         </div>
       </div>
       <div class="span4">
-        <%= @toy.description %>
+        <%= @toy.description.html_safe %>
       </div>
     </div>
   </div>

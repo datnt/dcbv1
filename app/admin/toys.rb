@@ -3,7 +3,9 @@ ActiveAdmin.register Toy do
   index do
     column :id
     column :name
-    column :description
+    column "Description" do |itm|
+      itm.description.html_safe
+    end
     column :avatar_file_name
     column :avatar_content_type
     column :avatar_file_size
@@ -20,7 +22,9 @@ ActiveAdmin.register Toy do
   show do |toy|
     attributes_table do
       row :name
-      row :description
+      row "Description" do |itm|
+        itm.description.html_safe
+      end
       row :avatar_file_name
       row :avatar_content_type
       row :avatar_file_size
@@ -33,7 +37,7 @@ ActiveAdmin.register Toy do
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
       f.input :name
-      f.input :description
+      f.input :description, as: :html_editor
       f.input :avatar
       f.input :price
       f.input :category_obj

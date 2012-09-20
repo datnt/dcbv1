@@ -10,5 +10,5 @@
  *
  *= require_self
  *= require_tree .
- //= require active_admin/editor/wysiwyg
+ *= require active_admin/editor/wysiwyg
  */
