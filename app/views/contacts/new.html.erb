@@ -1,22 +1,24 @@
 <%= form_for(@contact, :url => contacts_path , :html => {:multipart => false, :id => "tform", :style=>"margin:0" }, :method => :post) do |f| %>
   Name
-  <%= f.text_field :name, :class => "{validate:{required:true}" %>
+  <%= f.text_field :name, :class => "required" %>
   <p></p>
   Email
-  <%= f.text_field :email, :class => "{validate:{required:true}" %>
+  <%= f.text_field :email, :class => "required email" %>
   <p></p>
   Phone
-  <%= f.text_field :phone, :class => "{validate:{required:true}" %>
+  <%= f.text_field :phone, :class => "required" %>
   <p></p>
   Description
-  <%= f.text_area :description, :class => "{validate:{required:true}" %>
+  <%= f.text_area :description, :class => "required" %>
   <p></p>
+
   <%= f.submit "Send", :class => "btn btn-primary", :id => 'f_submit', :style=>"margin-top:10px" %>
 <% end %>
 <script type="text/javascript">
-  $().ready(function() {
+  $(document).ready(function() {
     $("#tform").validate({
       meta: "validate"
     });
   });
 </script>
+
