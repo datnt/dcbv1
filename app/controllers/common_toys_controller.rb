@@ -31,6 +31,7 @@ class CommonToysController < ApplicationController
   end
 
   def search
+    @search_str = params[:str_search]
   end
 
   private
