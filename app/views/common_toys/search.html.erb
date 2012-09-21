@@ -39,7 +39,9 @@
       <% @toys.each_with_index do |t, ind| %>
         <tr class="<%= sarr[ia] %>">
           <td><%= ind+1 %></td>
-          <td><%= t.name %></td>
+          <td>
+          <a href="<%= common_toy_path(t) %>"><%= t.name %></a>
+          </td>
           <td>
             <a style="" data-method="get" class="" href="/common_toys?id=<%= t.category_obj.id%>">
               <%= t.category_obj.name %>
