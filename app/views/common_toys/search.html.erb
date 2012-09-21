@@ -1,22 +1,22 @@
 <style>
-.table tbody tr.success td{
-background-color: #DFF0D8
-}
+  .table tbody tr.success td{
+    background-color: #DFF0D8
+  }
 
-.table tbody tr.error td{
-background-color: #F2DEDE
-}
+  .table tbody tr.error td{
+    background-color: #F2DEDE
+  }
 
-.table tbody tr.warning td{
-background-color: #FCF8E3
-}
-.table tbody tr.info td {
-background-color: #D9EDF7
-}
+  .table tbody tr.warning td{
+    background-color: #FCF8E3
+  }
+  .table tbody tr.info td {
+    background-color: #D9EDF7
+  }
 
-.error {
-  color: #323537;
-}
+  .error {
+    color: #323537;
+  }
 
 </style>
 
@@ -24,45 +24,52 @@ background-color: #D9EDF7
 <% sarr=['success','error','warning','info'] %>
 
 <% ia=0 %>
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Sản phẩm</th>
-      <th>Hạng mục</th>
-      <th>Độ tuổi</th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <% @toys.each_with_index do |t, ind| %>
-      <tr class="<%= sarr[ia] %>">
-        <td><%= ind+1 %></td>
-        <td><%= t.name %></td>
-        <td>
-<a style="" data-method="get" class="" href="/common_toys?id=<%= t.category_obj.id%>">
-  <%= t.category_obj.name %>
-</a>
-
-
-        </td>
-        <td>
-
-<% t.age_cates.each do |ct| %>
-                <a href="<%= by_age_common_toys_path %>?id=<%= ct.id %>" class="" style="">
-                  <%= ct.name %>
-                </a>
-              <% end %>
-
-        </td>
+<% if @toys.size > 0 %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Sản phẩm</th>
+        <th>Hạng mục</th>
+        <th>Độ tuổi</th>
       </tr>
-      <% ia=ia+1 %>
-      <% if ia==4 %>
-      <% ia=0 %>
+    </thead>
+    <tbody>
+
+      <% @toys.each_with_index do |t, ind| %>
+        <tr class="<%= sarr[ia] %>">
+          <td><%= ind+1 %></td>
+          <td><%= t.name %></td>
+          <td>
+            <a style="" data-method="get" class="" href="/common_toys?id=<%= t.category_obj.id%>">
+              <%= t.category_obj.name %>
+            </a>
+
+
+          </td>
+          <td>
+
+            <% t.age_cates.each do |ct| %>
+              <a href="<%= by_age_common_toys_path %>?id=<%= ct.id %>" class="" style="">
+                <%= ct.name %>
+              </a>
+            <% end %>
+
+          </td>
+        </tr>
+        <% ia=ia+1 %>
+        <% if ia==4 %>
+          <% ia=0 %>
+        <% end %>
+
       <% end %>
 
-    <% end %>
+    </tbody>
+  </table>
 
-  </tbody>
-</table>
+<% else %>
+  <div class="alert">
+    Không có sản phẩm ứng với nội dung bạn tìm kiếm !
+  </div>
+<% end %>
 
