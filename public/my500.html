@@ -26,8 +26,13 @@
     </div>
   </body>
   <script type="text/javascript">
+    var str_page = window.location;
     window.setInterval(function() {
-      window.location = 'http://www.dochoibevui.com';
+      if (str_page != "" && str_page != 'http://www.dochoibevui.com'){
+        window.location = str_page;
+      }else{
+       window.location = 'http://www.dochoibevui.com'; 
+      }
     }, 2000);
   </script>
 </html>
