@@ -1,8 +1,11 @@
 <% @rtoys.each do |t| %>
   <div class="span well" style="max-width: 100px; padding: 1px; margin-left: 0px; margin-right: 8px;">
-    <a href="<%= common_toy_path(t) %>">
-      <%= image_tag(t.avatar.url(:small), :style => "width: auto; height: 98px; display: block; margin-left: auto; margin-right: auto;") %>
-    </a>
+
+<% cache do %>
+  <%= render :partial => "/common_toys/shared/item", :locals => {:t => t, :sstyle => "width: auto; height: 98px; display: block; margin-left: auto; margin-right: auto;"} %>
+<% end %>
+
+
   </div>
 <% end %>
 
