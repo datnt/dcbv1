@@ -8,6 +8,41 @@
   <%= csrf_meta_tags %>
 </head>
 
+
+
+<style>
+
+.navbar {
+  overflow: visible;
+  margin-bottom: 20px;
+  color: #777777;
+  *position: relative;
+  *z-index: 2;
+}
+.navbar-inner {
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffeb99;
+  background-image: -moz-linear-gradient(top, #ffffff, #ffcc00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffcc00));
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffcc00);
+  background-image: -o-linear-gradient(top, #ffffff, #ffcc00);
+  background-image: linear-gradient(to bottom, #ffffff, #ffcc00);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffcc00', GradientType=0);
+  border: 1px solid #c29b00;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  *zoom: 1;
+}
+
+</style>
+
 <body style="background-color: #F1F1F1; padding-top: 0px;">
 
   <div class="container" style="background-color: #FFFFFF; padding: 10px 30px 30px;">
@@ -30,13 +65,45 @@
   
     </div>
 
-    <div class="row" style="background-color: #FFCC00; height: 40px; margin-left: 0px; border-radius: 4px;">
+    <!-- div class="row" style="background-color: #FFCC00; height: 40px; margin-left: 0px; border-radius: 4px;">
       <div class="span4 offset1">
       </div>
       <div class="span2 offset10" style="padding-top: 10px;">
         <a href="<%= new_contact_path%>" class="btn btn-primary" style="margin-left: 60px; margin-top: -3px; ;text-decoration:none; color: white;">Liên hệ</a>
       </div>
-    </div>
+    </div -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navbar">
+              <div class="navbar-inner">
+                <form class="navbar-form pull-left">
+                  <input type="text" class="span2">
+                  <button type="submit" class="btn">Submit</button>
+                </form>
+                <a href="<%= new_contact_path%>" class="btn btn-primary" style="margin-left: 60px; margin-top: -3px; ;text-decoration:none; color: white;">LiM-CM-*n hM-aM-;~G</a>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="row" style="padding-left: 31px; height: 28px;">
       <h3 style="font-size: 12px;">
