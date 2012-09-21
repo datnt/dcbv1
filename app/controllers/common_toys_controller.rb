@@ -30,6 +30,9 @@ class CommonToysController < ApplicationController
     response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
+  def search
+  end
+
   private
   def get_cate
     @cate = AgeCate.find(:all)
