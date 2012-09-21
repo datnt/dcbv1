@@ -32,6 +32,12 @@ class CommonToysController < ApplicationController
 
   def search
     @search_str = params[:str_search]
+
+    str1='%' + @search_str +'%'
+    str2='%' + @search_str  +'%'
+
+    @toys = Toy.all(:conditions => ["lower(name) LIKE ? OR lower(description) LIKE ?", str1.downcase, str2.downcase])
+
   end
 
   private
