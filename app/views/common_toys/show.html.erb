@@ -11,10 +11,9 @@
     <div class="row-fluid">
       <div class="span7">
         <div class="thumbnail" style="width: 450px;">
-          <%#= image_tag(@toy.avatar.url(:small), :style => "width: auto; height: 417px;") %>
-<% cache do %>
-  <%= render :partial => "/common_toys/shared/item", :locals => {:t => @toy, :sstyle => "width: auto; height: 417px;"} %>
-<% end %>
+        
+          <%= render :partial => "/common_toys/shared/item", :locals => {:t => @toy, :sstyle => "width: auto; height: 417px;"} %>
+
         </div>
       </div>
       <div class="span4">
