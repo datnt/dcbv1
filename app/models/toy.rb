@@ -10,7 +10,16 @@ class Toy < ActiveRecord::Base
                     :styles => { :thumb => "75x75>", :small => "555x417>" },
                     :url => '/:class/:id/:attachment?style=:style'
 
-scope :without_file_data, select_without_file_columns_for(:avatar)
+  scope :without_file_data, select_without_file_columns_for(:avatar)
 
+  def self.get_all
+    Rails.cache.fetch('all_data') do
+      find(:all)
+    end
+  end
+
+  def self.all_toys
+    Rails.cache.fetch('Toy.all', :expires_in => 4.hour) { all }
+  end
 
 end

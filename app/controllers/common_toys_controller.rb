@@ -2,9 +2,15 @@ class CommonToysController < ApplicationController
   before_filter :get_cate, :only => [:index, :by_age]
   def index
     if params[:id]
-      toys = CategoryObj.find_by_id(params[:id]).toys
+      #toys = CategoryObj.find_by_id(params[:id]).toys
+      ts=Toy.all_toys
+      toys = []
+      ts.select {|p| toys << p if p.category_obj_id == params[:id].to_i}
+
+
     else
-      toys = Toy.find(:all)
+      #toys = Toy.find(:all)
+      toys = Toy.all_toys
     end
 
     @sel_id = params[:id]
