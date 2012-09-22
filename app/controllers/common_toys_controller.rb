@@ -1,8 +1,6 @@
 class CommonToysController < ApplicationController
   before_filter :get_cate, :only => [:index, :by_age]
 
-  caches_page :index
-
   def index
     if params[:id]
       #toys = CategoryObj.find_by_id(params[:id]).toys
