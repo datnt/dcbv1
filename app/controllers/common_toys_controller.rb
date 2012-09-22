@@ -33,7 +33,12 @@ class CommonToysController < ApplicationController
   end
 
   def show
-    @toy = Toy.find_by_id(params[:id])
+    #@toy = Toy.find_by_id(params[:id])
+    ts=Toy.all_toys
+    toys = []
+    ts.select {|p| toys << p if p.id == params[:id].to_i}
+    @toy = toys[0]
+
     response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
