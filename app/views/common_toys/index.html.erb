@@ -24,7 +24,7 @@
           <div class="thumbnail">
 
             <div id="itm_<%= t.id %>">
-              <%= image_tag('/images/ajax-loader-a.gif') %>
+              <%= render :partial => "common_toys/shared/toy_item", :locals => {:itm => t }  %>
             </div>
 
             <div class="caption">
