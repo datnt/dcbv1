@@ -5,13 +5,14 @@ class CommonToysController < ApplicationController
     if params[:id]
       #toys = CategoryObj.find_by_id(params[:id]).toys
       ts=Toy.all_toys
-      toys = []
+      atoys = []
       ts.select {|p| toys << p if p.category_obj_id == params[:id].to_i}
 
 
     else
       #toys = Toy.find(:all)
-      toys = Toy.all_toys
+      #toys = Toy.all_toys
+      toys = Toy.all_without_img
     end
 
     @sel_id = params[:id]

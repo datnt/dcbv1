@@ -1,0 +1,68 @@
+<%= will_paginate @toys, :class => "" %>
+
+<div class="row" style="margin-left: 0px;">
+  <div class="span" style="background-color: #F4F4F4; padding-left: 10px;">
+    <h5 style="color: #747474; float: left; font-size: 14px; padding: 5px 0; "><%= @isize %> sản phẩm</h5>
+  </div>
+  <div class="span" style="margin-left: 0px;background-color: #F4F4F4; padding-left: 10px;">
+    <h5 style="color: #747474; float: left; font-size: 14px; padding: 5px 0; "> Lọc sản phẩm theo </h5>
+    <select style="margin-left: 10px;" onchange="myfilter(this)">
+      <option value="">Vui lòng lựa chọn</option>
+      <% @cate.each do |ct| %>
+        <option value="<%= ct.id %>"><%= ct.name %></option>
+      <% end %>
+    </select>
+  </div>
+</div>
+<% varray = @toys.in_groups_of(3) %>
+<% varray.each_with_index do |ts,index| %>
+  <div class="row-fluid show-grid" style="margin-top: 10px;">
+
+    <% ts.each do |t| %>
+      <% if t %>
+        <div class="span4">
+          <div class="thumbnail">
+
+
+<div id="itm_<%= t.id %>">
+  <%= image_tag('/images/ajax-loader-a.gif') %>
+</div>
+<%= render :partial => "common_toys/shared/toy_item", :locals => {:itm => t }  %>
+
+
+
+            <div class="caption">
+              <h5><%= t.name %></h5>
+              <% t.age_cates.each do |ct| %>
+                <a href="<%= by_age_common_toys_path %>?id=<%= ct.id %>" class="btn btn-success" style="color: white;">
+                  <%= ct.name %>
+                </a>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+  function myfilter(sel){
+    var value = sel.options[sel.selectedIndex].value;  
+    window.location="<%= by_age_common_toys_path %>?id="+value;
+  }
+function GetImage(item_id){
+
+  $.ajax({
+    url: '<%= get_img_common_toys_url %>',
+    type: 'GET',
+    dataType: 'script',
+    data: {
+      itm_id: item_id
+    },
+    success: function(data){
+      //$('#itm_'+item_id).html('LOAD XONG');
+    }
+  });//end ajax
+
+</script>

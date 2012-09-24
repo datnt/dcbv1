@@ -24,7 +24,12 @@
           <div class="thumbnail">
 
 
-  <%= render :partial => "/common_toys/shared/item", :locals => {:t => t, :sstyle => "width: auto; height: 220px; display: block; margin-left: auto; margin-right: auto;" } %>
+  <%# = render :partial => "/common_toys/shared/item", :locals => {:t => t, :sstyle => "width: auto; height: 220px; display: block; margin-left: auto; margin-right: auto;" } %>
+
+<div id="itm_<%= t.id %>">
+  <%= image_tag('/images/ajax-loader-a.gif') %>
+</div>
+<%= render :partial => "common_toys/shared/toy_item", :locals => {:itm => t }  %>
 
 
             <div class="caption">
@@ -47,4 +52,20 @@
     var value = sel.options[sel.selectedIndex].value;  
     window.location="<%= by_age_common_toys_path %>?id="+value;
   }
+function GetImage(item_id){
+
+  $.ajax({
+    url: '<%= get_img_common_toys_url %>',
+    type: 'GET',
+    dataType: 'script',
+    data: {
+      itm_id: item_id
+    },
+    success: function(data){
+      //$('#itm_'+item_id).html('LOAD XONG');
+    }
+  });//end ajax
+
+
+}
 </script>
