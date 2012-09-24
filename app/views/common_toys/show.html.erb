@@ -12,10 +12,8 @@
       <div class="span7">
         <div class="thumbnail" style="width: 450px;">
         
-          <%#= render :partial => "/common_toys/shared/item", :locals => {:t => @toy, :sstyle => "width: auto; height: 417px;"} %>
-
           <div id="itm_<%= @toy.id %>">
-            <%= render :partial => "common_toys/shared/toy_item", :locals => {:itm => @toy }  %>
+            <%= render :partial => "common_toys/shared/toy_item_show", :locals => {:itm => @toy }  %>
           </div>
 
 
@@ -47,9 +45,8 @@
   </div>
 <script type="text/javascript">
   function GetImage(item_id){
-
     $.ajax({
-      url: '<%= get_img_common_toys_url %>',
+      url: '<%= get_img_show_common_toys_url %>',
       type: 'GET',
       dataType: 'script',
       data: {
@@ -59,8 +56,5 @@
         //$('#itm_'+item_id).html('LOAD XONG');
       }
     });//end ajax
-
-
   }
-
 </script>

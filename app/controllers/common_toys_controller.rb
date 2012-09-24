@@ -61,6 +61,11 @@ class CommonToysController < ApplicationController
     @toy = Toy.find_by_id(params[:itm_id])
   end
 
+  def get_img_show
+    @toy = Toy.find_by_id(params[:itm_id])
+  end
+
+
   private
   def get_cate
     @cate = AgeCate.find(:all)

@@ -23,7 +23,7 @@ class Toy < ActiveRecord::Base
   end
 
   def self.detail_without_image(id)
-    Toy.find_by_sql('select id,name, category_obj_id from toys where id='+id)
+    Toy.find_by_sql('select id,name,description,price, category_obj_id from toys where id='+id).first
   end
 
 end
