@@ -59,14 +59,17 @@ class CommonToysController < ApplicationController
 
   def get_img
     @toy = Toy.find_by_id(params[:itm_id])
+    response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
   def get_img_show
     @toy = Toy.find_by_id(params[:itm_id])
+    response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
   def get_img_rel
     @toy = Toy.find_by_id(params[:itm_id])
+    response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
 
