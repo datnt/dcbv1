@@ -19,7 +19,9 @@ class CommonToysController < ApplicationController
   end
 
   def by_age
-    toys = Toy.all(:include => :age_cates, :conditions => ["age_cates.id = ?", params[:id]])
+#    toys = Toy.all(:include => :age_cates, :conditions => ["age_cates.id = ?", params[:id]])
+
+    toys = Toy.by_age_without_image(params[:id])
 
     @toys = toys.paginate({:page => params[:page], :per_page => 12})
     response.headers['Cache-Control'] = 'public, max-age=15600'

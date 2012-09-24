@@ -16,4 +16,11 @@ class Toy < ActiveRecord::Base
     Toy.find_by_sql('select id,name, category_obj_id from toys')
   end
 
+  def self.by_age_without_image(cate_id)
+    arr_ids = []
+    arr_ids = Toy.find_by_sql('select toy_id from age_cates_toys where age_cate_id='+cate_id).map(&:toy_id)
+    objs = Toy.find_by_sql("select id,name, category_obj_id  from toys where id in ("+arr_ids.join(',')+")")
+
+  end
+
 end
