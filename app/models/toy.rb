@@ -12,14 +12,12 @@ class Toy < ActiveRecord::Base
 
   scope :without_file_data, select_without_file_columns_for(:avatar)
 
-  def self.get_all
-    Rails.cache.fetch('all_data') do
-      find(:all)
-    end
-  end
-
   def self.all_toys
     Rails.cache.fetch('Toy.all', :expires_in => 4.hour) { all }
+  end
+
+  def self.all_without_img
+    Toy.find_by_sql('select id,name from toys')
   end
 
 end

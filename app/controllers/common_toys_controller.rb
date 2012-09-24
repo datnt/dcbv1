@@ -52,6 +52,14 @@ class CommonToysController < ApplicationController
 
   end
 
+  def show_all
+    @toys = Toy.all_without_img.first(5)
+  end
+
+  def get_img
+    @toy = Toy.find_by_id(params[:itm_id])
+  end
+
   private
   def get_cate
     @cate = AgeCate.find(:all)
