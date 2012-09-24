@@ -26,4 +26,8 @@ class Toy < ActiveRecord::Base
     Toy.find_by_sql('select id,name,description,price, category_obj_id from toys where id='+id).first
   end
 
+  def self.related_without_image(arr_ids)
+    objs = Toy.find_by_sql("select id,name, category_obj_id  from toys where id in ("+arr_ids.join(',')+")")
+  end
+
 end

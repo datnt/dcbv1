@@ -1,0 +1,26 @@
+<% @rtoys.each do |t| %>
+  <div class="span well" style="max-width: 100px; padding: 1px; margin-left: 0px; margin-right: 8px;">
+
+  <%#= render :partial => "/common_toys/shared/item", :locals => {:t => t, :sstyle => "width: auto; height: 98px; display: block; margin-left: auto; margin-right: auto;"} %>
+  <div id="rel_itm_<%= t.id%>">
+    <%= render :partial => "/common_toys/shared/toy_item_rel", :locals => {:itm => t} %>
+  </div>
+
+
+  </div>
+<% end %>
+<script type="text/javascript">
+  function GetImageRelated(item_id){
+    $.ajax({
+      url: '<%= get_img_rel_common_toys_url %>',
+      type: 'GET',
+      dataType: 'script',
+      data: {
+        itm_id: item_id
+      },
+      success: function(data){
+        //$('#itm_'+item_id).html('LOAD XONG');
+      }
+    });//end ajax
+  }
+</script>

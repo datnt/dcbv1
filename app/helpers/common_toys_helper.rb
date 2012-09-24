@@ -12,8 +12,9 @@ module CommonToysHelper
       arr2 = arr1
     end
 
-    @rtoys = Toy.all.select { |c| arr2.include?(c.id) }.shuffle
+    #@rtoys = Toy.all.select { |c| arr2.include?(c.id) }.shuffle
+    @rtoys = Toy.related_without_image(arr2)
 
-    render :partial => "shared/rel_itm"
+    render :partial => "common_toys/shared/rel_itm"
   end
 end

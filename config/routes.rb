@@ -67,7 +67,7 @@ match "/toys/*id/avatars" => 'toys#avatars'
 
 resources :common_toys do
   collection do
-    get :showpage, :by_age, :show_all, :get_img, :get_img_show
+    get :showpage, :by_age, :show_all, :get_img, :get_img_show, :get_img_rel
     post :search
   end
 end
