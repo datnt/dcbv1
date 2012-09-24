@@ -1,0 +1,2 @@
+$('#itm_<%= @toy.id %>').html('<%= escape_javascript ( raw(render :partial => "/common_toys/shared/item", :locals => {:t => @toy, :sstyle => "width: auto; height: 417px;" })) %>');
+
