@@ -28,7 +28,7 @@ gem 'activeadmin', '0.4.4'
 gem 'will_paginate', '3.0.3'
 gem "active_admin_editor", "0.3.5"
 gem 'dalli'
-
+gem 'will_paginate-bootstrap'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
