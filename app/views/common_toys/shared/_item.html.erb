@@ -10,8 +10,9 @@
       trigger: 'manual',
       animate: false,
       html: true,
+      title: 'Giá tiền:',
       placement: 'right',
-      content: 'Giá tiền: <%= number_to_currency(t.price,:precision => 0, :unit => "đồng", :format => "%n %u") %>'
+      content: '<%= number_to_currency(t.price,:precision => 0, :unit => "đồng", :format => "%n %u") %>'
     }).mouseenter(function(e) {
       var $popover = $('.popover');
       (keepPopover) && clearTimeout(keepPopover);
