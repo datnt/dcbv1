@@ -1,4 +1,35 @@
-            <a href="<%= common_toy_path(t) %>">
+            <a href="<%= common_toy_path(t) %>" id="snd_popover_<%= t.id %>">
               <%= image_tag(t.avatar.url(:small), :style => sstyle, :alt => "t.name") %>
             </a>
 
+<script>
+  $(document).ready(function(){
+    $("#snd_popover_<%= t.id %>")
+    .popover({
+      offset: 10,
+      trigger: 'manual',
+      animate: false,
+      html: true,
+      placement: 'right',
+      content: 'Giá tiền: <%= number_to_currency(t.price,:precision => 0, :unit => "đồng", :format => "%n %u") %>'
+    }).mouseenter(function(e) {
+      var $popover = $('.popover');
+      (keepPopover) && clearTimeout(keepPopover);
+      ($popover.length) && $popover.remove();
+      $(this).popover('show');
+
+    })
+
+ .mouseleave(function(e) {
+      var $smarttip = $(this);
+      delay();
+      $('.popover')
+      .mouseenter(function(e) { clearTimeout(keepPopover); })
+      .mouseleave(function(e) { delay(); });
+
+    }).click(function(e) {
+      e.preventDefault();
+    });
+
+  });
+</script>

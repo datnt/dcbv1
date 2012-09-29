@@ -47,6 +47,14 @@
 <% end %>
 
 <script type="text/javascript">
+    var keepPopover,
+    delay = function() {
+      keepPopover = setTimeout( function() {
+        $('.popover').hide();
+      }, 500);
+    };
+
+
   function myfilter(sel){
     var value = sel.options[sel.selectedIndex].value;  
     window.location="<%= by_age_common_toys_path %>?id="+value;
