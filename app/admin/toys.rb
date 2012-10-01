@@ -4,7 +4,10 @@ ActiveAdmin.register Toy do
     column :id
     column :name
     column "Description" do |itm|
-      itm.description.html_safe
+      #itm.description.html_safe
+      #truncate_html(itm.description, :length => 50, :omission => '...')
+      truncate(itm.description, :length => 30).html_safe
+
     end
     column :avatar_file_name
     column :avatar_content_type
