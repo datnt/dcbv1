@@ -31,9 +31,12 @@ table{
 
 <tr>
 <td>
+
+<% icarr=["icon-book", "icon-gift", "icon-flag"]%>
+
 <ul class="nav nav-list bs-docs-sidenav affix">
 
-          <% ls.each do |itm| %>
+          <% ls.each_with_index do |itm, index| %>
 <% stractive = "" %>
 <% if itm.id.to_s == @sel_id %>
   <% stractive = "active" %>
@@ -41,8 +44,8 @@ table{
 
 
 <li class="<%= stractive %>">
-<a style="text-decoration: none;" data-method="get" class="" href="/common_toys?id=<%= itm.id%>">
-  <i class="icon-chevron-right" style="float: right;"></i><%= itm.name %>
+<a style="padding-left: 0px; text-decoration: none;" data-method="get" class="" href="/common_toys?id=<%= itm.id%>">
+  <i class="<%= icarr[index] %>"></i><i class="icon-chevron-right" style="float: right;"></i><%= itm.name %>
 </a>
 
 </li>
