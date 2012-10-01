@@ -6,6 +6,9 @@
   background-color: #FBEED5;
   color: #468847;
 }
+.pagination .active a {
+  color: #E11D1F;
+}
 </style>
 
 <div class="row" style="margin-left: 0px;">
@@ -57,6 +60,9 @@
     <% end %>
   </div>
 <% end %>
+
+<%= will_paginate @toys, :renderer => BootstrapPagination::Rails, :style => "float: right; margin-top: 10px; margin-bottom: 0px;"  %>
+
 
 <script type="text/javascript">
     var keepPopover,
