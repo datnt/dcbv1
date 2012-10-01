@@ -1,9 +1,16 @@
-            <a href="<%= common_toy_path(t) %>" id="snd_popover_<%= t.id %>">
-              <%= image_tag(t.avatar.url(:small), :style => sstyle, :alt => "t.name") %>
+            <a href="<%= common_toy_url(t) %>" id="btn_<%= t.id %>">
+              <%= image_tag(t.avatar.url(:small), :style => sstyle, :alt => "t.name", :id => "snd_popover_#{t.id}") %>
             </a>
 
 <script>
   $(document).ready(function(){
+
+$('#btn_<%= t.id %>').click(function(){
+  window.location="<%= common_toy_url(t) %>";
+});
+
+
+
     $("#snd_popover_<%= t.id %>")
     .popover({
       offset: 10,
