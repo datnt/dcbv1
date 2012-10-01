@@ -35,16 +35,18 @@
     <% ts.each do |t| %>
       <% if t %>
         <div class="span4">
-          <div class="thumbnail">
+          <div class="thumbnail" style="position: relative;">
 
             <div id="itm_<%= t.id %>">
               <%= render :partial => "common_toys/shared/toy_item", :locals => {:itm => t }  %>
             </div>
 
-            <div class="caption">
-              <h5><%= t.name %></h5>
+            <div class="caption" style="position: absolute; bottom: 0px; width:100%; background-color: #DA4F49; color:white;  opacity:0.8;filter:alpha(opacity=60); left: 0px; width: 255px;">
+              <h5 style="float: left;">
+                <a href="<%= common_toy_path(t) %>"><%= t.name %></a>
+              </h5>
               <% t.age_cates.each do |ct| %>
-                <a href="<%= by_age_common_toys_path %>?id=<%= ct.id %>" class="btn btn-success" style="color: white;">
+                <a href="<%= by_age_common_toys_path %>?id=<%= ct.id %>" class="btn btn-success" style="color: white; float: right;">
                   <%= ct.name %>
                 </a>
               <% end %>
