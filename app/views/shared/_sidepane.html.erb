@@ -1,70 +1,116 @@
 <style>
-table:hover
-{ 
-  background-color:white;
-}
-table{
-  background-color: white;
-}
+  table:hover
+  { 
+    background-color:white;
+  }
+  table{
+    background-color: white;
+  }
 
-.table-striped tbody tr:nth-child(2n+1) td{
-  background-color: white;
-}
+  .table-striped tbody tr:nth-child(2n+1) td{
+    background-color: white;
+  }
 
 </style>
 
-      <div class="span3">
-        <!--Sidebar content-->
+<div class="span3">
+  <!--Sidebar content-->
 
-      <table class="table table-bordered table-striped responsive-utilities">
-        <thead>
-          <tr>
-            <th style="background: none repeat scroll 0 0 #DA4F49;">
-              <p style="color: #FFFFFF; padding: 9px 10px; text-align: center; width: 210px;">
-              Danh mục
-              </p>
-            </th>
-          </tr>
-        </thead>
-        <% ls=CategoryObj.find(:all) %>
-        <tbody>
+  <table class="table table-bordered table-striped responsive-utilities">
+    <thead>
+      <tr>
+        <th style="background: none repeat scroll 0 0 #DA4F49;">
+          <p style="color: #FFFFFF; padding: 9px 10px; text-align: center; width: 210px;">
+            Danh mục
+          </p>
+        </th>
+      </tr>
+    </thead>
+    <% ls=CategoryObj.find(:all) %>
+    <tbody>
 
-<tr>
-<td>
+      <tr>
+        <td>
 
-<% icarr=["icon-book", "icon-gift", "icon-flag", "icon-gift"]%>
+          <% icarr=["icon-book", "icon-gift", "icon-flag", "icon-gift"]%>
 
-<ul class="nav nav-list bs-docs-sidenav affix">
+          <ul class="nav nav-list bs-docs-sidenav affix">
 
-          <% ls.each_with_index do |itm, index| %>
-<% stractive = "" %>
-<% if itm.id.to_s == @sel_id %>
-  <% stractive = "active" %>
-<% end %>
-
-
-<li class="<%= stractive %>">
-<a style="padding-left: 0px; text-decoration: none;" data-method="get" class="" href="/common_toys?id=<%= itm.id%>">
-  <i class="<%= icarr[index] %>"></i><i class="icon-chevron-right" style="float: right;"></i><%= itm.name %>
-</a>
-
-</li>
-          <% end %>
-</ul>
-
-</td>
-</tr>
-
-        </tbody>
-      </table>
+            <% ls.each_with_index do |itm, index| %>
+              <% stractive = "" %>
+              <% if itm.id.to_s == @sel_id %>
+                <% stractive = "active" %>
+              <% end %>
 
 
+              <li class="<%= stractive %>">
+                <a style="padding-left: 0px; text-decoration: none;" data-method="get" class="" href="/common_toys?id=<%= itm.id%>">
+                  <i class="<%= icarr[index] %>"></i><i class="icon-chevron-right" style="float: right;"></i><%= itm.name %>
+                </a>
 
-<a class="logo" href="http://www.facebook.com/dochoi.bevui" target="_blank">
-                        <img alt="Facebook" src="/images/facebook_128.png" title="dochoi.bevui">
-</a>
+              </li>
+            <% end %>
+          </ul>
 
-      </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <table class="table table-bordered table-striped responsive-utilities">
+    <thead>
+      <tr>
+        <th style="background: none repeat scroll 0 0 #DA4F49;">
+          <p style="color: #FFFFFF; padding: 9px 10px; text-align: center; width: 210px;">
+            Thư viện bé vui
+          </p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>
+
+
+          <ul class="nav nav-list bs-docs-sidenav affix">
+
+
+
+              <li class="">
+                <a style="padding-left: 0px; text-decoration: none;" data-method="get" class="" href="<%= kid_libs_path %>">
+                  <i class="icon-film"></i><i class="icon-chevron-right" style="float: right;"></i>Videos
+                </a>
+
+              </li>
+          </ul>
+
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+  <a class="logo" href="http://www.facebook.com/dochoi.bevui" target="_blank">
+    <img alt="Facebook" src="/images/facebook_128.png" title="dochoi.bevui">
+  </a>
+
+</div>
 
 
 

@@ -73,6 +73,7 @@ resources :common_toys do
 end
 
 resources :contacts
+resources :kid_libs
 
 root :to => 'common_toys#index'
 
