@@ -1,3 +1,60 @@
-<% @videos.each do |v| %>
-<%= v.ecode.html_safe %>
-<% end %>
+<style>
+  .table tbody tr.success td{
+    background-color: #DFF0D8
+  }
+
+  .table tbody tr.error td{
+    background-color: #F2DEDE
+  }
+
+  .table tbody tr.warning td{
+    background-color: #FCF8E3
+  }
+  .table tbody tr.info td {
+    background-color: #D9EDF7
+  }
+
+  .error {
+    color: #323537;
+  }
+
+</style>
+
+
+<% sarr=['success','error','warning','info'] %>
+
+<% ia=0 %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Tiêu đề</th>
+        <th>Mô tả</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <% @videos.each_with_index do |t, ind| %>
+        <tr class="<%= sarr[ia] %>">
+          <td><%= ind+1 %></td>
+          <td>
+          <a href="<%= kid_lib_path(t) %>"><%= t.title %></a>
+          </td>
+          <td>
+            <a style="" data-method="get" class="" href="">
+              <%= t.description %>
+            </a>
+
+
+          </td>
+        </tr>
+        <% ia=ia+1 %>
+        <% if ia==4 %>
+          <% ia=0 %>
+        <% end %>
+
+      <% end %>
+
+    </tbody>
+  </table>
+
