@@ -1,5 +1,5 @@
             <a href="<%= common_toy_url(t) %>" id="btn_<%= t.id %>">
-              <%= image_tag(t.avatar.url(:small), :style => sstyle, :alt => "t.name", :id => "snd_popover_#{t.id}") %>
+              <%= image_tag(t.avatar.url(:small), :style => sstyle, :alt => t.name, :id => "snd_popover_#{t.id}") %>
             </a>
 
 <script>

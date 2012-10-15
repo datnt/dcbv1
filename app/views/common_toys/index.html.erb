@@ -50,7 +50,13 @@
             </div>
 
             <div class="caption">
-              <h5><%= t.name %></h5>
+<h5>
+<a href="<%= common_toy_url(t) %>">
+  <%= t.name %>
+</a>
+</h5>
+
+
               <% t.age_cates.each do |ct| %>
                 <a href="<%= by_age_common_toys_path %>?id=<%= ct.id %>" class="btn btn-success" style="color: white;">
                   <%= ct.name %>
