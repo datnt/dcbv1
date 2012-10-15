@@ -18,17 +18,17 @@ group :assets do
    gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '1.0.3'
-  gem 'twitter-bootstrap-rails'
+  gem 'twitter-bootstrap-rails', '2.1.1'
 end
 
 gem 'jquery-rails', '2.0.2'
 gem 'paperclip', :git => 'git://github.com/patshaughnessy/paperclip.git'
-gem 'pg'
+gem 'pg', '0.14.0'
 gem 'activeadmin', '0.4.4'
 gem 'will_paginate', '3.0.3'
 gem "active_admin_editor", "0.3.5"
 gem 'dalli'
-gem 'will_paginate-bootstrap'
+gem 'will_paginate-bootstrap', '0.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
