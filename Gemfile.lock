@@ -187,7 +187,7 @@ DEPENDENCIES
   activeadmin (= 0.4.4)
   coffee-rails (= 3.2.1)
   dalli
-  garelic
+  garelic (= 0.0.2)
   jquery-rails (= 2.0.2)
   paperclip!
   pg (= 0.14.0)
