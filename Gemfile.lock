@@ -188,11 +188,11 @@ DEPENDENCIES
   dalli
   jquery-rails (= 2.0.2)
   paperclip!
-  pg
+  pg (= 0.14.0)
   rails (= 3.2.6)
   sass-rails (= 3.2.3)
   therubyracer
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails (= 2.1.1)
   uglifier (= 1.0.3)
   will_paginate (= 3.0.3)
-  will_paginate-bootstrap
+  will_paginate-bootstrap (= 0.2.1)
