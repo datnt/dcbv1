@@ -1,12 +1,14 @@
 class KidLibsController < ApplicationController
   def index
-    @videos = KidLib.find(:all)
+    lcate = LibCate.find_by_id(params[:id])
+    @items = lcate.kid_libs
+    # @videos = KidLib.find(:all)
   end
 
   def show
-    @video = KidLib.find_by_id(params[:id])
+    @itm = KidLib.find_by_id(params[:id])
 
-    @rel_vids = KidLib.find(:all, :conditions=> ["id not in (?)", [params[:id]]])
+    @rel_itms = KidLib.find(:all, :conditions=> ["id not in (?) and lib_cate_id=?", [params[:id]], @itm.lib_cate_id])
   end
 
 end

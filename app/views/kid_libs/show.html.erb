@@ -1,4 +1,4 @@
-<%= @video.ecode.html_safe %>
+<%= @itm.ecode.html_safe %>
 <br/>
 
 
@@ -12,22 +12,12 @@
     </div>
     <div class="span" style="margin-left: 0px;">
 
-<% @rel_vids.each do |v| %>
-  <a href="<%= kid_lib_path(v) %>"><%= v.title %></a>
+<% @rel_itms.each do |v| %>
+  <a href="<%= kid_lib_path(v) %>"><%= v.title %></a> <br/>
 <% end %>
 
     </div>
 </div>
 
 
-<script type="text/javascript">
 
-$(document).ready(function(){
-  $('iframe').filter(function(index) {
-    if ( index > 0){
-      this.style.height = '160px';
-      this.style.width = '240px';
-    }
-  });  
-});
-</script>
