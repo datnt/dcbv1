@@ -41,9 +41,7 @@
           <a href="<%= kid_lib_path(t) %>"><%= t.title %></a>
           </td>
           <td>
-            <a style="" data-method="get" class="" href="">
-              <%= t.description %>
-            </a>
+              <%= t.description.html_safe %>
 
 
           </td>
