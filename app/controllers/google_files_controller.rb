@@ -1,5 +1,5 @@
 class GoogleFilesController < ApplicationController
 	def index
-		render :text => "Welcome"
+		render :text => "Welcome: update"
 	end
 end
