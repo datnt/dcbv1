@@ -31,6 +31,7 @@ gem "active_admin_editor", "0.3.5"
 gem 'dalli'
 gem 'will_paginate-bootstrap', '0.2.1'
 gem 'garelic', '0.0.2'
+gem 'google-api-client', '0.7.1' # Added on Apr1st,2016
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
