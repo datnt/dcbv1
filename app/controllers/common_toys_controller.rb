@@ -37,9 +37,7 @@ class CommonToysController < ApplicationController
     #toys = []
     #ts.select {|p| toys << p if p.id == params[:id].to_i}
     #@toy = toys[0]
-
     @toy = Toy.detail_without_image(params[:id])
-
     response.headers['Cache-Control'] = 'public, max-age=15600'
   end
 
