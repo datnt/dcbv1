@@ -9,6 +9,35 @@ class GoogleFilesController < ApplicationController
     render :text => "Welcome: <b> Connectivity </b>: #{@connectivity}; <img src='https://drive.google.com/uc?export=view&id=0B1fwbuqA93HJQWRrUS0yaEhFb1E'/> "
   end
 
+  def new
+  end
+
+  def create
+    puts "inspect data received from web browser"
+    puts "---"
+    puts "---"
+    puts "--- v== "
+    puts "--- v== #{params[:uploads]}"
+    #BEGIN upload param file to google drive
+    drive = @client.discovered_api('drive', 'v2')
+    file = drive.files.insert.request_schema.new({
+        :title => "Tiger1.png",
+        :description => "An image of tiger",
+        :mimeType => "image/jpeg",
+        :parents => [:kind => "drive#file",:id => "0B74OU5RnV3PnbS0xZTNaYVNyQTQ"] #This is the id of directory "appstorage" shared from main account's storage
+      })
+    media = Google::APIClient::UploadIO.new(params[:uploads], "image/jpeg")
+    result2 = @client.execute!(
+      :api_method => @client.discovered_api('drive', 'v2').files.insert,
+      :body_object => file,
+      :media => media,
+      :parameters => {
+        'uploadType' => 'multipart',
+        'alt' => 'json'})
+    #END upload param file to google drive
+    render text: "Action create done"
+  end
+
   def list_files
     fres = @client.execute!(
       :api_method => @client.discovered_api('drive', 'v2').files.list,
@@ -29,6 +58,7 @@ class GoogleFilesController < ApplicationController
       puts "item == #{item.methods}"
       puts "embed_link === #{item.to_json}"
     end
+
   end
 
   def upload_file_to_directory
