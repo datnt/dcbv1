@@ -1,0 +1,17 @@
+<input type="file" id="file" name="uploads"  />
+
+<div id="uploadFile">
+  click here to upload
+</div>
+<script type="text/javascript">
+
+$('#uploadFile').click(function(){
+  $.ajaxUpload({
+    url: "<%= google_files_path %>",
+    data: ':file',
+    success: function (data, status, xhr) {
+      console.log(data);
+    }
+  });
+});
+</script>
