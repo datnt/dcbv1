@@ -13,6 +13,13 @@ class GoogleFilesController < ApplicationController
     list_files
   end
 
+  def adel
+    fileid = params[:file_id]
+    drive = @client.discovered_api('drive', 'v2')
+    @client.execute(:api_method => drive.files.delete, :parameters => { 'fileId' => fileid })
+    render :text => "ID: #{fileid}"
+  end
+
   def new
   end
 

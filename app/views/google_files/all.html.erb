@@ -5,6 +5,7 @@ SIZE:== <%= @list_data.items.size %>
       <th>No. </th>
       <th>ID</th>
       <th>Thumbnail</th>
+      <td>Command Del</td>
   </thead>
   <tbody>
       <% @list_data.items.each_with_index do |item, i| %>
@@ -18,6 +19,9 @@ SIZE:== <%= @list_data.items.size %>
         </td>
         <td>
           <img src="<%= obj["thumbnailLink"] %>"/>
+        </td>
+        <td>
+          <a href="<%= adel_google_files_path(:file_id => item.id) %>">Delete</a>
         </td>
       </tr>
     <% end %>

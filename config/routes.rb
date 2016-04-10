@@ -78,7 +78,7 @@ resources :kid_libs
 # resources :google_files
 resources :google_files do
   collection do
-    get :all
+    get :all, :adel
   end
 end
 
