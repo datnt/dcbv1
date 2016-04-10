@@ -1,0 +1,25 @@
+All files <br/>
+SIZE:== <%= @list_data.items.size %>
+<table border="1  ">
+  <thead>
+      <th>No. </th>
+      <th>ID</th>
+      <th>Thumbnail</th>
+  </thead>
+  <tbody>
+      <% @list_data.items.each_with_index do |item, i| %>
+      <% obj = item.as_json %>
+      <tr>
+        <td>
+          <%= i %>
+        </td>
+        <td>
+           <%= item.id %>
+        </td>
+        <td>
+          <img src="<%= obj["thumbnailLink"] %>"/>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
