@@ -35,4 +35,7 @@ Dcbv1::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # DatNT: insert this line on Apr10th2016 to DISABLED cache on Development mode
+  config.action_controller.perform_caching = false
 end

@@ -9,6 +9,10 @@ class GoogleFilesController < ApplicationController
     render :text => "Welcome: <b> Connectivity </b>: #{@connectivity}; <img src='https://drive.google.com/uc?export=view&id=0B1fwbuqA93HJQWRrUS0yaEhFb1E'/> "
   end
 
+  def all
+    list_files
+  end
+
   def new
   end
 
@@ -21,7 +25,7 @@ class GoogleFilesController < ApplicationController
     #BEGIN upload param file to google drive
     drive = @client.discovered_api('drive', 'v2')
     file = drive.files.insert.request_schema.new({
-        :title => "Tiger1.png",
+        :title => "Tiger1#{Time.now.to_i}.png",
         :description => "An image of tiger",
         :mimeType => "image/jpeg",
         :parents => [:kind => "drive#file",:id => "0B74OU5RnV3PnbS0xZTNaYVNyQTQ"] #This is the id of directory "appstorage" shared from main account's storage
@@ -48,16 +52,47 @@ class GoogleFilesController < ApplicationController
     puts "====="
     puts "====="
     puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
+    puts "====="
     # puts "fres' methods == #{fres.methods}"
-    list_data = fres.data
+    @list_data = fres.data
     # puts "--content of data -- "
     # puts "list_data == #{list_data.items.size}"
-    puts "LOOP through item of data"
-    list_data.items.each do |item|
-      puts "============***************************"
-      puts "item == #{item.methods}"
-      puts "embed_link === #{item.to_json}"
-    end
+    # puts "LOOP through item of data"
+    # list_data.items.each do |item|
+    #   puts "============***************************"
+    #   # puts "item == #{item.methods}"
+    #   # puts "JSON of item === #{item.to_json}"
+    #   puts "item id == #{item.id}"
+    # end
 
   end
 

@@ -75,7 +75,13 @@ end
 resources :contacts
 resources :kid_libs
 resources :kid_libs
-resources :google_files
+# resources :google_files
+resources :google_files do
+  collection do
+    get :all
+  end
+end
+
 root :to => 'common_toys#index'
 
 
