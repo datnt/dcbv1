@@ -23,6 +23,7 @@ class GoogleFilesController < ApplicationController
   end
 
   def new
+    @toys = Toy.all
   end
 
   # create: upload a file user selected on browser to google drive
@@ -44,6 +45,7 @@ class GoogleFilesController < ApplicationController
         'uploadType' => 'multipart',
         'alt' => 'json'})
     #END upload param file to google drive
+    puts "SELECTED TOY ID == #{params[:toy_id]}"
     render text: "Action create done"
   end
 

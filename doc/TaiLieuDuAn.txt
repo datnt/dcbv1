@@ -1,0 +1,41 @@
+embed_link === {
+"kind":"drive#file",
+"id":"0B1fwbuqA93HJQWRrUS0yaEhFb1E",
+"etag":"\"FMfIP801mdMYeGgYeKsfAdVBBNU/MTQ1OTU3MDk1OTMzNA\"",
+"selfLink":"https://www.googleapis.com/drive/v2/files/0B1fwbuqA93HJQWRrUS0yaEhFb1E",
+
+"webContentLink":"https://docs.google.com/uc?id=0B1fwbuqA93HJQWRrUS0yaEhFb1E&export=download",
+
+"alternateLink":"https://drive.google.com/file/d/0B1fwbuqA93HJQWRrUS0yaEhFb1E/view?usp=drivesdk",
+
+"iconLink":"https://ssl.gstatic.com/docs/doclist/images/icon_11_image_list.png",
+
+"thumbnailLink":"https://lh6.googleusercontent.com/vTifVM7y3Gyvb1gxhtlX4yRodu4a5EV8L0fRIu2qsYv7s3Q1IVYxaI328At7WBsBpBbMLw=s220","title":"DochoiBeVui.png"
+
+==> lay ra embed_link, roi lay ra id 
+
+========================================================
+* cac buoc de tich hop file luu tren Google Drive vao he thong
+Step 1> 
+rails g model GoogleFile
+- model GoogleFile co the luu duoc thong tin: embed_link kieu text
+
+Step 2>
+Cau hinh model
+Toy has many GoogleFile
+Cau hinh model
+GoogleFile belongs to Toy
+
+Step 3>
+Chinh sua controller va view de ho tro cho viec tao moi Toy co 
+tich hop upload file len GoogleDrive
+
+- Sua trong giao dien edit Toy , them vao chuc nang upload file -->
+++ co kho khan, viec edit toy hien tai dang duoc coding trong ActiveAdmin
+++++ lam sao de ActiveAdmin co the duoc customize (view va controller) de ma ho tro viec upload file
+
+- Cach khac don gian hon::
+  + cu upload file len GoogleDrive
+  + chinh sua, hoac them vao giao dien quan ly file cua google files, de cho no co the mapping toi Toy
+  + nhu vay luc hien thi Toy, ta co the kiem tra toy.google_files.size > 0 de hien thi cac file cua no
+  + nhu vay, trong giao dien upload file cua GoogleFile, ta se ho tro thuc nang tim kiem toy map voi file chuan bi upload

@@ -1,20 +1,37 @@
+<link href="/assets/css/select2.css" rel="stylesheet" />
+<script src="/assets/js/select2.js"></script>
+
 <div>
   <span><a href="<%= all_google_files_path %>">View all files</a></span>
 </div>
+
+<select class="js-example-basic-single" id="toy">
+  <% @toys.each do |toy| %>
+    <option value="<%= toy.id %>"><%= toy.name %></option>
+  <% end %>
+</select>
+
 <input type="file" id="file" name="uploads"  />
 
-<div id="uploadFile">
+<button id="uploadFile" class="btn-primary">
   click here to upload
-</div>
+</button>
 <script type="text/javascript">
 
 $('#uploadFile').click(function(){
+  var toy_id = $('#toy').val();
   $.ajaxUpload({
-    url: "<%= google_files_path %>",
+    url: "<%= google_files_path %>?toy_id="+toy_id,
     data: ':file',
     success: function (data, status, xhr) {
       console.log(data);
     }
   });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".js-example-basic-single").select2();
 });
 </script>
