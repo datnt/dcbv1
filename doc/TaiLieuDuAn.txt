@@ -39,3 +39,11 @@ tich hop upload file len GoogleDrive
   + chinh sua, hoac them vao giao dien quan ly file cua google files, de cho no co the mapping toi Toy
   + nhu vay luc hien thi Toy, ta co the kiem tra toy.google_files.size > 0 de hien thi cac file cua no
   + nhu vay, trong giao dien upload file cua GoogleFile, ta se ho tro thuc nang tim kiem toy map voi file chuan bi upload
+
+      ********** bat dau tien hanh tao model GoogleFile
+      ** sau do migrate tren database local
+      ****  them vao active admin rails generate active_admin:resource GoogleFile
+            ref: http://stackoverflow.com/questions/32173935/add-model-administration-to-active-admin-rails-3
+      ** export file dump tu database local
+      ** upload file dump tu local len dropbox
+      ** chuyen file tu dropbox len dochoibevui
